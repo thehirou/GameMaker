@@ -1,0 +1,9 @@
+{
+  "FolderOrderSettings": [
+    {"name":"Assets","order":10,"path":"folders/Assets.yy",},
+  ],
+  "ResourceOrderSettings": [
+    {"name":"sprPlaceholder","order":2,"path":"sprites/sprPlaceholder/sprPlaceholder.yy",},
+    {"name":"oManager","order":1,"path":"objects/oManager/oManager.yy",},
+  ],
+}
