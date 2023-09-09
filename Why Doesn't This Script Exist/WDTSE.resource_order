@@ -1,0 +1,15 @@
+{
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"between","order":5,"path":"scripts/between/between.yy",},
+    {"name":"All functions","order":4,"path":"notes/All functions/All functions.yy",},
+    {"name":"bool_to_string","order":7,"path":"scripts/bool_to_string/bool_to_string.yy",},
+    {"name":"print","order":2,"path":"scripts/print/print.yy",},
+    {"name":"spr","order":2,"path":"sprites/spr/spr.yy",},
+    {"name":"draw_text_shadow","order":1,"path":"scripts/draw_text_shadow/draw_text_shadow.yy",},
+    {"name":"scr_speedhack","order":4,"path":"scripts/scr_speedhack/scr_speedhack.yy",},
+    {"name":"draw_rectangle_thick","order":6,"path":"scripts/draw_rectangle_thick/draw_rectangle_thick.yy",},
+    {"name":"f_font","order":1,"path":"fonts/f_font/f_font.yy",},
+    {"name":"instance_create_once","order":3,"path":"scripts/instance_create_once/instance_create_once.yy",},
+  ],
+}

@@ -1,0 +1,27 @@
+{
+  "FolderOrderSettings": [
+    {"name":"Objects","order":3,"path":"folders/Objects.yy",},
+    {"name":"Rooms","order":4,"path":"folders/Rooms.yy",},
+    {"name":"Scripts","order":2,"path":"folders/Scripts.yy",},
+    {"name":"Sounds","order":1,"path":"folders/Sounds.yy",},
+    {"name":"ObjTiles","order":25,"path":"folders/ObjTiles.yy",},
+    {"name":"Tileset","order":26,"path":"folders/Tileset.yy",},
+  ],
+  "ResourceOrderSettings": [
+    {"name":"oTileParent","order":4,"path":"objects/oTileParent/oTileParent.yy",},
+    {"name":"oWorldBorder","order":6,"path":"objects/oWorldBorder/oWorldBorder.yy",},
+    {"name":"sTile","order":1,"path":"sprites/sTile/sTile.yy",},
+    {"name":"sCoolerTileset","order":4,"path":"sprites/sCoolerTileset/sCoolerTileset.yy",},
+    {"name":"oPlayer","order":3,"path":"objects/oPlayer/oPlayer.yy",},
+    {"name":"oWater","order":4,"path":"objects/oWater/oWater.yy",},
+    {"name":"sChecker","order":5,"path":"sprites/sChecker/sChecker.yy",},
+    {"name":"sTileset","order":2,"path":"sprites/sTileset/sTileset.yy",},
+    {"name":"oChecker","order":5,"path":"objects/oChecker/oChecker.yy",},
+    {"name":"oFollow","order":1,"path":"objects/oFollow/oFollow.yy",},
+    {"name":"oTree","order":3,"path":"objects/oTree/oTree.yy",},
+    {"name":"sWorldBorder","order":3,"path":"sprites/sWorldBorder/sWorldBorder.yy",},
+    {"name":"oRiverside","order":2,"path":"objects/oRiverside/oRiverside.yy",},
+    {"name":"oMountain","order":1,"path":"objects/oMountain/oMountain.yy",},
+    {"name":"oGod","order":2,"path":"objects/oGod/oGod.yy",},
+  ],
+}

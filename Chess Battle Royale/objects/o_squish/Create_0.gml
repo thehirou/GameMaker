@@ -1,0 +1,9 @@
+squish=false
+squisher=id
+squishingY=false
+squishingX=false
+squishingDEFAULTX=1
+squishingDEFAULTY=1
+squishAmount=0
+squishTime=20
+timer=0
