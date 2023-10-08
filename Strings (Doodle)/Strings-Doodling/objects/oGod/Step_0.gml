@@ -1,6 +1,8 @@
 x=mouse_x
 y=mouse_y
 
+if keyboard_check_pressed(ord("R")){game_restart()}
+
 show_debug_message(string(mouse_x)+" / "+string(mouse_y))
 
 if mouse_x=640/2 and mouse_y=640/2

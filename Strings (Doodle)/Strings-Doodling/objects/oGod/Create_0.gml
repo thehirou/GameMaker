@@ -1,3 +1,5 @@
+window_set_caption("I'm so bored LOL")
+
 _string=""
 
 getFromString="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
