@@ -7,7 +7,7 @@ kirsche=3,
 coco=4,
 }
 
-numberOfAnimatronics=4
+numberOfAnimatronics=4 //Either way I think I hard-coded this to be 4 so it's going to be hard to add more without remaking the engine
 
 progress=0 //In ticks
 howLongIsAnHourInMinutes=4 //(In minutes)
@@ -16,8 +16,10 @@ totalHours=5*eachHour //Total hours * how long an hour is in ticks
 
 currentHour=0
 
+global.generalInteligence=1
+
 for (var i = 1; i <= numberOfAnimatronics; ++i) {
-    instance_create_depth(20,20,-999,oAnimatronic,{identity:i});
+    global.animatronicInstance[i]=instance_create_depth(20,20,-999,oAnimatronic,{identity:i});
 }
 
 #macro KEY_FULLSCREEN	keyboard_check_pressed(vk_f11)

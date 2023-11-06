@@ -8,8 +8,7 @@ roomLocated="undefined"
 
 sprite_index=sprAnimatronicMover
 
-
-
+debugColor=c_white
 
 //DEBUG
 x=irandom_range(90,1900)

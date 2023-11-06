@@ -1,3 +1,7 @@
+image_index=identity
+image_blend=debugColor
+
+
 scrAnimatronicManager();
 
 if place_meeting(x,y,oRoomKitchen)

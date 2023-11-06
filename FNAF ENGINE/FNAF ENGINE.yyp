@@ -32,6 +32,7 @@
     {"id":{"name":"oRoomKitchen","path":"objects/oRoomKitchen/oRoomKitchen.yy",},},
     {"id":{"name":"oAnimatronic","path":"objects/oAnimatronic/oAnimatronic.yy",},},
     {"id":{"name":"sprAnimatronicMover","path":"sprites/sprAnimatronicMover/sprAnimatronicMover.yy",},},
+    {"id":{"name":"ArtificialIntelligence","path":"scripts/ArtificialIntelligence/ArtificialIntelligence.yy",},},
     {"id":{"name":"oManager","path":"objects/oManager/oManager.yy",},},
     {"id":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
   ],

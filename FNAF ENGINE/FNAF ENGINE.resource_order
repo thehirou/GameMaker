@@ -11,5 +11,6 @@
     {"name":"sprRoom","order":1,"path":"sprites/sprRoom/sprRoom.yy",},
     {"name":"oRoomVent","order":2,"path":"objects/oRoomVent/oRoomVent.yy",},
     {"name":"oAnimatronic","order":1,"path":"objects/oAnimatronic/oAnimatronic.yy",},
+    {"name":"ArtificialIntelligence","order":1,"path":"scripts/ArtificialIntelligence/ArtificialIntelligence.yy",},
   ],
 }
