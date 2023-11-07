@@ -26,7 +26,7 @@ switch (identity) {
 		scrCocoAI();
         break;
     default:
-        show_message("Error setting the identity to a oAnimatronic object")
+        show_message("Error setting the identity to an oAnimatronic object")
         break;
 }
 
