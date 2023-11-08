@@ -24,9 +24,6 @@ switch (room) {
         break;
 	
 	case rmGame:
-		
-		draw_sprite(sprMap,0,1240,540)
-		
 		draw_text(20,1040,progress)
 		draw_text(20,1000,$"{currentHour} AM")
 		break;

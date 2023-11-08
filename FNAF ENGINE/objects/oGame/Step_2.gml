@@ -1,0 +1,1 @@
+horizontalMovement=clamp(horizontalMovement,-540,540)

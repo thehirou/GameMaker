@@ -1,0 +1,1 @@
+camID=cam.lobby //Example
