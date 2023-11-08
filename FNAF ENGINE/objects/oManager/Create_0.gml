@@ -71,8 +71,11 @@ sprPreOffice=sprite_add("pic/pre_office.png",0,false,false,1500,1290)
 
 //VIEWPORTS
 sprViewportTest=sprite_add("pic/viewport_test.png",0,false,false,1500,0)
+sprViewportKitchen=sprite_add("pic/viewport_kitchen.png",0,false,false,1500,0)
+sprViewportStage=sprite_add("pic/viewport_stage.png",0,false,false,1500,0)
 
 global.currentViewport=oManager.sprViewportTest
+global.currentCamera=cam.stage
 
 global.fullscreen=true
 global.mapAlpha=0.3

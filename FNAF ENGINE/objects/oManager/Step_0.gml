@@ -38,6 +38,21 @@ camRight1.image_alpha=0.3
 oCameraVent.image_alpha=1
 }
 
+
+
+switch (global.currentCamera) {
+    case cam.stage:
+        global.currentViewport=sprViewportStage
+        break;
+    case cam.kitchen:
+        global.currentViewport=sprViewportKitchen
+        break;
+    default:
+        global.currentViewport=sprViewportTest
+        break;
+}
+
+
 //DEBUG
 
 #macro RANDOM_ROOM choose(oRoomLobby,oRoomBath,oRoomKitchen,oRoomStage,oRoomSupl,oRoomSecurity,oRoomCorridor_1,oRoomCorridor_2,oRoomCorridor_A,oRoomCorridor_B)

@@ -27,6 +27,8 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"map_layout.psd","CopyToMask":-1,"filePath":"datafiles/pic",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"map.png","CopyToMask":-1,"filePath":"datafiles/pic",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"pre_office.png","CopyToMask":-1,"filePath":"datafiles/pic",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"viewport_kitchen.png","CopyToMask":-1,"filePath":"datafiles/pic",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"viewport_stage.png","CopyToMask":-1,"filePath":"datafiles/pic",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"viewport_test.png","CopyToMask":-1,"filePath":"datafiles/pic",},
   ],
   "isEcma": false,

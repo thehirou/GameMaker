@@ -12,8 +12,13 @@ false
 )
 {
 cursorHover=true
-if KEY_LEFTCLICK{show_message($"Selected CAMERA {string(camID)}")}	//DEBUG
-}else{cursorHover=false}
+if KEY_LEFTCLICK
+{
+global.currentCamera=camID	
+}
+}
+else
+{cursorHover=false}
 }
 else
 {
