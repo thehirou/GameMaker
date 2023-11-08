@@ -1,3 +1,7 @@
+function scrCreateCamera(_x,_y,_id){
+instance_create_layer(_x,_y,"LayerCameraButtons",oCameraButton,{camID:_id})
+}
+
 function scrAnimatronicManager(){
 
 switch (identity) {

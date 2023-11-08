@@ -1,0 +1,3 @@
+Holy shit this was a pain in the ass to get right.
+
+Check if oCameraClose and oCameraOpen are in their positions to draw the open camera sprite.

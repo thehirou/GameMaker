@@ -1,11 +1,13 @@
 {
   "FolderOrderSettings": [
     {"name":"Objects","order":3,"path":"folders/Objects.yy",},
+    {"name":"Camera Movement","order":7,"path":"folders/Objects/Camera Movement.yy",},
     {"name":"Rooms","order":5,"path":"folders/Objects/Rooms.yy",},
     {"name":"Rooms","order":4,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":1,"path":"folders/Scripts.yy",},
     {"name":"Shaders","order":2,"path":"folders/Shaders.yy",},
-    {"name":"Camera Movement","order":7,"path":"folders/Objects/Camera Movement.yy",},
+    {"name":"Camera Toggler","order":10,"path":"folders/Objects/Camera Toggler.yy",},
+    {"name":"Animation Curves","order":6,"path":"folders/Animation Curves.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oCursor","order":9,"path":"objects/oCursor/oCursor.yy",},
@@ -16,11 +18,15 @@
     {"name":"sprRoom","order":1,"path":"sprites/sprRoom/sprRoom.yy",},
     {"name":"oRoomBath","order":2,"path":"objects/oRoomBath/oRoomBath.yy",},
     {"name":"oRoomSupl","order":9,"path":"objects/oRoomSupl/oRoomSupl.yy",},
+    {"name":"oCameraReappearAfterClosed","order":3,"path":"objects/oCameraReappearAfterClosed/oCameraReappearAfterClosed.yy",},
     {"name":"oGame","order":6,"path":"objects/oGame/oGame.yy",},
     {"name":"previewMap","order":3,"path":"sprites/previewMap/previewMap.yy",},
+    {"name":"oCameraReappear","order":1,"path":"objects/oCameraReappear/oCameraReappear.yy",},
     {"name":"oAnimatronic","order":1,"path":"objects/oAnimatronic/oAnimatronic.yy",},
+    {"name":"8-Nov-2023","order":4,"path":"notes/8-Nov-2023/8-Nov-2023.yy",},
     {"name":"ArtificialIntelligence","order":1,"path":"scripts/ArtificialIntelligence/ArtificialIntelligence.yy",},
     {"name":"oRoomCorridor_2","order":6,"path":"objects/oRoomCorridor_2/oRoomCorridor_2.yy",},
+    {"name":"sprCameraOpen","order":4,"path":"sprites/sprCameraOpen/sprCameraOpen.yy",},
     {"name":"oRoomStage","order":7,"path":"objects/oRoomStage/oRoomStage.yy",},
     {"name":"rmMenu","order":2,"path":"rooms/rmMenu/rmMenu.yy",},
     {"name":"oRoomCorridor_B","order":4,"path":"objects/oRoomCorridor_B/oRoomCorridor_B.yy",},
@@ -28,6 +34,7 @@
     {"name":"oCameraVent","order":1,"path":"objects/oCameraVent/oCameraVent.yy",},
     {"name":"sprCursor","order":5,"path":"sprites/sprCursor/sprCursor.yy",},
     {"name":"oRoomCorridor_A","order":3,"path":"objects/oRoomCorridor_A/oRoomCorridor_A.yy",},
+    {"name":"oCameraClose","order":2,"path":"objects/oCameraClose/oCameraClose.yy",},
     {"name":"rmGame","order":1,"path":"rooms/rmGame/rmGame.yy",},
   ],
 }

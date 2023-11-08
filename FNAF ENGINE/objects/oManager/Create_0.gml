@@ -21,13 +21,15 @@ exitdoor=9,
 lobby=10,
 }
 
-#macro HALF_HVIEW = 1920/2
-#macro HALF_VVIEW = 1080/2
+#macro HALF_HVIEW 1920/2
+#macro HALF_VVIEW 1080/2
 
 //Change all mouse checks to be an object that follows the mouse (? 6899
 
 //DEBUG
 global.debug=false
+
+global.openCamera=false
 
 skipIntro=false
 skipMenu=true
@@ -61,10 +63,16 @@ intro_alpha[0]=-1
 intro_alpha[1]=-1
 intro_alpha[2]=0
 
+//MISC
 sprIntroBg=sprite_add("pic/doners_bg.png",0,false,false,0,0)
 sprIntroText=sprite_add("pic/five_nights_at_bg.png",0,false,false,0,0)
 sprMap=sprite_add("pic/map.png",0,false,false,620/2,470/2)
 sprPreOffice=sprite_add("pic/pre_office.png",0,false,false,1500,1290)
+
+//VIEWPORTS
+sprViewportTest=sprite_add("pic/viewport_test.png",0,false,false,1500,0)
+
+global.currentViewport=oManager.sprViewportTest
 
 global.fullscreen=true
 global.mapAlpha=0.3

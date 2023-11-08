@@ -17,3 +17,22 @@ scrMoveAnimatronic(global.animatronicInstance[anima.kirsche],oRoomStage)
 horizontalMovement=0 //Side doors
 verticalMovement=0 //Top bathroom vent
 displayMap=true
+
+curve[0]=animcurve_get_channel(animation,"viewportMovement");
+percent[0]=0;
+horizontalViewportPanning=0 //Default, the animation curve makes it oscillate between the max panning position and the min panning position
+panningDuration=10 //In seconds, how long does it take the viewport camera to pan the entire room
+
+
+//10 Cameras
+scrCreateCamera(1686,620,cam.kitchen)
+scrCreateCamera(1590,540,cam.suplrm)
+scrCreateCamera(1643,963,cam.exitdoor)
+scrCreateCamera(1290,600,cam.bath)
+scrCreateCamera(1600,720,cam.stage)
+scrCreateCamera(1200,930,cam.corridor1)
+scrCreateCamera(1200,720,cam.corridor2)
+scrCreateCamera(1500,590,cam.corridorA)
+scrCreateCamera(1430,800,cam.corridorB)
+
+
