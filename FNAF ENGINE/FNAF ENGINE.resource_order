@@ -5,10 +5,10 @@
     {"name":"Camera Movement","order":7,"path":"folders/Objects/Camera Movement.yy",},
     {"name":"Camera Toggler","order":10,"path":"folders/Objects/Camera Toggler.yy",},
     {"name":"Rooms","order":5,"path":"folders/Objects/Rooms.yy",},
+    {"name":"Text","order":13,"path":"folders/Objects/Text.yy",},
     {"name":"Rooms","order":4,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":1,"path":"folders/Scripts.yy",},
     {"name":"Shaders","order":2,"path":"folders/Shaders.yy",},
-    {"name":"Text","order":13,"path":"folders/Objects/Text.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oCursor","order":9,"path":"objects/oCursor/oCursor.yy",},
