@@ -63,11 +63,14 @@ intro_alpha[0]=-1
 intro_alpha[1]=-1
 intro_alpha[2]=0
 
+sndEerieLayer[0]=audio_create_stream("sfx/sfx_eerie_layer_1.ogg")
+
 //MISC
 sprIntroBg=sprite_add("pic/doners_bg.png",0,false,false,0,0)
 sprIntroText=sprite_add("pic/five_nights_at_bg.png",0,false,false,0,0)
 sprMap=sprite_add("pic/map.png",0,false,false,620/2,470/2)
 sprPreOffice=sprite_add("pic/pre_office.png",0,false,false,1500,1290)
+sprCameraOverlay1=sprite_add("pic/camera_overlay_1.png",0,false,false,0,0)
 
 //VIEWPORTS
 sprViewportTest=sprite_add("pic/viewport_test.png",0,false,false,1500,0)
@@ -75,7 +78,9 @@ sprViewportKitchen=sprite_add("pic/viewport_kitchen.png",0,false,false,1500,0)
 sprViewportStage=sprite_add("pic/viewport_stage.png",0,false,false,1500,0)
 
 global.currentViewport=oManager.sprViewportTest
+global.currentViewportPans=true
 global.currentCamera=cam.stage
+global.currentCameraString="STAGE"
 
 global.fullscreen=true
 global.mapAlpha=0.3

@@ -43,12 +43,18 @@ oCameraVent.image_alpha=1
 switch (global.currentCamera) {
     case cam.stage:
         global.currentViewport=sprViewportStage
+		global.currentViewportPans=true
+		global.currentCameraString="STAGE"
         break;
     case cam.kitchen:
         global.currentViewport=sprViewportKitchen
+		global.currentViewportPans=false
+		global.currentCameraString="KITCHEN"
         break;
     default:
         global.currentViewport=sprViewportTest
+		global.currentViewportPans=true
+		global.currentCameraString="TEST"
         break;
 }
 
