@@ -2,6 +2,8 @@ _spd=1
 
 if keyboard_check_pressed(ord("R")){game_restart()}
 
+if room=Room1
+{
 with(oFollower)
 {
 	if collision_point(x,y,inst_folow_first_collission,false,true)
@@ -49,4 +51,5 @@ switch (global.path) {
     default:
         // code here
         break;
+}
 }

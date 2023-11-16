@@ -9,6 +9,7 @@ global.path=0
 
 lol=show_question("Proceed")
 
+window_set_size(640*2,480*2)
+window_center()
 
-
-if room=rmInit{room_goto(Room1)}
+if room=rmInit{room_goto(rmPian)}
