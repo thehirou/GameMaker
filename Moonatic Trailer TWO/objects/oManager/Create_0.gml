@@ -1,6 +1,6 @@
 #macro GRID_SIZE 32
 
-#macro MACRO_SPD 1.5 //1.5 for street room
+#macro MACRO_SPD 2 //1.5 for street room and cheeselandias
 global.debug=false
 global.path=0
 
@@ -18,5 +18,6 @@ window_center()
 
 if room=rmInit{room_goto(room_street_new)}
 
+global.STAPPPPPP=false
 
 nightRoom=false
