@@ -1,6 +1,6 @@
 #macro GRID_SIZE 32
 
-#macro MACRO_SPD 1
+#macro MACRO_SPD 1.5 //1.5 for street room
 global.debug=false
 global.path=0
 
@@ -16,7 +16,7 @@ lol=show_question("Proceed")
 window_set_size(640*2,480*2)
 window_center()
 
-if room=rmInit{room_goto(room_troy_bedroom)}
+if room=rmInit{room_goto(room_street_new)}
 
 
 nightRoom=false

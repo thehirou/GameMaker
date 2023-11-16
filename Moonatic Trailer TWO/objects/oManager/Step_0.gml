@@ -2,6 +2,11 @@ _spd=1
 
 if keyboard_check_pressed(ord("R")){game_restart()}
 
+if room=room_street_new
+{
+oDummy.x+=MACRO_SPD	
+}
+
 if room=Room1
 {
 with(oFollower)
