@@ -1,1 +1,0 @@
-sprite_index=global.S_APFEL_DOWN
