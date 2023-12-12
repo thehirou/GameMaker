@@ -1,0 +1,395 @@
+You are using YYP Maker v1.1.2, released in 11-04-2021
+
+
+
+[28-07-2021 23:01:11] Initialized GameMaker Project: Hirougana.yyp
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/animcurves
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/datafiles
+[28-07-2021 23:01:11] Checking ARIALUNI.TTF
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/extensions
+[28-07-2021 23:01:11] Checking NekoPresence
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/extensions/NekoPresence
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/extensions/NekoPresence
+[28-07-2021 23:01:11] Checking NekoPresence.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/extensions/NekoPresence/NekoPresence.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/extensions/NekoPresence/NekoPresence.yy
+[28-07-2021 23:01:11] Par: "folders/Extensions" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/extensions/NekoPresence/NekoPresence.yy"
+[28-07-2021 23:01:11] Found Extension: NekoPresence
+[28-07-2021 23:01:11] Checking NekoPresence.gml
+[28-07-2021 23:01:11] Checking NekoPresence.dll
+[28-07-2021 23:01:11] Checking libnekopresence.so
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts
+[28-07-2021 23:01:11] Checking versionFont
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/versionFont
+[28-07-2021 23:01:11] Checking fuentePreguntas
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/fuentePreguntas
+[28-07-2021 23:01:11] Checking fontDef
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/fontDef
+[28-07-2021 23:01:11] Checking font4
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font4
+[28-07-2021 23:01:11] Checking font3
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font3
+[28-07-2021 23:01:11] Checking font1
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font1
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font1
+[28-07-2021 23:01:11] Checking font1.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font1/font1.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font1/font1.yy
+[28-07-2021 23:01:11] Par: "folders/Fonts" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font1/font1.yy"
+[28-07-2021 23:01:11] Found Font: font1
+[28-07-2021 23:01:11] Checking font1.png
+[28-07-2021 23:01:11] Checking font1.old.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font3
+[28-07-2021 23:01:11] Checking font3.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font3/font3.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font3/font3.yy
+[28-07-2021 23:01:11] Par: "folders/Fonts" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font3/font3.yy"
+[28-07-2021 23:01:11] Found Font: font3
+[28-07-2021 23:01:11] Checking font3.png
+[28-07-2021 23:01:11] Checking font3.old.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font4
+[28-07-2021 23:01:11] Checking font4.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font4/font4.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font4/font4.yy
+[28-07-2021 23:01:11] Par: "folders/Fonts" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/font4/font4.yy"
+[28-07-2021 23:01:11] Found Font: font4
+[28-07-2021 23:01:11] Checking font4.png
+[28-07-2021 23:01:11] Checking font4.old.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/fontDef
+[28-07-2021 23:01:11] Checking fontDef.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/fontDef/fontDef.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/fontDef/fontDef.yy
+[28-07-2021 23:01:11] ROOT found, not added.
+[28-07-2021 23:01:11] Par: "folders" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/fontDef/fontDef.yy"
+[28-07-2021 23:01:11] Found Font: fontDef
+[28-07-2021 23:01:11] Checking fontDef.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/fuentePreguntas
+[28-07-2021 23:01:11] Checking fuentePreguntas.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/fuentePreguntas/fuentePreguntas.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/fuentePreguntas/fuentePreguntas.yy
+[28-07-2021 23:01:11] Par: "folders/Fonts" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/fuentePreguntas/fuentePreguntas.yy"
+[28-07-2021 23:01:11] Found Font: fuentePreguntas
+[28-07-2021 23:01:11] Checking fuentePreguntas.png
+[28-07-2021 23:01:11] Checking fuentePreguntas.old.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/versionFont
+[28-07-2021 23:01:11] Checking versionFont.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/versionFont/versionFont.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/versionFont/versionFont.yy
+[28-07-2021 23:01:11] Par: "folders/Fonts" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/fonts/versionFont/versionFont.yy"
+[28-07-2021 23:01:11] Found Font: versionFont
+[28-07-2021 23:01:11] Checking versionFont.png
+[28-07-2021 23:01:11] Checking versionFont.old.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/notes
+[28-07-2021 23:01:11] Checking Note1
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/notes/Note1
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/notes/Note1
+[28-07-2021 23:01:11] Checking Note1.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/notes/Note1/Note1.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/notes/Note1/Note1.yy
+[28-07-2021 23:01:11] Par: "folders/Notes" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/notes/Note1/Note1.yy"
+[28-07-2021 23:01:11] Found Note: Note1
+[28-07-2021 23:01:11] Checking Note1.txt
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects
+[28-07-2021 23:01:11] Checking saving
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/saving
+[28-07-2021 23:01:11] Checking options
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/options
+[28-07-2021 23:01:11] Checking objNekoPresenceDemo
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/objNekoPresenceDemo
+[28-07-2021 23:01:11] Checking manager
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/manager
+[28-07-2021 23:01:11] Checking intro
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/intro
+[28-07-2021 23:01:11] Checking fadeout
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/fadeout
+[28-07-2021 23:01:11] Checking fadein
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/fadein
+[28-07-2021 23:01:11] Checking button
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/button
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/button
+[28-07-2021 23:01:11] Checking Step_0.gml
+[28-07-2021 23:01:11] Checking KeyPress_39.gml
+[28-07-2021 23:01:11] Checking KeyPress_37.gml
+[28-07-2021 23:01:11] Checking KeyPress_13.gml
+[28-07-2021 23:01:11] Checking Draw_0.gml
+[28-07-2021 23:01:11] Checking Create_0.gml
+[28-07-2021 23:01:11] Checking button.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/button/button.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/button/button.yy
+[28-07-2021 23:01:11] Par: "folders/Objects" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/button/button.yy"
+[28-07-2021 23:01:11] Found Object: button
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/fadein
+[28-07-2021 23:01:11] Checking Step_0.gml
+[28-07-2021 23:01:11] Checking fadein.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/fadein/fadein.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/fadein/fadein.yy
+[28-07-2021 23:01:11] Par: "folders/Objects" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/fadein/fadein.yy"
+[28-07-2021 23:01:11] Found Object: fadein
+[28-07-2021 23:01:11] Checking Create_0.gml
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/fadeout
+[28-07-2021 23:01:11] Checking Step_0.gml
+[28-07-2021 23:01:11] Checking fadeout.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/fadeout/fadeout.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/fadeout/fadeout.yy
+[28-07-2021 23:01:11] Par: "folders/Objects" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/fadeout/fadeout.yy"
+[28-07-2021 23:01:11] Found Object: fadeout
+[28-07-2021 23:01:11] Checking Create_0.gml
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/intro
+[28-07-2021 23:01:11] Checking Step_0.gml
+[28-07-2021 23:01:11] Checking intro.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/intro/intro.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/intro/intro.yy
+[28-07-2021 23:01:11] Par: "folders/Objects" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/intro/intro.yy"
+[28-07-2021 23:01:11] Found Object: intro
+[28-07-2021 23:01:11] Checking Draw_0.gml
+[28-07-2021 23:01:11] Checking Create_0.gml
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/manager
+[28-07-2021 23:01:11] Checking Step_0.gml
+[28-07-2021 23:01:11] Checking manager.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/manager/manager.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/manager/manager.yy
+[28-07-2021 23:01:11] Par: "folders/Objects" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/manager/manager.yy"
+[28-07-2021 23:01:11] Found Object: manager
+[28-07-2021 23:01:11] Checking KeyPress_82.gml
+[28-07-2021 23:01:11] Checking KeyPress_78.gml
+[28-07-2021 23:01:11] Checking KeyPress_68.gml
+[28-07-2021 23:01:11] Checking Draw_0.gml
+[28-07-2021 23:01:11] Checking Create_0.gml
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/objNekoPresenceDemo
+[28-07-2021 23:01:11] Checking Step_0.gml
+[28-07-2021 23:01:11] Checking Other_70.gml
+[28-07-2021 23:01:11] Checking Other_60.gml
+[28-07-2021 23:01:11] Checking objNekoPresenceDemo.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/objNekoPresenceDemo/objNekoPresenceDemo.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/objNekoPresenceDemo/objNekoPresenceDemo.yy
+[28-07-2021 23:01:11] Par: "folders/Objetos" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/objNekoPresenceDemo/objNekoPresenceDemo.yy"
+[28-07-2021 23:01:11] Found Object: objNekoPresenceDemo
+[28-07-2021 23:01:11] Checking KeyPress_27.gml
+[28-07-2021 23:01:11] Checking Create_0.gml
+[28-07-2021 23:01:11] Checking Alarm_0.gml
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/options
+[28-07-2021 23:01:11] Checking Step_0.gml
+[28-07-2021 23:01:11] Checking options.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/options/options.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/options/options.yy
+[28-07-2021 23:01:11] Par: "folders/Objects" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/options/options.yy"
+[28-07-2021 23:01:11] Found Object: options
+[28-07-2021 23:01:11] Checking Draw_0.gml
+[28-07-2021 23:01:11] Checking Create_0.gml
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/saving
+[28-07-2021 23:01:11] Checking Step_0.gml
+[28-07-2021 23:01:11] Checking saving.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/saving/saving.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/saving/saving.yy
+[28-07-2021 23:01:11] Par: "folders/Objects" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/objects/saving/saving.yy"
+[28-07-2021 23:01:11] Found Object: saving
+[28-07-2021 23:01:11] Checking Create_0.gml
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options
+[28-07-2021 23:01:11] Checking windows
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/windows
+[28-07-2021 23:01:11] Checking main
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/main
+[28-07-2021 23:01:11] Checking mac
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/mac
+[28-07-2021 23:01:11] Checking linux
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/linux
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/linux
+[28-07-2021 23:01:11] Checking options_linux.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/linux/options_linux.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/linux/options_linux.yy
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/mac
+[28-07-2021 23:01:11] Checking options_mac.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/mac/options_mac.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/mac/options_mac.yy
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/main
+[28-07-2021 23:01:11] Checking options_main.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/main/options_main.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/main/options_main.yy
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/windows
+[28-07-2021 23:01:11] Checking options_windows.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/windows/options_windows.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/windows/options_windows.yy
+[28-07-2021 23:01:11] Checking icons
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/windows/icons
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/options/windows/icons
+[28-07-2021 23:01:11] Checking icon.ico
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/paths
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/rooms
+[28-07-2021 23:01:11] Checking Room2
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/rooms/Room2
+[28-07-2021 23:01:11] Checking Room1
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/rooms/Room1
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/rooms/Room1
+[28-07-2021 23:01:11] Checking Room1.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/rooms/Room1/Room1.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/rooms/Room1/Room1.yy
+[28-07-2021 23:01:11] Par: "folders/Rooms" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/rooms/Room1/Room1.yy"
+[28-07-2021 23:01:11] Found Room: Room1
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/rooms/Room2
+[28-07-2021 23:01:11] Checking Room2.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/rooms/Room2/Room2.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/rooms/Room2/Room2.yy
+[28-07-2021 23:01:11] Par: "folders/Rooms" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/rooms/Room2/Room2.yy"
+[28-07-2021 23:01:11] Found Room: Room2
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts
+[28-07-2021 23:01:11] Checking Script3
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/Script3
+[28-07-2021 23:01:11] Checking Script1
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/Script1
+[28-07-2021 23:01:11] Checking saveNload
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/saveNload
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/saveNload
+[28-07-2021 23:01:11] Checking saveNload.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/saveNload/saveNload.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/saveNload/saveNload.yy
+[28-07-2021 23:01:11] Par: "folders/Scripts" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/saveNload/saveNload.yy"
+[28-07-2021 23:01:11] Found Script: saveNload
+[28-07-2021 23:01:11] Checking saveNload.gml
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/Script1
+[28-07-2021 23:01:11] Checking Script1.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/Script1/Script1.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/Script1/Script1.yy
+[28-07-2021 23:01:11] Par: "folders/Scripts" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/Script1/Script1.yy"
+[28-07-2021 23:01:11] Found Script: Script1
+[28-07-2021 23:01:11] Checking Script1.gml
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/scripts/Script3
+[28-07-2021 23:01:11] Checking Script3.gml
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sequences
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/shaders
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds
+[28-07-2021 23:01:11] Checking Selection
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Selection
+[28-07-2021 23:01:11] Checking NextSLCT_SND
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/NextSLCT_SND
+[28-07-2021 23:01:11] Checking Move_2
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Move_2
+[28-07-2021 23:01:11] Checking Move_1
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Move_1
+[28-07-2021 23:01:11] Checking Hirougana
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Hirougana
+[28-07-2021 23:01:11] Checking ErrorSND
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/ErrorSND
+[28-07-2021 23:01:11] Checking CorrectSND
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/CorrectSND
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/CorrectSND
+[28-07-2021 23:01:11] Checking CorrectSND.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/CorrectSND/CorrectSND.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/CorrectSND/CorrectSND.yy
+[28-07-2021 23:01:11] Par: "folders/Sounds" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/CorrectSND/CorrectSND.yy"
+[28-07-2021 23:01:11] Found Sound: CorrectSND
+[28-07-2021 23:01:11] Checking CorrectSND.mp3
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/ErrorSND
+[28-07-2021 23:01:11] Checking ErrorSND.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/ErrorSND/ErrorSND.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/ErrorSND/ErrorSND.yy
+[28-07-2021 23:01:11] Par: "folders/Sounds" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/ErrorSND/ErrorSND.yy"
+[28-07-2021 23:01:11] Found Sound: ErrorSND
+[28-07-2021 23:01:11] Checking ErrorSND.mp3
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Hirougana
+[28-07-2021 23:01:11] Checking Hirougana.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Hirougana/Hirougana.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Hirougana/Hirougana.yy
+[28-07-2021 23:01:11] Par: "folders/Sounds" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Hirougana/Hirougana.yy"
+[28-07-2021 23:01:11] Found Sound: Hirougana
+[28-07-2021 23:01:11] Checking Hirougana.mp3
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Move_1
+[28-07-2021 23:01:11] Checking Move_1.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Move_1/Move_1.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Move_1/Move_1.yy
+[28-07-2021 23:01:11] Par: "folders/Sounds" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Move_1/Move_1.yy"
+[28-07-2021 23:01:11] Found Sound: Move_1
+[28-07-2021 23:01:11] Checking Move_1.mp3
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Move_2
+[28-07-2021 23:01:11] Checking Move_2.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Move_2/Move_2.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Move_2/Move_2.yy
+[28-07-2021 23:01:11] Par: "folders/Sounds" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Move_2/Move_2.yy"
+[28-07-2021 23:01:11] Found Sound: Move_2
+[28-07-2021 23:01:11] Checking Move_2.mp3
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/NextSLCT_SND
+[28-07-2021 23:01:11] Checking NextSLCT_SND.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/NextSLCT_SND/NextSLCT_SND.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/NextSLCT_SND/NextSLCT_SND.yy
+[28-07-2021 23:01:11] Par: "folders/Sounds" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/NextSLCT_SND/NextSLCT_SND.yy"
+[28-07-2021 23:01:11] Found Sound: NextSLCT_SND
+[28-07-2021 23:01:11] Checking NextSLCT_SND.mp3
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Selection
+[28-07-2021 23:01:11] Checking Selection.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Selection/Selection.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Selection/Selection.yy
+[28-07-2021 23:01:11] Par: "folders/Sounds" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sounds/Selection/Selection.yy"
+[28-07-2021 23:01:11] Found Sound: Selection
+[28-07-2021 23:01:11] Checking Selection.mp3
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites
+[28-07-2021 23:01:11] Checking Sprite4
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite4
+[28-07-2021 23:01:11] Checking Sprite3
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite3
+[28-07-2021 23:01:11] Checking Sprite2
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite2
+[28-07-2021 23:01:11] Checking Sprite1
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite1
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite1
+[28-07-2021 23:01:11] Checking Sprite1.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite1/Sprite1.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite1/Sprite1.yy
+[28-07-2021 23:01:11] Par: "folders/Sprites" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite1/Sprite1.yy"
+[28-07-2021 23:01:11] Found Sprite: Sprite1
+[28-07-2021 23:01:11] Checking layers
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite1/layers
+[28-07-2021 23:01:11] Checking f9174eff-fa50-4bf8-bc33-ecc7306450b7.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite1/layers
+[28-07-2021 23:01:11] Checking f9174eff-fa50-4bf8-bc33-ecc7306450b7
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite1/layers/f9174eff-fa50-4bf8-bc33-ecc7306450b7
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite1/layers/f9174eff-fa50-4bf8-bc33-ecc7306450b7
+[28-07-2021 23:01:11] Checking 328e561d-a2f7-41fd-9048-01f5e751aad5.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite2
+[28-07-2021 23:01:11] Checking Sprite2.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite2/Sprite2.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite2/Sprite2.yy
+[28-07-2021 23:01:11] Par: "folders/Sprites" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite2/Sprite2.yy"
+[28-07-2021 23:01:11] Found Sprite: Sprite2
+[28-07-2021 23:01:11] Checking layers
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite2/layers
+[28-07-2021 23:01:11] Checking b5f8903a-e247-47da-a237-7f6653e30776.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite2/layers
+[28-07-2021 23:01:11] Checking b5f8903a-e247-47da-a237-7f6653e30776
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite2/layers/b5f8903a-e247-47da-a237-7f6653e30776
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite2/layers/b5f8903a-e247-47da-a237-7f6653e30776
+[28-07-2021 23:01:11] Checking 2413c009-9f1a-4f61-95bf-d4e9fc9bf52e.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite3
+[28-07-2021 23:01:11] Checking Sprite3.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite3/Sprite3.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite3/Sprite3.yy
+[28-07-2021 23:01:11] ROOT found, not added.
+[28-07-2021 23:01:11] Par: "folders" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite3/Sprite3.yy"
+[28-07-2021 23:01:11] Found Sprite: Sprite3
+[28-07-2021 23:01:11] Checking layers
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite3/layers
+[28-07-2021 23:01:11] Checking 9b7c2a5f-d291-4014-954d-28d85a003745.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite3/layers
+[28-07-2021 23:01:11] Checking 9b7c2a5f-d291-4014-954d-28d85a003745
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite3/layers/9b7c2a5f-d291-4014-954d-28d85a003745
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite3/layers/9b7c2a5f-d291-4014-954d-28d85a003745
+[28-07-2021 23:01:11] Checking 93c8fae5-2725-4fdc-9692-68a9ca5f39c4.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite4
+[28-07-2021 23:01:11] Checking Sprite4.yy
+[28-07-2021 23:01:11] Parsing C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite4/Sprite4.yy
+[28-07-2021 23:01:11] Reading C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite4/Sprite4.yy
+[28-07-2021 23:01:11] ROOT found, not added.
+[28-07-2021 23:01:11] Par: "folders" at dir: "C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite4/Sprite4.yy"
+[28-07-2021 23:01:11] Found Sprite: Sprite4
+[28-07-2021 23:01:11] Checking layers
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite4/layers
+[28-07-2021 23:01:11] Checking 90df05e9-6204-46cb-94ff-8ed0ac8fc3e5.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite4/layers
+[28-07-2021 23:01:11] Checking 90df05e9-6204-46cb-94ff-8ed0ac8fc3e5
+[28-07-2021 23:01:11] Directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite4/layers/90df05e9-6204-46cb-94ff-8ed0ac8fc3e5
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/sprites/Sprite4/layers/90df05e9-6204-46cb-94ff-8ed0ac8fc3e5
+[28-07-2021 23:01:11] Checking 0efb6aef-c634-42ce-abce-554396a21716.png
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/tilesets
+[28-07-2021 23:01:11] Current parent directory: C:/Users/Marco/Documents/GameMakerStudio2/Hirougana/timelines
+[28-07-2021 23:01:11] Moving files to trash...
+[28-07-2021 23:01:11] Files yeeted successfully!
+[28-07-2021 23:01:11] Generating YYP...
+[28-07-2021 23:01:11] Hirougana.yyp created successfully!
