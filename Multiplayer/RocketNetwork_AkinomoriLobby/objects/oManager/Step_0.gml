@@ -1,6 +1,13 @@
-if keyboard_check_pressed(vk_enter) and global.currentRoom="none"
+timer[1]++
+
+if timer[1]=2*60
 {
-ChangeRoom("public")	
+global.mainMenuMsg="Welcome "+string(oPlayer.setUser)+"!\n"+"Press ENTER to join the server."
+}
+
+if keyboard_check_pressed(vk_enter) and global.currentRoom="none" and timer[1]>2*60
+{
+ChangeRoom("public")
 }
 
 if global.debug

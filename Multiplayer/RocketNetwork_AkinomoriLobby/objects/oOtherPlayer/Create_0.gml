@@ -17,10 +17,20 @@ roomId = -1
 
 //add your personal variables under this line
 
+
+//JOIN
 audio_play_sound(sndJoin,1,false,global.sfxVolume)
 
+
+//VARIABLES
 receivedMsg=""
 receivedAfkState=0
 receivedSendMsgAudio=0
 receivedDisconnectCountdown=5*60
 playerUsername=""
+chatLogMsg=""
+
+getMsg=false
+
+once[0]=true
+msgConfirmation=0

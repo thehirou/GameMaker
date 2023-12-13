@@ -2,8 +2,8 @@
 #Async Code
 #Customize Text/Name color
 #Local message history
-#Play sound only if player is near
 
+#Play sound only if player is near DONE
 #Swear filter DONE
 #Depth Sorting (depth=-y)? DONE
 #AFK Timer DONE (Only works inside the window)

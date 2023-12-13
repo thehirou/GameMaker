@@ -29,17 +29,26 @@ receivedMsg=SP._msg
 receivedAfkState=real(SP._afkState)
 receivedDisconnectCountdown=real(SP._afkCountdown)
 receivedSendMsgAudio=real(SP._sendMsgAudio)
+chatLogMsg=SP.receivedChatLog
+msgConfirmation=SP._sentMessage
 
-if receivedSendMsgAudio=1 and distance_to_object(oPlayer)<600
+if receivedSendMsgAudio=1 and distance_to_object(oPlayer)<480/2
 {
-audio_play_sound(sndGetMessage,1,false,global.sfxVolume,0,1)	
+audio_play_sound(sndGetMessage,1,false,global.sfxVolume,0,1)
 }
 
+/*
+if msgConfirmation=1
+{
+	if once[0]=true
+	{
+	global.chatLog+="<"+playerUsername+"> "+chatLogMsg+"\n"	
+	once[0]=false
+	}
+}else{once[0]=true}
 
 
-
-
-
+*/
 
 
 

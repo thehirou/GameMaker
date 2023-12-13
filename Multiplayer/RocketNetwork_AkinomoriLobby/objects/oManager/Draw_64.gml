@@ -28,3 +28,8 @@ if clickedSomewhere=false
 draw_set_valign(fa_top)
 draw_text(10,15,"(Left click anywhere to enable sound.)")
 }
+
+draw_set_valign(fa_bottom)
+draw_set_halign(fa_left)
+draw_text_ext(10,460-30,global.chatLog,15,500)
+draw_set_halign(fa_left)

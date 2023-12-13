@@ -4,11 +4,12 @@ setUser=global.inputField
 
 thisUsername=""
 
-global.mainMenuMsg="Welcome "+string(oPlayer.setUser)+"!\n"+"Press ENTER to join the server."
 
 keyboard_string=""
 msg=""
 filteredMsg=""
+global.filteredMsgGlobal=""
+global.thisUserNameGlobal=""
 blinkingMotherfucker="|"
 timer[0]=0
 
@@ -26,6 +27,11 @@ afkState=0
 timerMsg=0
 timerAfk=0
 timerEachSecond=0
+timerSentMessageDelay=0
+
+joined=true
+
+sentMessage=0
 
 disconnectCountdown=5*60
 

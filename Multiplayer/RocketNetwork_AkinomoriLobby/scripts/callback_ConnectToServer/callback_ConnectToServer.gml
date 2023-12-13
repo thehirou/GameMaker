@@ -5,5 +5,5 @@ function callback_ConnectToServer(){
 	
 	//6899 ADD log_show SCRIPT
 	//log_show("You connected as client with id "+ string(global.clientId)+" at time "+string(current_time))
-
+	
 }

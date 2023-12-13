@@ -15,6 +15,8 @@ switch (setUser) {
         break;
 }
 
+global.thisUserNameGlobal=thisUsername
+
 depth=-y
 
 timerAfk++
@@ -95,6 +97,18 @@ else
 keyboard_string=msg
 }
 
+if global.currentRoom!="none" and joined=true
+{
+	if instance_exists(oOtherPlayer)
+	{
+		with (oOtherPlayer)
+		{
+		var thisClientId = clientId
+		SendMessageToClient(thisClientId,"<Server> "+global.thisUserNameGlobal+" joined the room.") //6899 for some reason I don't need to add a line break here???
+		}
+	}
+joined=false
+}
 if msg!="" and keyboard_check_pressed(vk_enter)
 {
 global.playerState=state.normal
@@ -102,10 +116,35 @@ playAudioFromOutside=1
 audio_play_sound(sndGetMessage,1,false,global.sfxVolume,0,2)
 timerMsg=0
 filteredMsg=scrFilter(msg)
+global.filteredMsgGlobal="<"+thisUsername+"> "+filteredMsg
 sentMsg="<"+string(filteredMsg)+">"
+global.chatLog+="<"+thisUsername+"> "+filteredMsg+"\n"
+
+	if instance_exists(oOtherPlayer)
+	{
+		with (oOtherPlayer)
+		{
+		var thisClientId = clientId
+		SendMessageToClient(thisClientId,global.filteredMsgGlobal)
+		}
+	}
+
 msg=""
 keyboard_string=""
+if instance_exists(oOtherPlayer){oOtherPlayer.getMsg=true}
+sentMessage=1
 }else{playAudioFromOutside=0}
+
+if sentMessage=1
+{
+timerSentMessageDelay++
+var _delay=10
+	if timerSentMessageDelay>_delay
+	{
+		sentMessage=0
+		timerSentMessageDelay=0
+	}
+}
 
 #region Crappy placeholder movement code
 moveRight	=	keyboard_check(vk_right)
@@ -144,8 +183,11 @@ global.sharedProperties = {
 	_y : y,
 	_spr : sprite_index,
 	setUsername : thisUsername,
+	receivedChatLog : filteredMsg,
 	_msg : sentMsg,
 	_afkState : afkState,
 	_afkCountdown : disconnectCountdown,
-	_sendMsgAudio : playAudioFromOutside
+	_sendMsgAudio : playAudioFromOutside,
+	_chatLog : global.chatLog,
+	_sentMessage : sentMessage,
 }
