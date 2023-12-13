@@ -9,6 +9,10 @@ global.mainMenuMsg="Welcome "+string(oPlayer.setUser)+"!\n"+"Press ENTER to join
 keyboard_string=""
 msg=""
 filteredMsg=""
+blinkingMotherfucker="|"
+timer[0]=0
+
+maxCharacters=90
 
 image_xscale=2
 image_yscale=2

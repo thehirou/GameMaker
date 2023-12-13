@@ -11,6 +11,8 @@
   },
   "defaultScriptType": 1,
   "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"#Game","folderPath":"folders/#Game.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Apfel Sprites","folderPath":"folders/#Game/Apfel Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rocket Networking","folderPath":"folders/Objects/Rocket Networking.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
@@ -21,8 +23,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Internal Functions","folderPath":"folders/Scripts/Rocket Networking/Internal Functions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rocket Networking","folderPath":"folders/Sprites/Rocket Networking.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"#Game","folderPath":"folders/#Game.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Apfel Sprites","folderPath":"folders/#Game/Apfel Sprites.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -38,6 +38,7 @@
   "resources": [
     {"id":{"name":"oManager","path":"objects/oManager/oManager.yy",},},
     {"id":{"name":"ShowAllClientsInRoom","path":"scripts/ShowAllClientsInRoom/ShowAllClientsInRoom.yy",},},
+    {"id":{"name":"tsTileset","path":"tilesets/tsTileset/tsTileset.yy",},},
     {"id":{"name":"upWalk","path":"sprites/upWalk/upWalk.yy",},},
     {"id":{"name":"ShowAllRooms","path":"scripts/ShowAllRooms/ShowAllRooms.yy",},},
     {"id":{"name":"callback_ChangeRoom","path":"scripts/callback_ChangeRoom/callback_ChangeRoom.yy",},},
@@ -54,6 +55,7 @@
     {"id":{"name":"oOtherPlayersEntity","path":"objects/oOtherPlayersEntity/oOtherPlayersEntity.yy",},},
     {"id":{"name":"sWhite","path":"sprites/sWhite/sWhite.yy",},},
     {"id":{"name":"oBrain","path":"objects/oBrain/oBrain.yy",},},
+    {"id":{"name":"sprTileset","path":"sprites/sprTileset/sprTileset.yy",},},
     {"id":{"name":"sndGetMessage","path":"sounds/sndGetMessage/sndGetMessage.yy",},},
     {"id":{"name":"SendMessageToClient","path":"scripts/SendMessageToClient/SendMessageToClient.yy",},},
     {"id":{"name":"leftWalk","path":"sprites/leftWalk/leftWalk.yy",},},

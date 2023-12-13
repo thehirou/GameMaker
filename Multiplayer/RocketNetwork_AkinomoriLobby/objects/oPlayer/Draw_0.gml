@@ -7,7 +7,7 @@ draw_set_valign(fa_bottom)
 draw_text(x,y-global.nameHeight,thisUsername)
 if afkState=1
 {
-draw_text(x,y+15,"(AFK) "+string(disconnectCountdown))
+draw_text(x,y+25,"(AFK) "+string(disconnectCountdown))
 }
 draw_set_halign(fa_left)
 

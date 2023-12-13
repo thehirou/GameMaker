@@ -31,6 +31,43 @@ if afkState=1
 	}
 }
 
+if global.playerState=state.normal
+{
+if keyboard_check_pressed(ord("T"))
+{
+keyboard_string=""
+msg=""
+global.playerState=state.texting	
+}
+}
+
+if global.playerState=state.texting
+{
+if keyboard_check_pressed(vk_escape)
+{
+global.playerState=state.normal	
+keyboard_string=""
+msg=""
+}
+}
+
+timer[0]++
+
+if timer[0]<60
+{
+blinkingMotherfucker="|"	
+}
+
+if timer[0]>60
+{
+blinkingMotherfucker=""	
+}
+
+if timer[0]>120
+{
+timer[0]=0	
+}
+
 if disconnectCountdown<0
 {
 global.disconnectReason="Disconnected! You were AFK for too long!"
@@ -49,13 +86,18 @@ if global.currentRoom="none"
 image_alpha=0	
 }else{image_alpha=1}
 
-if string_length(keyboard_string)<120 and global.currentRoom!="none"
+if string_length(keyboard_string)<maxCharacters and global.currentRoom!="none" and global.playerState=state.texting
 {
 msg=keyboard_string
+}
+else
+{
+keyboard_string=msg
 }
 
 if msg!="" and keyboard_check_pressed(vk_enter)
 {
+global.playerState=state.normal
 playAudioFromOutside=1
 audio_play_sound(sndGetMessage,1,false,global.sfxVolume,0,2)
 timerMsg=0

@@ -5,7 +5,7 @@ draw_set_valign(fa_bottom)
 draw_text(x,y-global.nameHeight,playerUsername)
 if receivedAfkState=1
 {
-draw_text(x,y+15,"(AFK) "+string(receivedDisconnectCountdown))
+draw_text(x,y+25,"(AFK) "+string(receivedDisconnectCountdown))
 }
 draw_set_halign(fa_left)
 

@@ -1,6 +1,8 @@
 #Customizable Sprites
 #Async Code
 #Customize Text/Name color
+#Local message history
+#Play sound only if player is near
 
 #Swear filter DONE
 #Depth Sorting (depth=-y)? DONE

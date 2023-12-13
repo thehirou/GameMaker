@@ -3,6 +3,13 @@ draw_set_valign(fa_middle)
 if global.currentRoom="none"
 {
 draw_text(640/2,(480/2)-20,global.mainMenuMsg)
+timer[0]++
+
+if timer[0]>60*7
+{
+var warning="\nPressing ENTER and can't join? Spam ENTER or refresh the page."
+global.mainMenuMsg="Welcome "+string(oPlayer.setUser)+"!\n"+"Press ENTER to join the server."+warning
+}
 }
 draw_set_halign(fa_left)
 draw_set_valign(fa_bottom)

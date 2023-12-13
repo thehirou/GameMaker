@@ -1,5 +1,7 @@
 {
   "FolderOrderSettings": [
+    {"name":"#Game","order":11,"path":"folders/#Game.yy",},
+    {"name":"Apfel Sprites","order":1,"path":"folders/#Game/Apfel Sprites.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Rocket Networking","order":2,"path":"folders/Objects/Rocket Networking.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
@@ -10,12 +12,11 @@
     {"name":"Internal Functions","order":6,"path":"folders/Scripts/Rocket Networking/Internal Functions.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Rocket Networking","order":2,"path":"folders/Sprites/Rocket Networking.yy",},
-    {"name":"#Game","order":11,"path":"folders/#Game.yy",},
-    {"name":"Apfel Sprites","order":1,"path":"folders/#Game/Apfel Sprites.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oManager","order":2,"path":"objects/oManager/oManager.yy",},
     {"name":"ShowAllClientsInRoom","order":6,"path":"scripts/ShowAllClientsInRoom/ShowAllClientsInRoom.yy",},
+    {"name":"tsTileset","order":4,"path":"tilesets/tsTileset/tsTileset.yy",},
     {"name":"upWalk","order":7,"path":"sprites/upWalk/upWalk.yy",},
     {"name":"ShowAllRooms","order":3,"path":"scripts/ShowAllRooms/ShowAllRooms.yy",},
     {"name":"callback_ChangeRoom","order":3,"path":"scripts/callback_ChangeRoom/callback_ChangeRoom.yy",},
@@ -28,6 +29,7 @@
     {"name":"oLocalInstance","order":6,"path":"objects/oLocalInstance/oLocalInstance.yy",},
     {"name":"oOtherPlayersEntity","order":3,"path":"objects/oOtherPlayersEntity/oOtherPlayersEntity.yy",},
     {"name":"sWhite","order":1,"path":"sprites/sWhite/sWhite.yy",},
+    {"name":"sprTileset","order":3,"path":"sprites/sprTileset/sprTileset.yy",},
     {"name":"sndGetMessage","order":4,"path":"sounds/sndGetMessage/sndGetMessage.yy",},
     {"name":"SendMessageToClient","order":7,"path":"scripts/SendMessageToClient/SendMessageToClient.yy",},
     {"name":"leftWalk","order":3,"path":"sprites/leftWalk/leftWalk.yy",},

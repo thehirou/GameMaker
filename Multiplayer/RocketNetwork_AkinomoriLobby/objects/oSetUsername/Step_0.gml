@@ -22,7 +22,7 @@ timer[0]=0
 }
 
 //Probably add a filter
-if inputField!="" and keyboard_check_pressed(vk_enter)
+if global.inputField!="" and keyboard_check_pressed(vk_enter)
 {
 room_goto(rmLobby)	
 }

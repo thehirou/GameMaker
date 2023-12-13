@@ -30,7 +30,7 @@ receivedAfkState=real(SP._afkState)
 receivedDisconnectCountdown=real(SP._afkCountdown)
 receivedSendMsgAudio=real(SP._sendMsgAudio)
 
-if receivedSendMsgAudio=1
+if receivedSendMsgAudio=1 and distance_to_object(oPlayer)<600
 {
 audio_play_sound(sndGetMessage,1,false,global.sfxVolume,0,1)	
 }
