@@ -1,0 +1,8 @@
+#Customizable Sprites
+#Async Code
+#Customize Text/Name color
+
+#Swear filter DONE
+#Depth Sorting (depth=-y)? DONE
+#AFK Timer DONE (Only works inside the window)
+#Sound when someone sends a message DONE
