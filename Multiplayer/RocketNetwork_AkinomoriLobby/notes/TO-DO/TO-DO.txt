@@ -1,10 +1,21 @@
+#TO-DO
+----------------------
 #Customizable Sprites
-#Async Code
+#Async Code (Impossible?)
 #Customize Text/Name color
-#Local message history
 
-#Play sound only if player is near DONE
-#Swear filter DONE
-#Depth Sorting (depth=-y)? DONE
-#AFK Timer DONE (Only works inside the window)
-#Sound when someone sends a message DONE
+
+
+#KIND OF DONE
+----------------------
+#AFK Timer (Only works inside the window)
+
+
+
+#DONE
+----------------------
+#Local message history
+#Play sound only if player is near
+#Swear filter
+#Depth Sorting (depth=-y)?
+#Sound when someone sends a message
