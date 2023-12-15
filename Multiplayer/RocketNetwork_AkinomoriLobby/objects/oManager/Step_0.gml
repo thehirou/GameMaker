@@ -24,3 +24,15 @@ if mouse_check_button_pressed(mb_left)
 {
 clickedSomewhere=true	
 }
+
+if arrayChanged=true or global.playerState=state.texting //meh, kinda works
+{
+timerToRevert++
+afkOpacity=lerp(afkOpacity,1,0.05)
+
+if timerToRevert>4*60
+{
+	timerToRevert=0
+	arrayChanged=false
+}
+}else{afkOpacity=lerp(afkOpacity,0.3,0.05)}

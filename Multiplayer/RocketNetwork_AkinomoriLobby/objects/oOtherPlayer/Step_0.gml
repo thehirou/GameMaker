@@ -32,6 +32,74 @@ receivedSendMsgAudio=real(SP._sendMsgAudio)
 chatLogMsg=SP.receivedChatLog
 msgConfirmation=SP._sentMessage
 
+
+
+moving					   =	SP.received_moving					
+moveRight				   =	SP.received_moveRight				
+moveLeft				   =	SP.received_moveLeft				
+moveUp					   =	SP.received_moveUp					
+moveDown				   =	SP.received_moveDown				
+image_blend				   =	SP.received_image_blend				
+
+//OPTIMIZE LATER THIS IS FUCKING HORRENDOUS 6899
+
+eyes[spr.idleUp]		   =	SP.received_eyesIsprIidleUp	
+eyes[spr.idleDown]		   =	SP.received_eyesIsprIidleDown	
+eyes[spr.idleRight]		   =	SP.received_eyesIsprIidleRight
+eyes[spr.idleLeft]		   =	SP.received_eyesIsprIidleLeft	
+eyes[spr.walkUp]		   =	SP.received_eyesIsprIwalkUp	
+eyes[spr.walkDown]		   =	SP.received_eyesIsprIwalkDown	
+eyes[spr.walkRight]		   =	SP.received_eyesIsprIwalkRight
+eyes[spr.walkLeft]		   =	SP.received_eyesIsprIwalkLeft	
+mout[spr.idleUp]		   =	SP.received_moutIsprIidleUp	
+mout[spr.idleDown]		   =	SP.received_moutIsprIidleDown	
+mout[spr.idleRight]		   =	SP.received_moutIsprIidleRight
+mout[spr.idleLeft]		   =	SP.received_moutIsprIidleLeft	
+mout[spr.walkUp]		   =	SP.received_moutIsprIwalkUp		
+mout[spr.walkDown]		   =	SP.received_moutIsprIwalkDown	
+mout[spr.walkRight]		   =	SP.received_moutIsprIwalkRight
+mout[spr.walkLeft]		   =	SP.received_moutIsprIwalkLeft	
+feet[spr.idleUp]		   =	SP.received_feetIsprIidleUp	
+feet[spr.idleDown]		   =	SP.received_feetIsprIidleDown	
+feet[spr.idleRight]		   =	SP.received_feetIsprIidleRight
+feet[spr.idleLeft]		   =	SP.received_feetIsprIidleLeft
+feet[spr.walkUp]		   =	SP.received_feetIsprIwalkUp	
+feet[spr.walkDown]		   =	SP.received_feetIsprIwalkDown	
+feet[spr.walkRight]		   =	SP.received_feetIsprIwalkRight
+feet[spr.walkLeft]		   =	SP.received_feetIsprIwalkLeft	
+legs[spr.idleUp]		   =	SP.received_legsIsprIidleUp	
+legs[spr.idleDown]		   =	SP.received_legsIsprIidleDown		
+legs[spr.idleRight]		   =	SP.received_legsIsprIidleRight	
+legs[spr.idleLeft]		   =	SP.received_legsIsprIidleLeft		
+legs[spr.walkUp]		   =	SP.received_legsIsprIwalkUp		
+legs[spr.walkDown]		   =	SP.received_legsIsprIwalkDown		
+legs[spr.walkRight]		   =	SP.received_legsIsprIwalkRight	
+legs[spr.walkLeft]		   =	SP.received_legsIsprIwalkLeft		
+tors[spr.idleUp]		   =	SP.received_torsIsprIidleUp		
+tors[spr.idleDown]		   =	SP.received_torsIsprIidleDown		
+tors[spr.idleRight]		   =	SP.received_torsIsprIidleRight	
+tors[spr.idleLeft]		   =	SP.received_torsIsprIidleLeft
+tors[spr.walkUp]		   =	SP.received_torsIsprIwalkUp		
+tors[spr.walkDown]		   =	SP.received_torsIsprIwalkDown		
+tors[spr.walkRight]		   =	SP.received_torsIsprIwalkRight
+tors[spr.walkLeft]		   =	SP.received_torsIsprIwalkLeft		
+head[spr.idleUp]		   =	SP.received_headIsprIidleUp	
+head[spr.idleDown]		   =	SP.received_headIsprIidleDown		
+head[spr.idleRight]		   =	SP.received_headIsprIidleRight
+head[spr.idleLeft]		   =	SP.received_headIsprIidleLeft		
+head[spr.walkUp]		   =	SP.received_headIsprIwalkUp	
+head[spr.walkDown]		   =	SP.received_headIsprIwalkDown		
+head[spr.walkRight]		   =	SP.received_headIsprIwalkRight
+head[spr.walkLeft]		   =	SP.received_headIsprIwalkLeft		
+
+
+
+
+
+
+
+
+
 if receivedSendMsgAudio=1 and distance_to_object(oPlayer)<480/2
 {
 audio_play_sound(sndGetMessage,1,false,global.sfxVolume,0,1)

@@ -1,9 +1,16 @@
 ConnectToServer()
 
+scrSetSpriteDefaults();
+
 setUser=global.inputField
 
 thisUsername=""
 
+col[0]=irandom_range(50,200)
+col[1]=irandom_range(50,200)
+col[2]=irandom_range(50,200)
+
+image_blend=make_color_rgb(col[0],col[1],col[2])
 
 keyboard_string=""
 msg=""

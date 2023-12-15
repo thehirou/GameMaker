@@ -7,6 +7,13 @@ global.sfxVolume=1
 global.peopleConnected=0
 global.mainMenuMsg="Loading..."
 
+maxChatLog=20
+global.chat=array_create(maxChatLog,"")
+
+afkOpacity=0.3
+arrayChanged=false
+timerToRevert=0
+
 enum state
 {
 normal,

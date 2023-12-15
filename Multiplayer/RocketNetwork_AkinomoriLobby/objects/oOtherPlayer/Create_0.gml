@@ -21,6 +21,7 @@ roomId = -1
 //JOIN
 audio_play_sound(sndJoin,1,false,global.sfxVolume)
 
+scrSetSpriteDefaults()
 
 //VARIABLES
 receivedMsg=""
