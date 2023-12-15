@@ -2,6 +2,7 @@
   "FolderOrderSettings": [
     {"name":"#Game","order":11,"path":"folders/#Game.yy",},
     {"name":"Apfel Sprites","order":1,"path":"folders/#Game/Apfel Sprites.yy",},
+    {"name":"ASSETS","order":11,"path":"folders/#Game/ASSETS.yy",},
     {"name":"SPRITES","order":10,"path":"folders/#Game/SPRITES.yy",},
     {"name":"EYES","order":2,"path":"folders/#Game/SPRITES/EYES.yy",},
     {"name":"NEUTRAL","order":1,"path":"folders/#Game/SPRITES/EYES/NEUTRAL.yy",},
@@ -17,7 +18,6 @@
     {"name":"Internal Functions","order":6,"path":"folders/Scripts/Rocket Networking/Internal Functions.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Rocket Networking","order":2,"path":"folders/Sprites/Rocket Networking.yy",},
-    {"name":"ASSETS","order":11,"path":"folders/#Game/ASSETS.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprWalkRight","order":2,"path":"sprites/sprWalkRight/sprWalkRight.yy",},
@@ -84,6 +84,7 @@
     {"name":"sndJoin","order":8,"path":"sounds/sndJoin/sndJoin.yy",},
     {"name":"rmSetUsername","order":1,"path":"rooms/rmSetUsername/rmSetUsername.yy",},
     {"name":"sprEyesNeutralWalkLeft","order":5,"path":"sprites/sprEyesNeutralWalkLeft/sprEyesNeutralWalkLeft.yy",},
+    {"name":"oJsonFromUrl","order":16,"path":"objects/oJsonFromUrl/oJsonFromUrl.yy",},
     {"name":"sprIdleRight","order":6,"path":"sprites/sprIdleRight/sprIdleRight.yy",},
     {"name":"sprEmpty","order":1,"path":"sprites/sprEmpty/sprEmpty.yy",},
     {"name":"downWalk","order":1,"path":"sprites/downWalk/downWalk.yy",},

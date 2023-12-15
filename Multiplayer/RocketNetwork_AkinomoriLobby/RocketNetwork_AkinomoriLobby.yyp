@@ -13,6 +13,7 @@
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"#Game","folderPath":"folders/#Game.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Apfel Sprites","folderPath":"folders/#Game/Apfel Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ASSETS","folderPath":"folders/#Game/ASSETS.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SPRITES","folderPath":"folders/#Game/SPRITES.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"BASE","folderPath":"folders/#Game/SPRITES/BASE.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"EYES","folderPath":"folders/#Game/SPRITES/EYES.yy",},
@@ -29,7 +30,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Internal Functions","folderPath":"folders/Scripts/Rocket Networking/Internal Functions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rocket Networking","folderPath":"folders/Sprites/Rocket Networking.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ASSETS","folderPath":"folders/#Game/ASSETS.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -115,6 +115,7 @@
     {"id":{"name":"sndJoin","path":"sounds/sndJoin/sndJoin.yy",},},
     {"id":{"name":"rmSetUsername","path":"rooms/rmSetUsername/rmSetUsername.yy",},},
     {"id":{"name":"sprEyesNeutralWalkLeft","path":"sprites/sprEyesNeutralWalkLeft/sprEyesNeutralWalkLeft.yy",},},
+    {"id":{"name":"oJsonFromUrl","path":"objects/oJsonFromUrl/oJsonFromUrl.yy",},},
     {"id":{"name":"sprWalkDown","path":"sprites/sprWalkDown/sprWalkDown.yy",},},
     {"id":{"name":"sprIdleRight","path":"sprites/sprIdleRight/sprIdleRight.yy",},},
     {"id":{"name":"sprEmpty","path":"sprites/sprEmpty/sprEmpty.yy",},},

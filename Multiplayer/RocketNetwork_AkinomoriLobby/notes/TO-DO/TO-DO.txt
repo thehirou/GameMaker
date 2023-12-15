@@ -12,7 +12,8 @@
 #Async Code (Impossible?)
 #Customize Text/Name color
 #Limit players to only one per IP or per computer
-
+#Add connected users list (TAB) (use array_insert)
+#Añadir sonido diegetico (audio_play_sound_at) creo
 
 
 #KIND OF DONE

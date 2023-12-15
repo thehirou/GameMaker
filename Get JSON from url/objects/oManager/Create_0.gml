@@ -1,20 +1,20 @@
-get = http_get("https://thehirou.com/projects/akinomori-engine/data.json");
-
-spr = sprPlaceholder
-
+get = http_get("https://api.myip.com/");
+gotResult=false
 jsonOutput=undefined
+r_str = "null";
+resultHttp="null";
 
-resultHttp=sprPlaceholder
+
+
+
+timer=0
+/*
 
 global.urlSet="disabled"
-
-r_str = "null";
-
-gotResult=false
+spr = sprPlaceholder
 drawImage=false
 image=0
 imageVar =	sprite_add(resultHttp,0,0,0,0,0)
 timer=0
 onceIsCool=true
-
 state=0

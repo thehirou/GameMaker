@@ -1,3 +1,6 @@
+timer++
+
+/*
 global.urlSet=resultHttp
 
 if gotResult=true and state=0

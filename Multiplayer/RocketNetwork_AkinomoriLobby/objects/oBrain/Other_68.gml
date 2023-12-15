@@ -34,8 +34,6 @@ if(type == network_type_data){
 	//var realData = json_decode(buffer_processed);
 	var realData = json_parse(buffer_processed)
 	
-	//6899 Added by Hirou
-	//global.peopleConnected=array_length(realData.clients)
 	//----------------------
 	
 	if(variable_struct_exists(realData , "eventName")){
