@@ -20,6 +20,12 @@ global.thisUserNameGlobal=""
 blinkingMotherfucker="|"
 timer[0]=0
 
+once[0]=true
+once[1]=true
+
+hSpd=0
+vSpd=0
+
 maxCharacters=90
 
 image_xscale=2

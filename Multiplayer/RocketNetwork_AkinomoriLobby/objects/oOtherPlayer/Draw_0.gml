@@ -12,7 +12,8 @@ draw_set_halign(fa_left)
 var spaceBetweenNameAndMsg=20
 draw_set_halign(fa_center)
 draw_set_valign(fa_bottom)
-draw_text_ext(x,y-global.nameHeight-spaceBetweenNameAndMsg,receivedMsg,15,250)
+//6899 DISABLED UNTIL GAMEMAKER FIXES DRAW_TEXT_EXT BUG
+//draw_text_ext(x,y-global.nameHeight-spaceBetweenNameAndMsg,receivedMsg,15,250)
 draw_set_halign(fa_left)
 
 

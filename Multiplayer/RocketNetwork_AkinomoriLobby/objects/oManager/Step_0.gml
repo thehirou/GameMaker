@@ -1,12 +1,14 @@
 timer[1]++
 
-if timer[1]=2*60
+if timer[1]=loadingTime*60
 {
+instance_destroy(loadingInstance)
 global.mainMenuMsg="Welcome "+string(oPlayer.setUser)+"!\n"+"Press ENTER to join the server."
 }
 
 if keyboard_check_pressed(vk_enter) and global.currentRoom="none" and timer[1]>2*60
 {
+audio_play_sound(sndEnterRoom,1,false,global.sfxVolume)
 ChangeRoom("public")
 }
 
@@ -35,4 +37,4 @@ if timerToRevert>4*60
 	timerToRevert=0
 	arrayChanged=false
 }
-}else{afkOpacity=lerp(afkOpacity,0.3,0.05)}
+}else{afkOpacity=lerp(afkOpacity,afkMinOpacity,0.05)}

@@ -24,6 +24,14 @@ audio_play_sound(sndJoin,1,false,global.sfxVolume)
 scrSetSpriteDefaults()
 
 //VARIABLES
+
+moveRight	=	false
+moveLeft	=	false
+moveDown	=	false
+moveUp		=	false
+
+moving=movement.down
+
 receivedMsg=""
 receivedAfkState=0
 receivedSendMsgAudio=0

@@ -35,6 +35,9 @@
     "name": "downIdle",
     "path": "sprites/downIdle/downIdle.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sprEmpty",
+    "path": "sprites/sprEmpty/sprEmpty.yy",
+  },
   "visible": true,
 }

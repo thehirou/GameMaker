@@ -1,7 +1,7 @@
 if string_length(keyboard_string)<16
 {
 global.inputField=keyboard_string
-}
+}else{keyboard_string=global.inputField}
 
 timer[0]++
 

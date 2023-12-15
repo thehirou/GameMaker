@@ -1,3 +1,5 @@
+if once[0]=true
+{
 switch (setUser) {
     case "ADMIN_DEBUG01":
         global.debug=true
@@ -13,6 +15,22 @@ switch (setUser) {
     default:
         thisUsername=string_replace_all(setUser," ","_") //Replace spaces with underscores
         break;
+}
+
+once[0]=false
+}
+
+if global.currentRoom="public"
+{
+if instance_exists(oOtherPlayer) 
+{
+	if thisUsername=oOtherPlayer.playerUsername and once[1]=true
+	{
+	thisUsername=thisUsername+" ("+string(string(global.peopleConnected))+")"
+	//thisUsername=thisUsername+string(global.clientId)
+	once[1]=false
+	}
+}else{once[1]=false}
 }
 
 global.thisUserNameGlobal=thisUsername
@@ -33,7 +51,7 @@ if afkState=1
 	}
 }
 
-if global.playerState=state.normal
+if global.playerState=state.normal and global.currentRoom!="none"
 {
 if keyboard_check_pressed(ord("T"))
 {
@@ -53,6 +71,7 @@ timer[0]=0	//resets the position of the blinking mother fuckr
 
 if keyboard_check_pressed(vk_escape)
 {
+if instance_exists(oManager){oManager.timerToRevert=0}
 global.playerState=state.normal	
 keyboard_string=""
 msg=""
@@ -94,7 +113,9 @@ if global.currentRoom="none"
 image_alpha=0	
 }else{image_alpha=1}
 
-if string_length(keyboard_string)<maxCharacters and global.currentRoom!="none" and global.playerState=state.texting
+//previous condition string_length(keyboard_string)<maxCharacters 6899 replace it when gamemaker fixes ext bug
+
+if string_width(keyboard_string)<450 and global.currentRoom!="none" and global.playerState=state.texting
 {
 msg=keyboard_string
 }
@@ -117,6 +138,7 @@ joined=false
 }
 if msg!="" and keyboard_check_pressed(vk_enter)
 {
+if instance_exists(oManager){oManager.timerToRevert=0}
 global.playerState=state.normal
 playAudioFromOutside=1
 audio_play_sound(sndGetMessage,1,false,global.sfxVolume,0,2)
@@ -166,13 +188,31 @@ moveLeft	=	keyboard_check(vk_left)
 moveDown	=	keyboard_check(vk_down)
 moveUp		=	keyboard_check(vk_up)
 
-if moveRight	{x+=spd;	sprite_index=base[spr.walkRight];	moving=movement.right}
-if moveLeft		{x-=spd;	sprite_index=base[spr.walkLeft];	moving=movement.left}
-if moveUp		{y-=spd;	sprite_index=base[spr.walkUp];		moving=movement.up}
-if moveDown		{y+=spd;	sprite_index=base[spr.walkDown];	moving=movement.down}
+if global.currentRoom!="none"
+{
+if moveRight	{sprite_index=base[spr.walkRight];	moving=movement.right}
+if moveLeft		{sprite_index=base[spr.walkLeft];	moving=movement.left}
+if moveUp		{sprite_index=base[spr.walkUp];		moving=movement.up}	
+if moveDown		{sprite_index=base[spr.walkDown];	moving=movement.down}
+}
+
+var _xinput = moveRight - moveLeft
+var _yinput = moveDown - moveUp;
+move_and_collide(_xinput * spd, _yinput * spd, oWall);
+
+/*
+Old
+x+=spd;	
+x-=spd;	
+y-=spd;	
+y+=spd;	
+*/
+
+move_and_collide(hSpd,vSpd,oWall)
 
 if !moveRight and !moveLeft and !moveUp and !moveDown
 {
+	
 	switch (moving)
 	{
 	    case movement.right:

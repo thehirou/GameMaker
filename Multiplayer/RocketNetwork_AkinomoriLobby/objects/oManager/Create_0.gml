@@ -7,10 +7,16 @@ global.sfxVolume=1
 global.peopleConnected=0
 global.mainMenuMsg="Loading..."
 
-maxChatLog=20
+loadingInstance=instance_create_layer(640,480,layer,oLocalInstance)
+loadingInstance.sprite_index=sprLoading
+
+loadingTime=choose(2,3)
+
+maxChatLog=40
 global.chat=array_create(maxChatLog,"")
 
-afkOpacity=0.3
+afkMinOpacity=0
+afkOpacity=afkMinOpacity
 arrayChanged=false
 timerToRevert=0
 
