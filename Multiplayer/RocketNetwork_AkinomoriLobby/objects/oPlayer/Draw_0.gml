@@ -126,3 +126,19 @@ customizing=!customizing
 
 }
 
+if global.debug
+{
+	// Loop through all instances of oOtherPlayer
+	var otherPlayerCount = instance_number(oOtherPlayer);
+
+	for (var i = 0; i < otherPlayerCount; i++)
+	{
+	    // Get the current instance of oOtherPlayer
+	    var currentOtherPlayer = instance_find(oOtherPlayer, i);
+
+	    // Draw a line to the current instance of oOtherPlayer
+		draw_set_color(c_red)
+	    draw_line_width(x, y, currentOtherPlayer.x, currentOtherPlayer.y, 2);
+		draw_set_color(c_white)
+	}
+}

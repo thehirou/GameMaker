@@ -4,30 +4,35 @@
 #Send whispers
 #Different servers with more rooms
 #Report users
+#Kick users
+#Ban users
 
 
 #TO-DO
 ----------------------
-#Customizable Sprites
 #Async Code (Impossible?)
 #Customize Text/Name color
 #Limit players to only one per IP or per computer
 #Add connected users list (TAB) (use array_insert)
-#Añadir sonido diegetico (audio_play_sound_at) creo
+#Añadir sonido extradiegetico (audio_play_sound_at) creo
+#Add dots on top of players if they are typing
+#Depth Sorting (Between instances)
+#Change skin color
 
 
 #KIND OF DONE
 ----------------------
-#AFK Timer (Only works inside the window)
+#AFK Timer (Only works inside the browser tab)
 #Fix double line of text (Text is only limited to one line now)
 
 
 #DONE
 ----------------------
+#Customizable Sprites
 #Fix string crashing the game if there are no spaces
 #Limit text to one line in the writing thingy
 #Local message history
 #Play sound only if player is near
 #Swear filter
-#Depth Sorting (depth=-y)?
+#Depth Sorting (Between players)
 #Sound when someone sends a message

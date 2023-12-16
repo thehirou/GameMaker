@@ -299,6 +299,9 @@ switch (wearingAccessory)
 case "sprEmpty":
 textAccessory="No Accessory"
 break;
+case "sprBlumeFlower":
+textAccessory="Blume's Flower"
+break;
 }
 
 
@@ -368,5 +371,13 @@ received_headIsprIidleLeft		:		head[spr.idleLeft]			,
 received_headIsprIwalkUp		:		head[spr.walkUp]			,	
 received_headIsprIwalkDown		:		head[spr.walkDown]			,	
 received_headIsprIwalkRight		:		head[spr.walkRight]			,
-received_headIsprIwalkLeft		:		head[spr.walkLeft]			,	
+received_headIsprIwalkLeft		:		head[spr.walkLeft]			,
+received_acsrIsprIidleUp		:		acsr[spr.idleUp]			,	
+received_acsrIsprIidleDown		:		acsr[spr.idleDown]			,	
+received_acsrIsprIidleRight		:		acsr[spr.idleRight]			,
+received_acsrIsprIidleLeft		:		acsr[spr.idleLeft]			,	
+received_acsrIsprIwalkUp		:		acsr[spr.walkUp]			,	
+received_acsrIsprIwalkDown		:		acsr[spr.walkDown]			,	
+received_acsrIsprIwalkRight		:		acsr[spr.walkRight]			,
+received_acsrIsprIwalkLeft		:		acsr[spr.walkLeft]			,
 }

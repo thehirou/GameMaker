@@ -91,6 +91,14 @@ head[spr.walkUp]		   =	SP.received_headIsprIwalkUp
 head[spr.walkDown]		   =	SP.received_headIsprIwalkDown		
 head[spr.walkRight]		   =	SP.received_headIsprIwalkRight
 head[spr.walkLeft]		   =	SP.received_headIsprIwalkLeft		
+acsr[spr.idleUp]		   =	SP.received_acsrIsprIidleUp		
+acsr[spr.idleDown]		   =	SP.received_acsrIsprIidleDown			
+acsr[spr.idleRight]		   =	SP.received_acsrIsprIidleRight		
+acsr[spr.idleLeft]		   =	SP.received_acsrIsprIidleLeft			
+acsr[spr.walkUp]		   =	SP.received_acsrIsprIwalkUp		
+acsr[spr.walkDown]		   =	SP.received_acsrIsprIwalkDown			
+acsr[spr.walkRight]		   =	SP.received_acsrIsprIwalkRight		
+acsr[spr.walkLeft]		   =	SP.received_acsrIsprIwalkLeft		
 
 
 

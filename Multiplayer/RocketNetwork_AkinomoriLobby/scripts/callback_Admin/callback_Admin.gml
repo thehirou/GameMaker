@@ -5,7 +5,7 @@ function callback_Admin(alert_message){
 	//  "MAX CAPACITY REACHED"
 	//  Hide this from your players!
 	
-	show_message("Server is full, wait for someone to leave the server.")
+	show_message("(30/30) Server is full, wait for someone to leave the server.")
 	global.serverFull=true
 	//show_message(alert_message)
 	//show_message(alert_message+" This alert came from callback_Admin function. Please hide this in production!")

@@ -79,7 +79,7 @@ headArray=		["sprEmpty","sprHeadDoge"]
 legsArray=		["sprEmpty","sprLegsDoge"]
 mouthArray=		["sprMouthSmile","sprEmpty"]
 torsoArray=		["sprEmpty","sprTorsoDoge"]
-accessoryArray=	["sprEmpty","sprEmpty"]
+accessoryArray=	["sprEmpty","sprBlumeFlower"]
 
 eyesOption		=0
 mouthOption		=0

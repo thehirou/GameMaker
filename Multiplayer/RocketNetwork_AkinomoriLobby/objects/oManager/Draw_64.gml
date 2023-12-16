@@ -39,7 +39,7 @@ draw_set_valign(fa_bottom)
 
 if global.debug
 {
-var maxClients=4
+var maxClients=30
 var s=15
 draw_set_valign(fa_top)
 draw_text(10,s*1,"Room: "+string(global.currentRoom))
