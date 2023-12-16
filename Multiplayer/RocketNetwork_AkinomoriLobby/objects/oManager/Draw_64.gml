@@ -3,7 +3,7 @@ if instance_exists(localTextWarning)
 with(localTextWarning)
 {
 draw_set_halign(fa_center)
-draw_text(640/2,30,"This is ALPHA, this has not been announced yet.")	
+//draw_text(640/2,30,"This is ALPHA, this has not been announced yet.")	
 }
 }
 
@@ -18,7 +18,10 @@ if global.currentRoom="none"
 {
 draw_text(640/2,(480/2)-20,global.mainMenuMsg)
 draw_set_halign(fa_left)
+if global.debug=true
+{
 draw_text(10,20,"Server: 'public' (US)")
+}
 draw_set_halign(fa_center)
 timer[0]++
 

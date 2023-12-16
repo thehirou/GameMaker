@@ -38,3 +38,5 @@ if timerToRevert>4*60
 	arrayChanged=false
 }
 }else{afkOpacity=lerp(afkOpacity,afkMinOpacity,0.05)}
+
+

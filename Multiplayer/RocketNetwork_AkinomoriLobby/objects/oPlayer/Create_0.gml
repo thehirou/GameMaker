@@ -2,6 +2,18 @@ ConnectToServer()
 
 scrSetSpriteDefaults();
 
+enum part
+{
+eyes		,
+feet		, //usual
+head		, //usual
+legs		, //usual
+mouth		,
+torso		, //usual
+accessory	, //usual
+}
+
+
 setUser=global.inputField
 
 thisUsername=""
@@ -60,3 +72,54 @@ left,
 up,
 down
 }
+
+eyesArray=		["sprEyesNeutral","sprEmpty"]
+feetArray=		["sprEmpty","sprFeetDoge"]
+headArray=		["sprEmpty","sprHeadDoge"]
+legsArray=		["sprEmpty","sprLegsDoge"]
+mouthArray=		["sprMouthSmile","sprEmpty"]
+torsoArray=		["sprEmpty","sprTorsoDoge"]
+accessoryArray=	["sprEmpty","sprEmpty"]
+
+eyesOption		=0
+mouthOption		=0
+accessoryOption	=0
+headOption		=0
+torsoOption		=0
+legsOption		=0
+feetOption		=0
+
+max_eyesOption		=array_length(eyesArray)		-1
+max_mouthOption		=array_length(feetArray)		-1
+max_accessoryOption	=array_length(headArray)		-1
+max_headOption		=array_length(legsArray)		-1
+max_torsoOption		=array_length(mouthArray)		-1
+max_legsOption		=array_length(torsoArray)		-1
+max_feetOption		=array_length(accessoryArray)	-1
+
+textEyes="Nothing"
+textMouth="Nothing"
+textAccessory="Nothing"
+textHead="Nothing"
+textTorso="Nothing"
+textLegs="Nothing"
+textFeet="Nothing"
+
+wearingEyes="sprEmpty"
+wearingMouth="sprEmpty"
+wearingAccessory="sprEmpty"
+wearingHead="sprEmpty"
+wearingTorso="sprEmpty"
+wearingLegs="sprEmpty"
+wearingFeet="sprEmpty"
+
+scrSwitchPart(part.torso,		torsoArray		[0]);
+scrSwitchPart(part.head,		headArray		[0]);
+scrSwitchPart(part.legs,		legsArray		[0]);
+scrSwitchPart(part.feet,		feetArray		[0]);
+scrSwitchPart(part.eyes,		eyesArray		[0]);
+scrSwitchPart(part.mouth,		mouthArray		[0]);
+scrSwitchPart(part.accessory,	accessoryArray	[0]);
+
+customizing=false
+

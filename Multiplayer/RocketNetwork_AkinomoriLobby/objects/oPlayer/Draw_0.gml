@@ -43,6 +43,7 @@ if !moveRight and !moveLeft and !moveUp and !moveDown
 	        scrSpriteOnTop(legs[spr.idleRight])
 	        scrSpriteOnTop(tors[spr.idleRight])
 	        scrSpriteOnTop(head[spr.idleRight])
+	        scrSpriteOnTop(acsr[spr.idleRight])
 	        break;
 	    case movement.left:
 	        scrSpriteOnTop(eyes[spr.idleLeft])
@@ -51,6 +52,7 @@ if !moveRight and !moveLeft and !moveUp and !moveDown
 	        scrSpriteOnTop(legs[spr.idleLeft])
 	        scrSpriteOnTop(tors[spr.idleLeft])
 	        scrSpriteOnTop(head[spr.idleLeft])
+	        scrSpriteOnTop(acsr[spr.idleLeft])
 	        break;
 	    case movement.up:
 	        scrSpriteOnTop(eyes[spr.idleUp])
@@ -59,6 +61,7 @@ if !moveRight and !moveLeft and !moveUp and !moveDown
 	        scrSpriteOnTop(legs[spr.idleUp])
 	        scrSpriteOnTop(tors[spr.idleUp])
 	        scrSpriteOnTop(head[spr.idleUp])
+	        scrSpriteOnTop(acsr[spr.idleUp])
 	        break;
 	    case movement.down:
 	        scrSpriteOnTop(eyes[spr.idleDown])
@@ -67,6 +70,7 @@ if !moveRight and !moveLeft and !moveUp and !moveDown
 	        scrSpriteOnTop(legs[spr.idleDown])
 	        scrSpriteOnTop(tors[spr.idleDown])
 	        scrSpriteOnTop(head[spr.idleDown])
+	        scrSpriteOnTop(acsr[spr.idleDown])
 	        break;
 	}	
 }
@@ -81,6 +85,7 @@ else
 	        scrSpriteOnTop(legs[spr.walkRight])
 	        scrSpriteOnTop(tors[spr.walkRight])
 	        scrSpriteOnTop(head[spr.walkRight])
+	        scrSpriteOnTop(acsr[spr.walkRight])
 	        break;
 	    case movement.left:
 	        scrSpriteOnTop(eyes[spr.walkLeft])
@@ -89,6 +94,7 @@ else
 	        scrSpriteOnTop(legs[spr.walkLeft])
 	        scrSpriteOnTop(tors[spr.walkLeft])
 	        scrSpriteOnTop(head[spr.walkLeft])
+	        scrSpriteOnTop(acsr[spr.walkLeft])
 	        break;
 	    case movement.up:
 	        scrSpriteOnTop(eyes[spr.walkUp])
@@ -97,6 +103,7 @@ else
 	        scrSpriteOnTop(legs[spr.walkUp])
 	        scrSpriteOnTop(tors[spr.walkUp])
 	        scrSpriteOnTop(head[spr.walkUp])
+	        scrSpriteOnTop(acsr[spr.walkUp])
 	        break;
 	    case movement.down:
 	        scrSpriteOnTop(eyes[spr.walkDown])
@@ -105,6 +112,17 @@ else
 	        scrSpriteOnTop(legs[spr.walkDown])
 	        scrSpriteOnTop(tors[spr.walkDown])
 	        scrSpriteOnTop(head[spr.walkDown])
+	        scrSpriteOnTop(acsr[spr.walkDown])
 	        break;
 	}
 }
+
+if keyboard_check_pressed(ord("C")) and global.currentRoom!="none" and global.playerState!=state.texting
+{
+	
+if customizing=true{global.playerState=state.normal}
+if customizing=false{global.playerState=state.customizing}
+customizing=!customizing
+
+}
+

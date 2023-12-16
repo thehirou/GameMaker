@@ -30,6 +30,131 @@ function scrSpriteOnTop(_sprite)
 }
 
 
+function scrSwitchPart(_part,_string)
+{
+//There's clearly a better way and I know how to do it but I just don't give a fuck anymore	
+if _string!="sprEmpty"
+{
+var _IdleUp			="IdleUp"
+var _IdleDown		="IdleDown"
+var _IdleRight		="IdleRight"
+var _IdleLeft		="IdleLeft"
+var _WalkUp			="WalkUp"
+var _WalkDown		="WalkDown"
+var _WalkRight		="WalkRight"
+var _WalkLeft		="WalkLeft"
+}
+else
+{
+var _IdleUp			=""
+var _IdleDown		=""
+var _IdleRight		=""
+var _IdleLeft		=""
+var _WalkUp			=""
+var _WalkDown		=""
+var _WalkRight		=""
+var _WalkLeft		=""
+}
+
+switch (_part)
+{
+case part.eyes:
+wearingEyes=_string
+//EYES
+eyes[spr.idleUp]			=	asset_get_index(_string+string(_IdleUp))		
+eyes[spr.idleDown]			=	asset_get_index(_string+string(_IdleDown))	
+eyes[spr.idleRight]			=	asset_get_index(_string+string(_IdleRight))	
+eyes[spr.idleLeft]			=	asset_get_index(_string+string(_IdleLeft))	
+eyes[spr.walkUp]			=	asset_get_index(_string+string(_WalkUp))		
+eyes[spr.walkDown]			=	asset_get_index(_string+string(_WalkDown))	
+eyes[spr.walkRight]			=	asset_get_index(_string+string(_WalkRight))
+eyes[spr.walkLeft]			=	asset_get_index(_string+string(_WalkLeft))	
+break;
+//////
+case part.mouth:
+wearingMouth=_string
+//MOUTH
+mout[spr.idleUp]			=	asset_get_index(_string+string(_IdleUp))		
+mout[spr.idleDown]			=	asset_get_index(_string+string(_IdleDown))	
+mout[spr.idleRight]			=	asset_get_index(_string+string(_IdleRight))	
+mout[spr.idleLeft]			=	asset_get_index(_string+string(_IdleLeft))	
+mout[spr.walkUp]			=	asset_get_index(_string+string(_WalkUp))		
+mout[spr.walkDown]			=	asset_get_index(_string+string(_WalkDown))	
+mout[spr.walkRight]			=	asset_get_index(_string+string(_WalkRight))
+mout[spr.walkLeft]			=	asset_get_index(_string+string(_WalkLeft))	
+break;
+//////
+case part.feet:
+wearingFeet=_string
+//FEET
+feet[spr.idleUp]			=	asset_get_index(_string+string(_IdleUp))		
+feet[spr.idleDown]			=	asset_get_index(_string+string(_IdleDown))	
+feet[spr.idleRight]			=	asset_get_index(_string+string(_IdleRight))	
+feet[spr.idleLeft]			=	asset_get_index(_string+string(_IdleLeft))	
+feet[spr.walkUp]			=	asset_get_index(_string+string(_WalkUp))		
+feet[spr.walkDown]			=	asset_get_index(_string+string(_WalkDown))	
+feet[spr.walkRight]			=	asset_get_index(_string+string(_WalkRight))
+feet[spr.walkLeft]			=	asset_get_index(_string+string(_WalkLeft))	
+break;
+//////
+case part.legs:
+wearingLegs=_string
+//LEGS
+legs[spr.idleUp]			=	asset_get_index(_string+string(_IdleUp))		
+legs[spr.idleDown]			=	asset_get_index(_string+string(_IdleDown))	
+legs[spr.idleRight]			=	asset_get_index(_string+string(_IdleRight))	
+legs[spr.idleLeft]			=	asset_get_index(_string+string(_IdleLeft))	
+legs[spr.walkUp]			=	asset_get_index(_string+string(_WalkUp))		
+legs[spr.walkDown]			=	asset_get_index(_string+string(_WalkDown))	
+legs[spr.walkRight]			=	asset_get_index(_string+string(_WalkRight))
+legs[spr.walkLeft]			=	asset_get_index(_string+string(_WalkLeft))	
+break;
+//////
+case part.torso:
+wearingTorso=_string
+//TORSO
+tors[spr.idleUp]			=	asset_get_index(_string+string(_IdleUp))		
+tors[spr.idleDown]			=	asset_get_index(_string+string(_IdleDown))	
+tors[spr.idleRight]			=	asset_get_index(_string+string(_IdleRight))	
+tors[spr.idleLeft]			=	asset_get_index(_string+string(_IdleLeft))	
+tors[spr.walkUp]			=	asset_get_index(_string+string(_WalkUp))		
+tors[spr.walkDown]			=	asset_get_index(_string+string(_WalkDown))	
+tors[spr.walkRight]			=	asset_get_index(_string+string(_WalkRight))
+tors[spr.walkLeft]			=	asset_get_index(_string+string(_WalkLeft))	
+break;
+//////
+case part.head:
+wearingHead=_string
+//HEAD
+head[spr.idleUp]			=	asset_get_index(_string+string(_IdleUp))		
+head[spr.idleDown]			=	asset_get_index(_string+string(_IdleDown))	
+head[spr.idleRight]			=	asset_get_index(_string+string(_IdleRight))	
+head[spr.idleLeft]			=	asset_get_index(_string+string(_IdleLeft))	
+head[spr.walkUp]			=	asset_get_index(_string+string(_WalkUp))		
+head[spr.walkDown]			=	asset_get_index(_string+string(_WalkDown))	
+head[spr.walkRight]			=	asset_get_index(_string+string(_WalkRight))
+head[spr.walkLeft]			=	asset_get_index(_string+string(_WalkLeft))	
+break;
+//////
+case part.accessory:
+wearingAccessory=_string
+//Accessory
+acsr[spr.idleUp]			=	asset_get_index(_string+string(_IdleUp))		
+acsr[spr.idleDown]			=	asset_get_index(_string+string(_IdleDown))	
+acsr[spr.idleRight]			=	asset_get_index(_string+string(_IdleRight))	
+acsr[spr.idleLeft]			=	asset_get_index(_string+string(_IdleLeft))	
+acsr[spr.walkUp]			=	asset_get_index(_string+string(_WalkUp))		
+acsr[spr.walkDown]			=	asset_get_index(_string+string(_WalkDown))	
+acsr[spr.walkRight]			=	asset_get_index(_string+string(_WalkRight))
+acsr[spr.walkLeft]			=	asset_get_index(_string+string(_WalkLeft))	
+break;
+//////
+}
+
+
+}
+
+
 function scrSetSpriteDefaults()
 {
 
@@ -104,6 +229,17 @@ head[spr.walkUp]			=	sprEmpty
 head[spr.walkDown]			=	sprEmpty
 head[spr.walkRight]			=	sprEmpty
 head[spr.walkLeft]			=	sprEmpty
+
+
+//ACCESORIES
+acsr[spr.idleUp]			=	sprEmpty
+acsr[spr.idleDown]			=	sprEmpty
+acsr[spr.idleRight]			=	sprEmpty
+acsr[spr.idleLeft]			=	sprEmpty
+acsr[spr.walkUp]			=	sprEmpty
+acsr[spr.walkDown]			=	sprEmpty
+acsr[spr.walkRight]			=	sprEmpty
+acsr[spr.walkLeft]			=	sprEmpty
 
 
 }

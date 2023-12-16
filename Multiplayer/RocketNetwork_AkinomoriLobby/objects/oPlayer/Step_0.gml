@@ -101,7 +101,7 @@ global.disconnectReason="Disconnected! You were AFK for too long!"
 DisconnectFromServer()	
 }
 
-if keyboard_check(vk_anykey)
+if keyboard_check(vk_anykey) or mouse_check_button(mb_any)
 {
 timerAfk=0	
 timerEachSecond=0
@@ -231,6 +231,76 @@ if !moveRight and !moveLeft and !moveUp and !moveDown
 }
 
 #endregion
+
+
+
+switch (wearingEyes)
+{
+case "sprEmpty":
+textEyes="Eyeless"
+break;
+case "sprEyesNeutral":
+textEyes="Normal Eyes"
+break;
+}
+
+switch (wearingFeet)
+{
+case "sprEmpty":
+textFeet="No Shoes"
+break;
+case "sprFeetDoge":
+textFeet="Lia's Shoes"
+break;
+}
+
+switch (wearingHead)
+{
+case "sprEmpty":
+textHead="No Top"
+break;
+case "sprHeadDoge":
+textHead="Lia's Hat"
+break;
+}
+
+switch (wearingLegs)
+{
+case "sprEmpty":
+textLegs="No Pants"
+break;
+case "sprLegsDoge":
+textLegs="Lia's Socks"
+break;
+}
+
+switch (wearingTorso)
+{
+case "sprEmpty":
+textTorso="No Shirt"
+break;
+case "sprTorsoDoge":
+textTorso="Lia's Shirt"
+break;
+}
+
+switch (wearingMouth)
+{
+case "sprEmpty":
+textMouth="Mouthless"
+break;
+case "sprMouthSmile":
+textMouth="Smile"
+break;
+}
+
+switch (wearingAccessory)
+{
+case "sprEmpty":
+textAccessory="No Accessory"
+break;
+}
+
 
 global.sharedProperties = {
 _x								:		x							,

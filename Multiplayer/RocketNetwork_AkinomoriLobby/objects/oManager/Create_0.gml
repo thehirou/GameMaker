@@ -6,6 +6,7 @@ global.disconnectReason="Disconnected (Reason Unknown)"
 global.sfxVolume=1
 global.peopleConnected=0
 global.mainMenuMsg="Loading..."
+global.serverFull=false
 
 loadingInstance=instance_create_layer(640,480,layer,oLocalInstance)
 loadingInstance.sprite_index=sprLoading
@@ -24,7 +25,8 @@ enum state
 {
 normal,
 interacting,
-texting
+texting,
+customizing,
 }
 
 global.playerState=state.normal
