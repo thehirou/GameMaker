@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 3.433039,
   "parent": {
-    "name": "#Game",
-    "path": "folders/#Game.yy",
+    "name": "SFX",
+    "path": "folders/#Game/ASSETS/SFX.yy",
   },
   "preload": false,
   "sampleRate": 44100,

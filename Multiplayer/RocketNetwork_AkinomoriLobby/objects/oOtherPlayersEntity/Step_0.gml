@@ -13,14 +13,36 @@ or whatever you want to update in any way from
 your entityProperties
 */
 
+x=						EP._x
+y=						EP._y
+sprite_index =			EP.rec_sprite_index
+image_alpha=			EP.rec_image_alpha
+image_xscale=			EP.rec_image_xscale
+image_yscale=			EP.rec_image_yscale
+image_index=			EP.rec_image_index
+image_speed=			EP.rec_image_speed
+type=					EP._type
 
-	//x = real(EP._x)
-	
-	
-	
-	
-	
-	
+/*STUPID
+timer++
+
+if timer>1*60
+{
+x = lerp(x,real(EP._x),0.5)
+y = lerp(y,real(EP._y),0.5)
+}
+else
+{
+x=EP._x
+y=EP._y
+}
+
+sprite_index = EP.rec_sprite_index
+image_alpha=EP.rec_image_alpha
+image_xscale=	EP.rec_image_xscale
+image_yscale=	EP.rec_image_yscale
+*/
+
 	
 	
 	

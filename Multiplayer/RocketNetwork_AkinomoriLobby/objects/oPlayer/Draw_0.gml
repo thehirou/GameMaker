@@ -1,9 +1,16 @@
 draw_self()
 
+
+
+
 if global.currentRoom!="none"
 {
 draw_set_halign(fa_center)
 draw_set_valign(fa_bottom)
+var _padUs=5
+draw_set_alpha(0.5)
+draw_rectangle_color(x-(string_width(thisUsername)/2)-_padUs,y-global.nameHeight+_padUs-3,x+(string_width(thisUsername)/2)+_padUs,y-global.nameHeight-23,c_black,c_black,c_black,c_black,false)
+draw_set_alpha(1)
 draw_text(x,y-global.nameHeight,thisUsername)
 if afkState=1
 {
@@ -117,14 +124,26 @@ else
 	}
 }
 
-if keyboard_check_pressed(ord("C")) and global.currentRoom!="none" and global.playerState!=state.texting
-{
-	
-if customizing=true{global.playerState=state.normal}
-if customizing=false{global.playerState=state.customizing}
-customizing=!customizing
+if global.playerState=state.customizing and keyboard_check_pressed(vk_escape){global.playerState=state.normal; customizing=false}
 
+if keyboard_check_pressed(ord("C")) and global.currentRoom!="none"
+{
+
+	if global.playerState=state.normal or global.playerState=state.customizing
+	{
+		customizing=!customizing
+		
+		if customizing=true{global.playerState=state.customizing}
+		if customizing=false{global.playerState=state.normal}
+		
+	}
 }
+
+/*
+if customizing=true{global.playerState=state.normal; customizing=false}
+if customizing=false{global.playerState=state.customizing; customizing=true}
+*/
+
 
 if global.debug
 {

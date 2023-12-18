@@ -16,6 +16,6 @@ global.sharedProperties = {
 
 }
 
-
+oBrain.AmIPseudoHost = false
 
 

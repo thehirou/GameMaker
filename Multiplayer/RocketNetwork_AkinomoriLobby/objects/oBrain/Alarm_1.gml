@@ -8,6 +8,8 @@ if(variable_instance_exists(oBrain,"socket") and global.clientId!=-1){
 		//WHAT DATA 
 		var data = ds_map_create();
 		data[? "ct"] = current_time;
+		data[? "serverId"] = global.SERVERID
+		data[? "clientId"] = global.clientId
 	
 		
 		ds_map_add(data,"eventName","ping");

@@ -10,3 +10,6 @@ entityProperties = {
 
 
 }
+
+timer=0
+type=entity.emoji

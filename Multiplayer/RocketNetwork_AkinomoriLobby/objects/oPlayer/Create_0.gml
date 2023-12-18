@@ -34,6 +34,7 @@ timer[0]=0
 
 once[0]=true
 once[1]=true
+once[2]=true
 
 hSpd=0
 vSpd=0
@@ -73,13 +74,13 @@ up,
 down
 }
 
-eyesArray=		["sprEyesNeutral","sprEmpty"]
-feetArray=		["sprEmpty","sprFeetDoge"]
-headArray=		["sprEmpty","sprHeadDoge"]
-legsArray=		["sprEmpty","sprLegsDoge"]
-mouthArray=		["sprMouthSmile","sprEmpty"]
-torsoArray=		["sprEmpty","sprTorsoDoge"]
-accessoryArray=	["sprEmpty","sprBlumeFlower"]
+eyesArray=		["sprEyesNeutral","sprEmilioGlasses","sprEyesFocus","sprEmpty"]
+feetArray=		["sprEmpty","sprFeetDoge","sprApfelBoots","sprIsBoots"]
+headArray=		["sprEmpty","sprHeadDoge","sprIsHair","sprIsHead"]
+legsArray=		["sprEmpty","sprLegsDoge","sprApfelSkirt","sprIsPants"]
+mouthArray=		["sprMouthSmile","sprMouthSerious","sprEmilioBeard","sprEmpty"]
+torsoArray=		["sprEmpty","sprTorsoDoge","sprApfelShirt","sprIsPoncho","sprIsShirt"]
+accessoryArray=	["sprEmpty","sprApfelVest","sprLumberjackBeard","sprIsAcsrHat","sprBlumeFlower","sprIsAcsrFlower","sprGloCatLeft","sprGloCatRight","sprTabbyCatLeft","sprTabbyCatRight"]
 
 eyesOption		=0
 mouthOption		=0
@@ -90,12 +91,12 @@ legsOption		=0
 feetOption		=0
 
 max_eyesOption		=array_length(eyesArray)		-1
-max_mouthOption		=array_length(feetArray)		-1
-max_accessoryOption	=array_length(headArray)		-1
-max_headOption		=array_length(legsArray)		-1
-max_torsoOption		=array_length(mouthArray)		-1
-max_legsOption		=array_length(torsoArray)		-1
-max_feetOption		=array_length(accessoryArray)	-1
+max_mouthOption		=array_length(mouthArray)		-1
+max_accessoryOption	=array_length(accessoryArray)	-1
+max_headOption		=array_length(headArray)		-1
+max_torsoOption		=array_length(torsoArray)		-1
+max_legsOption		=array_length(legsArray)		-1
+max_feetOption		=array_length(feetArray)	-1
 
 textEyes="Nothing"
 textMouth="Nothing"
@@ -121,5 +122,19 @@ scrSwitchPart(part.eyes,		eyesArray		[0]);
 scrSwitchPart(part.mouth,		mouthArray		[0]);
 scrSwitchPart(part.accessory,	accessoryArray	[0]);
 
+emojiInstance=instance_create_depth(x,y,999,oTemporalObject)
+cursorInstance=instance_create_depth(x,y,999,oTemporalObject)
+
+selectedColor=0
+
+skinR=round(255/2)
+skinG=round(255/2)
+skinB=round(255/2)
+
+image_blend=make_color_rgb(skinR,skinG,skinB)
+
+rgbOutputString="Red: 0"
+
+once[3]=true
 customizing=false
 

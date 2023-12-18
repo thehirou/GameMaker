@@ -7,13 +7,35 @@ entityId = oBrain.entitiesCreated
 array_push(oBrain.entitiesActive , entityId);
 
 
+displayIcon=sprArrow
+timer[0]=0
+image_alpha=-0.1
+sprite_index=sprArrow
+image_xscale=1
+image_yscale=1
 
 /*
 * Add your variables in this entityproperties
 */
+
+enum entity
+{
+emoji,
+cursor,
+}
+
+//type=entity.emoji
+
 entityProperties = {
-	_entityId : entityId
-	//Add stuff here like type / x / y / whatever
+	_entityId : entityId,
+	_type : type,
+	rec_sprite_index:sprite_index,
+	rec_image_alpha:image_alpha,
+	rec_image_xscale:image_xscale,
+	rec_image_yscale:image_yscale,
+	rec_y_:y,
+	rec_x_:x
+
 
 
 }

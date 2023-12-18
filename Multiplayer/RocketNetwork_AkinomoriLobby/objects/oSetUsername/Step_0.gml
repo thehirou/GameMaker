@@ -1,3 +1,12 @@
+if mouse_check_button_pressed(mb_left)
+{
+allow=true
+keyboard_string=""
+global.inputField=""
+}
+
+if allow=true
+{
 if string_length(keyboard_string)<16
 {
 global.inputField=keyboard_string
@@ -30,4 +39,5 @@ timer[0]=0	//resets the position of the blinking mother fuckr
 if global.inputField!="" and keyboard_check_pressed(vk_enter)
 {
 room_goto(rmLobby)	
+}
 }

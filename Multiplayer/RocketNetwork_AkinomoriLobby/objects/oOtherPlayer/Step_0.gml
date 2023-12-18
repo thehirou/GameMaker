@@ -13,6 +13,8 @@ or whatever you want to update in any way from
 your sharedProperties
 */
 
+
+
 //Step
 image_xscale=2
 image_yscale=2

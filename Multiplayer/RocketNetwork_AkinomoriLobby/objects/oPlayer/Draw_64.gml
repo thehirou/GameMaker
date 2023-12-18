@@ -15,22 +15,30 @@ draw_set_halign(fa_left)
 if global.currentRoom!="none" and global.playerState=state.customizing
 {
 	
+	
+	
+	
+	
+	
+	
+	
+	//CLOTHING
 	var _c=mouse_check_button_pressed(mb_left)
-	if instance_position(mouse_x, mouse_y,inst_L1)	and	 _c{eyesOption--			} //EYES
-	if instance_position(mouse_x, mouse_y,inst_L2)	and	 _c{mouthOption--			} //MOUTH
-	if instance_position(mouse_x, mouse_y,inst_L3)	and	 _c{accessoryOption--		} //ACCESSORY
-	if instance_position(mouse_x, mouse_y,inst_L4)	and	 _c{headOption--			} //HEAD
-	if instance_position(mouse_x, mouse_y,inst_L5)	and	 _c{torsoOption--			} //TORSO
-	if instance_position(mouse_x, mouse_y,inst_L6)	and	 _c{legsOption--			} //LEGS
-	if instance_position(mouse_x, mouse_y,inst_L7)	and	 _c{feetOption--			} //FEET
+	if instance_position(mouse_x, mouse_y,inst_L1)	and	 _c{if eyesOption			=0{eyesOption		=	max_eyesOption			+1};	eyesOption--			} //EYES
+	if instance_position(mouse_x, mouse_y,inst_L2)	and	 _c{if mouthOption			=0{mouthOption		=	max_mouthOption			+1};	mouthOption--			} //MOUTH
+	if instance_position(mouse_x, mouse_y,inst_L3)	and	 _c{if accessoryOption		=0{accessoryOption	=	max_accessoryOption		+1};	accessoryOption--		} //ACCESSORY
+	if instance_position(mouse_x, mouse_y,inst_L4)	and	 _c{if headOption			=0{headOption		=	max_headOption			+1};	headOption--			} //HEAD
+	if instance_position(mouse_x, mouse_y,inst_L5)	and	 _c{if torsoOption			=0{torsoOption		=	max_torsoOption			+1};	torsoOption--			} //TORSO
+	if instance_position(mouse_x, mouse_y,inst_L6)	and	 _c{if legsOption			=0{legsOption		=	max_legsOption			+1};	legsOption--			} //LEGS
+	if instance_position(mouse_x, mouse_y,inst_L7)	and	 _c{if feetOption			=0{feetOption		=	max_feetOption			+1};	feetOption--			} //FEET
 														
-	if instance_position(mouse_x, mouse_y,inst_R1)	and	 _c{eyesOption++			} //EYES
-	if instance_position(mouse_x, mouse_y,inst_R2)	and	 _c{mouthOption++			} //MOUTH
-	if instance_position(mouse_x, mouse_y,inst_R3)	and	 _c{accessoryOption++		} //ACCESSORY
-	if instance_position(mouse_x, mouse_y,inst_R4)	and	 _c{headOption++			} //HEAD
-	if instance_position(mouse_x, mouse_y,inst_R5)	and	 _c{torsoOption++			} //TORSO
-	if instance_position(mouse_x, mouse_y,inst_R6)	and	 _c{legsOption++			} //LEGS
-	if instance_position(mouse_x, mouse_y,inst_R7)	and	 _c{feetOption++			} //FEET
+	if instance_position(mouse_x, mouse_y,inst_R1)	and	 _c{if eyesOption			=max_eyesOption			+0		{eyesOption		=	-1};	eyesOption++			} //EYES
+	if instance_position(mouse_x, mouse_y,inst_R2)	and	 _c{if mouthOption			=max_mouthOption		+0		{mouthOption	=	-1};	mouthOption++			} //MOUTH
+	if instance_position(mouse_x, mouse_y,inst_R3)	and	 _c{if accessoryOption		=max_accessoryOption	+0		{accessoryOption=	-1};	accessoryOption++		} //ACCESSORY
+	if instance_position(mouse_x, mouse_y,inst_R4)	and	 _c{if headOption			=max_headOption			+0		{headOption		=	-1};	headOption++			} //HEAD
+	if instance_position(mouse_x, mouse_y,inst_R5)	and	 _c{if torsoOption			=max_torsoOption		+0		{torsoOption	=	-1};	torsoOption++			} //TORSO
+	if instance_position(mouse_x, mouse_y,inst_R6)	and	 _c{if legsOption			=max_legsOption			+0		{legsOption		=	-1};	legsOption++			} //LEGS
+	if instance_position(mouse_x, mouse_y,inst_R7)	and	 _c{if feetOption			=max_feetOption			+0		{feetOption		=	-1};	feetOption++			} //FEET
 	
 	show_debug_message(eyesOption)
 	
@@ -100,20 +108,69 @@ if global.currentRoom!="none" and global.playerState=state.customizing
 	draw_set_valign(fa_bottom)
 	draw_set_halign(fa_left)
 	
-	if global.debug=true
+	//SKIN RGB
+	
+	
+	
+selectedColor=clamp(selectedColor,0,2)
+skinR=clamp(skinR,0,255)
+skinG=clamp(skinG,0,255)
+skinB=clamp(skinB,0,255)
+	
+	if selectedColor>0
 	{
-	draw_set_halign(fa_center)
-	draw_set_valign(fa_middle)
-	draw_text(_xcam+640/2,_ycam+480/2,
-	"Eyes"+"\n"+			textEyes		+"\n"+"\n"+
-	"Mouth"+"\n"+			textMouth		+"\n"+"\n"+
-	"Accessory"+"\n"+		textAccessory		+"\n"+"\n"+
-	"Head"+"\n"+			textHead			+"\n"+"\n"+
-	"Shirt"+"\n"+			textTorso		+"\n"+"\n"+
-	"Pants"+"\n"+			textLegs		+"\n"+"\n"+
-	"Shoes"+"\n"+			textFeet
-	)
-	draw_set_valign(fa_bottom)
-	draw_set_halign(fa_left)
+	if instance_position(mouse_x, mouse_y,instRGB1)	and	 _c{selectedColor--}
 	}
+	
+	if selectedColor<2
+	{
+	if instance_position(mouse_x, mouse_y,instRGB2)	and	 _c{selectedColor++}
+	}
+	
+	var _c_m=mouse_check_button(mb_left)
+	if instance_position(mouse_x, mouse_y,sliderRGB_L)	and	 _c_m
+	{
+		switch (selectedColor)
+		{
+		    case 0:		if skinR>0{skinR--}; break;
+		    case 1:		if skinG>0{skinG--}; break;
+		    case 2:		if skinB>0{skinB--}; break;
+		    default:	if skinR>0{skinR--}; break;
+		}
+	}
+	if instance_position(mouse_x, mouse_y,sliderRGB_R)	and	 _c_m
+	{
+		switch (selectedColor)
+		{
+		    case 0:		if skinR<255{skinR++}; break;
+		    case 1:		if skinG<255{skinG++}; break;
+		    case 2:		if skinB<255{skinB++}; break;
+		    default:	if skinR<255{skinR++}; break;
+		}
+	}
+	
+	switch (selectedColor)
+	{
+	    case 0:		rgbOutputString="Red: "+string(skinR) break;
+	    case 1:		rgbOutputString="Green: "+string(skinG) break;
+	    case 2:		rgbOutputString="Blue: "+string(skinB) break;
+	    default:	rgbOutputString="Red: "+string(skinR) break;
+	}
+	
+	var _dis=16
+	draw_set_color(c_white)
+	draw_set_valign(fa_middle)
+	draw_set_halign(fa_center)
+	draw_text(instRGBtextType.startX+_dis,instRGBtextType.startY+_dis,"Skin Color RGB")
+	draw_text(instRGBoutput.startX+_dis,instRGBoutput.startY+_dis,rgbOutputString)
+	draw_text(instRGB1.startX+_dis,instRGB1.startY+_dis,"<")
+	draw_text(instRGB2.startX+_dis,instRGB2.startY+_dis,">")
+	draw_text(sliderRGB_L.startX+_dis,sliderRGB_L.startY+_dis,"<")
+	draw_text(sliderRGB_R.startX+_dis,sliderRGB_R.startY+_dis,">")
+	draw_set_color(c_white)
+	
+	
+	
+	
+	
 }

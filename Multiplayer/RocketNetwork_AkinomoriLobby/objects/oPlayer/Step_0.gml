@@ -1,3 +1,14 @@
+if global.playerState=state.normal{window_set_cursor(cr_default)}
+//Id also check for state.settings and state.interacting but to get to those you have to go through state.normal no matter what
+
+
+
+
+if global.debug
+{
+if !instance_exists(cursorInstance){cursorInstance=instance_create_depth(x,y,depth,oMyEntity,{type : entity.cursor})}	
+}
+
 if once[0]=true
 {
 switch (setUser) {
@@ -31,6 +42,19 @@ if instance_exists(oOtherPlayer)
 	once[1]=false
 	}
 }else{once[1]=false}
+}
+
+if once[2]=true
+{
+oManager.addUserToTheList=oManager.addUserToTheList+thisUsername+"\n"	
+once[2]=false
+}
+
+if global.currentRoom="public" and once[3]=true
+{
+x=room_width/2
+y=room_height/2	
+once[3]=false
 }
 
 global.thisUserNameGlobal=thisUsername
@@ -138,6 +162,12 @@ joined=false
 }
 if msg!="" and keyboard_check_pressed(vk_enter)
 {
+	
+//COMMANDS
+scrEmojiCheck();
+	
+
+
 if instance_exists(oManager){oManager.timerToRevert=0}
 global.playerState=state.normal
 playAudioFromOutside=1
@@ -198,8 +228,10 @@ if moveDown		{sprite_index=base[spr.walkDown];	moving=movement.down}
 
 var _xinput = moveRight - moveLeft
 var _yinput = moveDown - moveUp;
+if global.currentRoom!="none"
+{
 move_and_collide(_xinput * spd, _yinput * spd, oWall);
-
+}
 /*
 Old
 x+=spd;	
@@ -242,15 +274,27 @@ break;
 case "sprEyesNeutral":
 textEyes="Normal Eyes"
 break;
+case "sprEyesFocus":
+textEyes="Focused Eyes"
+break;
+case "sprEmilioGlasses":
+textEyes="Emilio's Glasses"
+break;
 }
 
 switch (wearingFeet)
 {
 case "sprEmpty":
-textFeet="No Shoes"
+textFeet="Barefoot"
 break;
 case "sprFeetDoge":
 textFeet="Lia's Shoes"
+break;
+case "sprApfelBoots":
+textFeet="Apfel's Boots"
+break;
+case "sprIsBoots":
+textFeet="I's Boots"
 break;
 }
 
@@ -262,6 +306,12 @@ break;
 case "sprHeadDoge":
 textHead="Lia's Hat"
 break;
+case "sprIsHair":
+textHead="I's Hair"
+break;
+case "sprIsHead":
+textHead="I's Head"
+break;
 }
 
 switch (wearingLegs)
@@ -272,6 +322,12 @@ break;
 case "sprLegsDoge":
 textLegs="Lia's Socks"
 break;
+case "sprApfelSkirt":
+textLegs="Apfel's Skirt"
+break;
+case "sprIsPants":
+textLegs="I's Pants"
+break;
 }
 
 switch (wearingTorso)
@@ -280,7 +336,16 @@ case "sprEmpty":
 textTorso="No Shirt"
 break;
 case "sprTorsoDoge":
-textTorso="Lia's Shirt"
+textTorso="Lia's Dress"
+break;
+case "sprApfelShirt":
+textTorso="Apfel's Shirt"
+break;
+case "sprIsPoncho":
+textTorso="I's Poncho"
+break;
+case "sprIsShirt":
+textTorso="I's Shirt"
 break;
 }
 
@@ -292,6 +357,12 @@ break;
 case "sprMouthSmile":
 textMouth="Smile"
 break;
+case "sprEmilioBeard":
+textMouth="Emilio's Goatee"
+break;
+case "sprMouthSerious":
+textMouth="Serious"
+break;
 }
 
 switch (wearingAccessory)
@@ -302,8 +373,33 @@ break;
 case "sprBlumeFlower":
 textAccessory="Blume's Flower"
 break;
+case "sprIsAcsrFlower":
+textAccessory="I's Flower"
+break;
+case "sprApfelVest":
+textAccessory="Apfel's Vest"
+break;
+case "sprLumberjackBeard":
+textAccessory="Lumberjack Beard"
+break;
+case "sprIsAcsrHat":
+textAccessory="I's Hat"
+break;
+case "sprGloCatLeft":
+textAccessory="I's Cat Leftside"
+break;
+case "sprGloCatRight":
+textAccessory="I's Cat Rightside"
+break;
+case "sprTabbyCatLeft":
+textAccessory="Tabby Cat Leftside"
+break;
+case "sprTabbyCatRight":
+textAccessory="Tabby Cat Rightside"
+break;
 }
 
+image_blend=make_color_rgb(skinR,skinG,skinB)
 
 global.sharedProperties = {
 _x								:		x							,

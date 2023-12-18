@@ -2,6 +2,12 @@ draw_self()
 
 draw_set_halign(fa_center)
 draw_set_valign(fa_bottom)
+var _padUs=5
+draw_set_alpha(0.5)
+if playerUsername="Admin"{draw_set_color(c_blue)}else{draw_set_color(c_black)}
+draw_rectangle(x-(string_width(playerUsername)/2)-_padUs,y-global.nameHeight+_padUs-3,x+(string_width(playerUsername)/2)+_padUs,y-global.nameHeight-23,false)
+draw_set_alpha(1)
+draw_set_color(c_white)
 draw_text(x,y-global.nameHeight,playerUsername)
 if receivedAfkState=1
 {
@@ -16,6 +22,14 @@ draw_set_valign(fa_bottom)
 //draw_text_ext(x,y-global.nameHeight-spaceBetweenNameAndMsg,receivedMsg,15,250)
 draw_set_halign(fa_left)
 
+
+
+
+if onceSetName=true
+{
+oManager.addUserToTheList=oManager.addUserToTheList+playerUsername+"\n"	
+onceSetName=false
+}
 
 if !moveRight and !moveLeft and !moveUp and !moveDown 
 {

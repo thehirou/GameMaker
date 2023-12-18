@@ -1,0 +1,1 @@
+audio_play_sound(sndLeave,1,false,global.sfxVolume)

@@ -10,6 +10,193 @@ enum spr
 	walkLeft
 }
 
+
+function scrEmojiCheck(_sprite)
+{
+switch (msg)
+{
+//case ":xxxxx:":				scrEmote(sprEmote);					break;
+
+//Secrets (Unique)
+case ":broly:":				scrEmote(sprEmoteBroly);					break;
+case ":goku:":				scrEmote(sprEmoteGoku);					break;
+
+//16-Dec-2023
+case ":zzz:":				scrEmote(sprEmoteZzz);					break;
+case ":zany:":				scrEmote(sprEmoteZany);					break;
+case ":yum:":				scrEmote(sprEmoteYum);					break;
+case ":youtube:":			scrEmote(sprEmoteYoutube);					break;
+case ":worried:":			scrEmote(sprEmoteWorried);					break;
+case ":world:":				scrEmote(sprEmoteWorld);					break;
+case ":wink:":				scrEmote(sprEmoteWink);					break;
+case ":windows:":			scrEmote(sprEmoteWindows);					break;
+case ":wifi:":				scrEmote(sprEmoteWifi);					break;
+case ":weezer:":			scrEmote(sprEmoteWeezer);					break;
+case ":waving:":			scrEmote(sprEmoteWave);					break;
+case ":vriska:":			scrEmote(sprEmoteVriska);					break;
+case ":typing:":			scrEmote(sprEmoteTyping);					break;
+case ":twitter:":			scrEmote(sprEmoteTwitter);					break;
+case ":trans:":				scrEmote(sprEmoteTrans);					break;
+case ":tongue:":			scrEmote(sprEmoteTongue);					break;
+case ":tomato:":			scrEmote(sprEmoteTomato);					break;
+case ":thumbs_up:":			scrEmote(sprEmoteThumbsUp);					break;
+case ":thumbs_down:":		scrEmote(sprEmoteThumbDown);					break;
+case ":thinking:":			scrEmote(sprEmoteThinking);					break;
+case ":think_bubble:":		scrEmote(sprEmoteThinkBubble);					break;
+case ":terezi:":			scrEmote(sprEmoteTerezi);					break;
+case ":tear:":				scrEmote(sprEmoteTear);					break;
+case ":tavros:":			scrEmote(sprEmoteTavros);					break;
+case ":taco:":				scrEmote(sprEmoteTaco);					break;
+case ":joyful:":			scrEmote(sprEmoteSuperJoy);					break;
+case ":sunglasses:":		scrEmote(sprEmoteSunglasses);					break;
+case ":moon:":				scrEmote(sprEmoteMoon);					break;
+case ":sun:":				scrEmote(sprEmoteSun);					break;
+case ":strawberry:":		scrEmote(sprEmoteStrawberry);					break;
+case ":stops:":				scrEmote(sprEmoteStop);					break;
+case ":spade:":				scrEmote(sprEmoteSpade);					break;
+case ":sos:":				scrEmote(sprEmoteSos);					break;
+case ":sollux:":			scrEmote(sprEmoteSollux);					break;
+case ":sob:":				scrEmote(sprEmoteSob);					break;
+case ":smoke:":				scrEmote(sprEmoteSmoke);					break;
+case ":cat_smirk:":			scrEmote(sprEmoteSmirkCat);					break;
+case ":smile:":				scrEmote(sprEmoteSmile);					break;
+case ":smh:":				scrEmote(sprEmoteSmh);					break;
+case ":skull:":				scrEmote(sprEmoteSkull);					break;
+case ":silly:":				scrEmote(sprEmoteSilly);					break;
+case ":backwards:":			scrEmote(sprEmoteSideways);					break;
+case ":shush:":				scrEmote(sprEmoteShush);					break;
+case ":serious:":			scrEmote(sprEmoteSerious);					break;
+case ":scared:":			scrEmote(sprEmoteScared);					break;
+case ":cat_scared:":		scrEmote(sprEmoteScareCat);					break;
+case ":save:":				scrEmote(sprEmoteSaving);					break;
+case ":salute:":			scrEmote(sprEmoteSalute);					break;
+case ":sad:":				scrEmote(sprEmoteSad);					break;
+case ":retweet:":			scrEmote(sprEmoteRetweet);					break;
+case ":rat_small:":			scrEmote(sprEmoteRatSmall);					break;
+case ":rat:":				scrEmote(sprEmoteRat);					break;
+case ":hirou:":				scrEmote(sprEmoteRat);					break;
+case ":qr:":				scrEmote(sprEmoteQr);					break;
+case ":fist:":				scrEmote(sprEmotePunch);					break;
+case ":puke:":				scrEmote(sprEmotePuke);					break;
+case ":present:":			scrEmote(sprEmotePresent);					break;
+case ":finger_up:":			scrEmote(sprEmotePointing);					break;
+case ":pleading:":			scrEmote(sprEmotePleading);					break;
+case ":gratitude:":			scrEmote(sprEmotePleadCry);					break;
+case ":pizza:":				scrEmote(sprEmotePizza);					break;
+case ":pinata:":			scrEmote(sprEmotePinata);					break;
+case ":piano:":				scrEmote(sprEmotePiano);					break;
+case ":pfft:":				scrEmote(sprEmotePfft);					break;
+case ":pensive:":			scrEmote(sprEmotePensive);					break;
+case ":peace_sign:":		scrEmote(sprEmotePeaceSign);					break;
+case ":peace:":				scrEmote(sprEmotePeace);					break;
+case ":open_mouth:":		scrEmote(sprEmoteOpenMouth);					break;
+case ":ooh:":				scrEmote(sprEmoteOoh);					break;
+case ":okay:":				scrEmote(sprEmoteOkay);					break;
+case ":no_reaction:":		scrEmote(sprEmoteNoReaction);					break;
+case ":noodles:":			scrEmote(sprEmoteNoodles);					break;
+case ":neutral:":			scrEmote(sprEmoteNeutral);					break;
+case ":nerd:":				scrEmote(sprEmoteNerd);					break;
+case ":nepeta:":			scrEmote(sprEmoteNepeta);					break;
+case ":mute:":				scrEmote(sprEmoteMute);					break;
+case ":mouse:":				scrEmote(sprEmoteMouse);					break;
+case ":mindblown:":			scrEmote(sprEmoteMindBlown);					break;
+case ":middle_finger:":		scrEmote(sprEmoteMiddleFinger);					break;
+case ":melt:":				scrEmote(sprEmoteMelt);					break;
+case ":mac:":				scrEmote(sprEmoteMac);					break;
+case ":lipbite:":			scrEmote(sprEmoteLipBite);					break;
+case ":lgbt:":				scrEmote(sprEmoteLgtb);					break;
+case ":cat_kiss:":			scrEmote(sprEmoteKissCat);					break;
+case ":kiss_blow:":			scrEmote(sprEmoteKissBlow);					break;
+case ":kiss:":				scrEmote(sprEmoteKiss);					break;
+case ":kebab:":				scrEmote(sprEmoteKebab);					break;
+case ":karkat:":			scrEmote(sprEmoteKarkat);					break;
+case ":kanaya:":			scrEmote(sprEmoteKanaya);					break;
+case ":cat_joy:":			scrEmote(sprEmoteJoyCat);					break;
+case ":joy:":				scrEmote(sprEmoteJoy);				break;
+case ":internet_explorer:":	scrEmote(sprEmoteInternetExplorer);					break;
+case ":internet:":			scrEmote(sprEmoteInternet);					break;
+case ":swear:":				scrEmote(sprEmoteInsult);					break;
+case ":icecream:":			scrEmote(sprEmoteIceCream);					break;
+case ":ice_face:":			scrEmote(sprEmoteIce);					break;
+case ":hundred:":			scrEmote(sprEmoteHundred);					break;
+case ":huh:":				scrEmote(sprEmoteHuh);					break;
+case ":hot_face:":			scrEmote(sprEmoteHot);					break;
+case ":horse:":				scrEmote(sprEmoteHorse);					break;
+case ":heart_sparks:":		scrEmote(sprEmoteHeartSpark);					break;
+case ":heartbreak:":		scrEmote(sprEmoteHeartbreak);					break;
+case ":heart:":				scrEmote(sprEmoteHeart);					break;
+case ":happywink:":			scrEmote(sprEmoteHappyWink);					break;
+case ":cat_happy:":			scrEmote(sprEmoteHappyCat);					break;
+case ":halloween:":			scrEmote(sprEmoteHalloween);					break;
+case ":groucho:":			scrEmote(sprEmoteGroucho);					break;
+case ":grin:":				scrEmote(sprEmoteGrin);					break;
+case ":goat:":				scrEmote(sprEmoteGoat);					break; 
+case ":mantana:":			scrEmote(sprEmoteGoat);					break; //repeated (secret)
+case ":gamzee:":			scrEmote(sprEmoteGamzee);					break;
+case ":frisk:":				scrEmote(sprEmoteFrisk);					break;
+case ":fox:":				scrEmote(sprEmoteFox);					break;
+case ":flustered:":			scrEmote(sprEmoteFlustered);					break;
+case ":flushed:":			scrEmote(sprEmoteFlushed);					break;
+case ":flower:":			scrEmote(sprEmoteFlower);					break;
+case ":flash:":				scrEmote(sprEmoteFlash);					break;
+case ":firefox:":			scrEmote(sprEmoteFirefox);					break;
+case ":fire:":				scrEmote(sprEmoteFire);					break;
+case ":feferi:":			scrEmote(sprEmoteFeferi);					break;
+case ":eridan:":			scrEmote(sprEmoteEridan);					break;
+case ":equius:":			scrEmote(sprEmoteEquius);					break;
+case ":edge:":				scrEmote(sprEmoteEdge);					break;
+case ":drool:":				scrEmote(sprEmoteDrooling);					break;
+case ":dog:":				scrEmote(sprEmoteDog);					break;
+case ":disappointed:":		scrEmote(sprEmoteDisapointed);					break;
+case ":diamond:":			scrEmote(sprEmoteDiamond);					break;
+case ":cursor:":			scrEmote(sprEmoteCursor);					break;
+case ":cry:":				scrEmote(sprEmoteCry);					break;
+case ":cowboy:":			scrEmote(sprEmoteCowboy);					break;
+case ":cookie:":			scrEmote(sprEmoteCookie);					break;
+case ":confused:":			scrEmote(sprEmoteConfused);					break;
+case ":clown:":				scrEmote(sprEmoteClown);					break;
+case ":clover:":			scrEmote(sprEmoteClover);					break;
+case ":chrome:":			scrEmote(sprEmoteChrome);					break;
+case ":xmas:":				scrEmote(sprEmoteChristmas);					break;
+case ":chocolate:":			scrEmote(sprEmoteChocolate);					break;
+case ":cherry:":			scrEmote(sprEmoteCherry);					break;
+case ":cheese:":			scrEmote(sprEmoteCheese);					break;
+case ":cat:":				scrEmote(sprEmoteCat);					break;
+case ":cap:":				scrEmote(sprEmoteCap);					break;
+case ":camera:":			scrEmote(sprEmoteCamera);					break;
+case ":slice_of_cake:":		scrEmote(sprEmoteCake);					break;
+case ":bubbles:":			scrEmote(sprEmoteBubbles);					break;
+case ":bored:":				scrEmote(sprEmoteBoring);					break;
+case ":cake:":				scrEmote(sprEmoteBirthdayCake);					break;
+case ":audio:":				scrEmote(sprEmoteAudio);					break;
+case ":astonished:":		scrEmote(sprEmoteAtonished);					break;
+case ":asdf:":				scrEmote(sprEmoteAsdf);					break;
+case ":aradia:":			scrEmote(sprEmoteAradia);					break;
+case ":apple:":				scrEmote(sprEmoteApple);					break;
+case ":angry:":				scrEmote(sprEmoteAngry);					break;
+case ":8ball:":				scrEmote(sprEmote8Ball);					break;
+
+				
+default:
+//do nothing
+break;
+}
+}
+
+function scrEmote(_sprite)
+{
+if !instance_exists(emojiInstance){emojiInstance=instance_create_depth(x,y-sprite_height+16,depth,oMyEntity, {type : entity.emoji, displayIcon : _sprite})}
+if instance_exists(emojiInstance)
+{
+if instance_number(emojiInstance)>=1
+	{
+	emojiInstance.timer[0]=0
+	}
+emojiInstance.displayIcon=_sprite
+}
+	
+}
+
 /*
 For Copying
 
@@ -250,9 +437,14 @@ function scrFilter(_MSG)
 
 var originalString = _MSG;
 var swearWords =
-["faggot",
+[
+"faggot",
 "nigger",
 "nigga",
+"whore",
+"retard",
+"retard",
+"sex",
 "omori"
 ];
 

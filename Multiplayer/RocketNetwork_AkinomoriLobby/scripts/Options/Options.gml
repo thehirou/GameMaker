@@ -1,6 +1,15 @@
-// Settings    V1.6.2
+// Settings    V1.7.0
 // -- Updates in this version? 
-//  - Added Server Clock
+//
+//  - Added a Complete Persistent Object Control System
+//      so you can create long lasting objects on the server.
+//  - Added  a pseudohost system in oBrain.AmIPseudoHost
+//      this tells you if you are the player who has joined the room earlier than the others existing in the room. 
+//      You can sort of assume control as the lead if you are the pseudohost.
+//  - Added a KickPlayer() function to forcefully disconnect another player.
+//  - Added ViewServerActivity() that returns a complete nested struct of everything on your RNet Server
+
+
 
 /*
 * Your server id or secret key. 
@@ -19,8 +28,9 @@ global.OtherPlayersLayerName = "Instances"
 * Do you want to manually connect to RNet? You can do this by copying your serverURL directy
 * from dashboard.rocketnetworking.net
 */
-global.manualServerURLconnection = false;
-global.manualServerURL = "rocket-networking.uc.r.appspot.com/"
+global.manualServerURLconnection = true;
+global.manualServerURL = "rocket-networking.uc.r.appspot.com"
+
 
 /*
 * How often do you want to share your sharedProperties?

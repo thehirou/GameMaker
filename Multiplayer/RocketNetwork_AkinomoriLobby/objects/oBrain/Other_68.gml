@@ -33,9 +33,6 @@ if(type == network_type_data){
 	var buffer_processed = buffer_read(buffer_raw , buffer_text);
 	//var realData = json_decode(buffer_processed);
 	var realData = json_parse(buffer_processed)
-	
-	//----------------------
-	
 	if(variable_struct_exists(realData , "eventName")){
 		//show_message(buffer_processed)
 	}
@@ -71,6 +68,13 @@ if(type == network_type_data){
 		}
 		instance_destroy(oOtherPlayer)
 		
+		with(oPersistentObject){
+			if(roomId!=realData.roomId){
+				instance_destroy(id)
+			}
+		}
+		
+		
 		break;
 		
 		
@@ -80,6 +84,11 @@ if(type == network_type_data){
 		
 		case "all_clients":
 		callback_ShowAllClientsInRoom(realData.clients)
+		break;
+		
+		
+		case "all_pO":
+		callback_ShowAllPersistentObjectsInRoom(realData.pOs)
 		break;
 		
 		
@@ -112,6 +121,27 @@ if(type == network_type_data){
 		break;
 		
 		
+		case "pO_update":
+		var found = false;
+		with(oPersistentObject){
+			if(id.persistentObjectId == realData.POid){
+				
+				id.persistentObjectProperties = realData.pOp
+				found = true;
+			}
+		
+			
+		}
+		if(!found){
+			
+			var new_pO = instance_create_layer(0,0,global.OtherPlayersLayerName,oPersistentObject);
+			new_pO.persistentObjectId = realData.POid;
+			new_pO.persistentObjectProperties = realData.pOp
+			new_pO.roomId = realData.roomId
+		}
+		break;
+		
+		
 		case "disconnected":
 		callback_DisconnectFromServer()
 		break;
@@ -134,6 +164,15 @@ if(type == network_type_data){
 		break;
 		
 		
+		case "destroy_pO":
+		with(oPersistentObject){
+			if(persistentObjectId == realData.POid){
+				instance_destroy(id)
+			}
+		}
+		break;
+		
+		
 		case "pong":
 		global.ping = current_time - real(realData.ct)
 		break;
@@ -147,6 +186,25 @@ if(type == network_type_data){
 		
 		case "SMTC":
 		callback_ReceivedMessage(  realData.message , realData.senderClientId);
+		break;
+		
+		
+		case "created_PO":
+		callback_CreatedPersistentObject(realData.POid)
+		break;
+		
+		case "pseudoHost":
+		var pseudoHostClientId = real(realData.pH)
+		if(pseudoHostClientId == global.clientId){
+			oBrain.AmIPseudoHost = true
+		}else{
+			oBrain.AmIPseudoHost = false
+		}
+		break;
+		
+		
+		case "full_server_view":
+		callback_ViewServerActivity(realData.activity)
 		break;
 	
 	}
