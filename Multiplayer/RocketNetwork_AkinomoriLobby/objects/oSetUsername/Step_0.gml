@@ -7,8 +7,13 @@ global.inputField=""
 
 if allow=true
 {
+	
+
 if string_length(keyboard_string)<16
 {
+	
+if keyboard_check_pressed(vk_anykey){audio_play_sound(sndClick,1,false,global.sfxVolume,0,random_range(0.9,2))}
+
 global.inputField=keyboard_string
 }else{keyboard_string=global.inputField}
 

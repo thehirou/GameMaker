@@ -2,6 +2,8 @@ ConnectToServer()
 global.debug=false
 test=false
 
+#macro SND_CHANGEVAL if mouse_check_button_pressed(mb_left){audio_play_sound(sndChangeValue,1,false,global.sfxVolume,0,random_range(0.9,1.5))}
+
 global.nameHeight=70
 global.currentRoom="none"
 global.disconnectReason="You got disconnected!"

@@ -2,11 +2,13 @@ if global.currentRoom!="none"
 {
 if global.playerState=state.normal and keyboard_check_pressed(vk_escape)
 {
+audio_play_sound(sndOpenMenu,1,false,global.sfxVolume)
 settings=!settings
 }
 
 if global.playerState=state.settings and keyboard_check_pressed(vk_escape)
 {
+audio_play_sound(sndCloseMenu,1,false,global.sfxVolume)
 global.playerState=state.normal
 settings=false
 }

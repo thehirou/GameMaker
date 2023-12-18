@@ -21,3 +21,7 @@ draw_text_color(640/2,480-20,version+" "+updateName+" | "+legal,c_white,c_white,
 draw_set_halign(fa_left)
 draw_set_valign(fa_bottom)
 
+fadeIn-=0.05
+draw_set_alpha(fadeIn)
+draw_rectangle_color(0,0,999,999,c_black,c_black,c_black,c_black,false)
+draw_set_alpha(1)

@@ -124,17 +124,21 @@ else
 	}
 }
 
-if global.playerState=state.customizing and keyboard_check_pressed(vk_escape){global.playerState=state.normal; customizing=false}
+if global.playerState=state.customizing and keyboard_check_pressed(vk_escape)
+{
+	global.playerState=state.normal;
+	customizing=false
+	audio_play_sound(sndCloseMenu,1,false,global.sfxVolume)
+}
 
 if keyboard_check_pressed(ord("C")) and global.currentRoom!="none"
 {
-
 	if global.playerState=state.normal or global.playerState=state.customizing
 	{
 		customizing=!customizing
 		
-		if customizing=true{global.playerState=state.customizing}
-		if customizing=false{global.playerState=state.normal}
+		if customizing=true{global.playerState=state.customizing; audio_play_sound(sndOpenMenu,1,false,global.sfxVolume)}
+		if customizing=false{global.playerState=state.normal; audio_play_sound(sndCloseMenu,1,false,global.sfxVolume)}
 		
 	}
 }

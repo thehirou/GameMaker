@@ -11,3 +11,5 @@ allow=false
 timer[0]=0
 
 random_set_seed(current_second*(current_minute+current_hour))
+
+fadeIn=1

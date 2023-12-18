@@ -10,6 +10,7 @@ image_alpha=0
 
 if global.playerState=state.settings
 {
+	
 	if instance_position(mouse_x, mouse_y,oGetPositionSettings)
 	{
 		window_set_cursor(cr_handpoint)	

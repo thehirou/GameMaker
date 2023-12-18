@@ -14,31 +14,24 @@ draw_set_halign(fa_left)
 //Sprite customization
 if global.currentRoom!="none" and global.playerState=state.customizing
 {
-	
-	
-	
-	
-	
-	
-	
-	
+
 	//CLOTHING
 	var _c=mouse_check_button_pressed(mb_left)
-	if instance_position(mouse_x, mouse_y,inst_L1)	and	 _c{if eyesOption			=0{eyesOption		=	max_eyesOption			+1};	eyesOption--			} //EYES
-	if instance_position(mouse_x, mouse_y,inst_L2)	and	 _c{if mouthOption			=0{mouthOption		=	max_mouthOption			+1};	mouthOption--			} //MOUTH
-	if instance_position(mouse_x, mouse_y,inst_L3)	and	 _c{if accessoryOption		=0{accessoryOption	=	max_accessoryOption		+1};	accessoryOption--		} //ACCESSORY
-	if instance_position(mouse_x, mouse_y,inst_L4)	and	 _c{if headOption			=0{headOption		=	max_headOption			+1};	headOption--			} //HEAD
-	if instance_position(mouse_x, mouse_y,inst_L5)	and	 _c{if torsoOption			=0{torsoOption		=	max_torsoOption			+1};	torsoOption--			} //TORSO
-	if instance_position(mouse_x, mouse_y,inst_L6)	and	 _c{if legsOption			=0{legsOption		=	max_legsOption			+1};	legsOption--			} //LEGS
-	if instance_position(mouse_x, mouse_y,inst_L7)	and	 _c{if feetOption			=0{feetOption		=	max_feetOption			+1};	feetOption--			} //FEET
+	if instance_position(mouse_x, mouse_y,inst_L1)	and	 _c{SND_CHANGEVAL; if eyesOption			=0{eyesOption		=	max_eyesOption			+1};	eyesOption--			} //EYES
+	if instance_position(mouse_x, mouse_y,inst_L2)	and	 _c{SND_CHANGEVAL; if mouthOption			=0{mouthOption		=	max_mouthOption			+1};	mouthOption--			} //MOUTH
+	if instance_position(mouse_x, mouse_y,inst_L3)	and	 _c{SND_CHANGEVAL; if accessoryOption		=0{accessoryOption	=	max_accessoryOption		+1};	accessoryOption--		} //ACCESSORY
+	if instance_position(mouse_x, mouse_y,inst_L4)	and	 _c{SND_CHANGEVAL; if headOption			=0{headOption		=	max_headOption			+1};	headOption--			} //HEAD
+	if instance_position(mouse_x, mouse_y,inst_L5)	and	 _c{SND_CHANGEVAL; if torsoOption			=0{torsoOption		=	max_torsoOption			+1};	torsoOption--			} //TORSO
+	if instance_position(mouse_x, mouse_y,inst_L6)	and	 _c{SND_CHANGEVAL; if legsOption			=0{legsOption		=	max_legsOption			+1};	legsOption--			} //LEGS
+	if instance_position(mouse_x, mouse_y,inst_L7)	and	 _c{SND_CHANGEVAL; if feetOption			=0{feetOption		=	max_feetOption			+1};	feetOption--			} //FEET
 														
-	if instance_position(mouse_x, mouse_y,inst_R1)	and	 _c{if eyesOption			=max_eyesOption			+0		{eyesOption		=	-1};	eyesOption++			} //EYES
-	if instance_position(mouse_x, mouse_y,inst_R2)	and	 _c{if mouthOption			=max_mouthOption		+0		{mouthOption	=	-1};	mouthOption++			} //MOUTH
-	if instance_position(mouse_x, mouse_y,inst_R3)	and	 _c{if accessoryOption		=max_accessoryOption	+0		{accessoryOption=	-1};	accessoryOption++		} //ACCESSORY
-	if instance_position(mouse_x, mouse_y,inst_R4)	and	 _c{if headOption			=max_headOption			+0		{headOption		=	-1};	headOption++			} //HEAD
-	if instance_position(mouse_x, mouse_y,inst_R5)	and	 _c{if torsoOption			=max_torsoOption		+0		{torsoOption	=	-1};	torsoOption++			} //TORSO
-	if instance_position(mouse_x, mouse_y,inst_R6)	and	 _c{if legsOption			=max_legsOption			+0		{legsOption		=	-1};	legsOption++			} //LEGS
-	if instance_position(mouse_x, mouse_y,inst_R7)	and	 _c{if feetOption			=max_feetOption			+0		{feetOption		=	-1};	feetOption++			} //FEET
+	if instance_position(mouse_x, mouse_y,inst_R1)	and	 _c{SND_CHANGEVAL; if eyesOption			=max_eyesOption			+0		{eyesOption		=	-1};	eyesOption++			} //EYES
+	if instance_position(mouse_x, mouse_y,inst_R2)	and	 _c{SND_CHANGEVAL; if mouthOption			=max_mouthOption		+0		{mouthOption	=	-1};	mouthOption++			} //MOUTH
+	if instance_position(mouse_x, mouse_y,inst_R3)	and	 _c{SND_CHANGEVAL; if accessoryOption		=max_accessoryOption	+0		{accessoryOption=	-1};	accessoryOption++		} //ACCESSORY
+	if instance_position(mouse_x, mouse_y,inst_R4)	and	 _c{SND_CHANGEVAL; if headOption			=max_headOption			+0		{headOption		=	-1};	headOption++			} //HEAD
+	if instance_position(mouse_x, mouse_y,inst_R5)	and	 _c{SND_CHANGEVAL; if torsoOption			=max_torsoOption		+0		{torsoOption	=	-1};	torsoOption++			} //TORSO
+	if instance_position(mouse_x, mouse_y,inst_R6)	and	 _c{SND_CHANGEVAL; if legsOption			=max_legsOption			+0		{legsOption		=	-1};	legsOption++			} //LEGS
+	if instance_position(mouse_x, mouse_y,inst_R7)	and	 _c{SND_CHANGEVAL; if feetOption			=max_feetOption			+0		{feetOption		=	-1};	feetOption++			} //FEET
 	
 	show_debug_message(eyesOption)
 	
@@ -119,17 +112,18 @@ skinB=clamp(skinB,0,255)
 	
 	if selectedColor>0
 	{
-	if instance_position(mouse_x, mouse_y,instRGB1)	and	 _c{selectedColor--}
+	if instance_position(mouse_x, mouse_y,instRGB1)	and	 _c{SND_CHANGEVAL; selectedColor--}
 	}
 	
 	if selectedColor<2
 	{
-	if instance_position(mouse_x, mouse_y,instRGB2)	and	 _c{selectedColor++}
+	if instance_position(mouse_x, mouse_y,instRGB2)	and	 _c{SND_CHANGEVAL; selectedColor++}
 	}
 	
 	var _c_m=mouse_check_button(mb_left)
 	if instance_position(mouse_x, mouse_y,sliderRGB_L)	and	 _c_m
 	{
+		//6899 Add custom slider sound effect here
 		switch (selectedColor)
 		{
 		    case 0:		if skinR>0{skinR--}; break;

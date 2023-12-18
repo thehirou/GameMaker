@@ -17,8 +17,7 @@
 #Add dots on top of players if they are typing
 #Depth Sorting (Between instances)
 #Make music not local
-#GUI Sounds
-#Ambience SFX
+
 
 #KIND OF DONE
 ----------------------
@@ -28,6 +27,8 @@
 
 #DONE
 ----------------------
+#GUI Sounds
+#Ambience SFX
 #Change skin color
 #Mantana event at 3:33AM
 #Bajar sonido de la musica si hay campanadas

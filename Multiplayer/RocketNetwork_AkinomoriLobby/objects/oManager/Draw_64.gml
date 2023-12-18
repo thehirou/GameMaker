@@ -126,14 +126,14 @@ draw_set_halign(fa_left)
 var _c=mouse_check_button_pressed(mb_left)
 
 
-if instance_position(mouse_x, mouse_y,iSettingsOpt1L)	and	 _c{optValue1-=10}
-if instance_position(mouse_x, mouse_y,iSettingsOpt1R)	and	 _c{optValue1+=10}
-
-if instance_position(mouse_x, mouse_y,iSettingsOpt2L)	and	 _c{optValue2-=10}
-if instance_position(mouse_x, mouse_y,iSettingsOpt2R)	and	 _c{optValue2+=10}
-
-if instance_position(mouse_x, mouse_y,iSettingsOpt3L)	and	 _c{showChat=!showChat}
-if instance_position(mouse_x, mouse_y,iSettingsOpt3R)	and	 _c{showChat=!showChat}
+if instance_position(mouse_x, mouse_y,iSettingsOpt1L)	and	 _c{SND_CHANGEVAL; optValue1-=10}
+if instance_position(mouse_x, mouse_y,iSettingsOpt1R)	and	 _c{SND_CHANGEVAL; optValue1+=10}
+																
+if instance_position(mouse_x, mouse_y,iSettingsOpt2L)	and	 _c{SND_CHANGEVAL; optValue2-=10}
+if instance_position(mouse_x, mouse_y,iSettingsOpt2R)	and	 _c{SND_CHANGEVAL; optValue2+=10}
+																
+if instance_position(mouse_x, mouse_y,iSettingsOpt3L)	and	 _c{SND_CHANGEVAL; showChat=!showChat}
+if instance_position(mouse_x, mouse_y,iSettingsOpt3R)	and	 _c{SND_CHANGEVAL; showChat=!showChat}
 
 optValue1=clamp(optValue1,0,100)
 optValue2=clamp(optValue2,0,100)
