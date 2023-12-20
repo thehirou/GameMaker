@@ -22,6 +22,8 @@ roomId = -1
 oManager.newPlayerJoin=true
 onceSetName=true
 
+otherPlayerIP="loading"
+
 audio_play_sound(sndJoin,1,false,global.sfxVolume)
 
 scrSetSpriteDefaults()
@@ -34,6 +36,8 @@ moveDown	=	false
 moveUp		=	false
 
 moving=movement.down
+
+joinPosition=0
 
 receivedMsg=""
 receivedAfkState=0

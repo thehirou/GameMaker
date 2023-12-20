@@ -11,6 +11,22 @@ enum spr
 }
 
 
+function scrLayering(_var)
+{
+	if oPlayer.y>_var
+	{
+	depth=oPlayer.depth+1
+	}else{depth=oPlayer.depth-1}
+	
+	if instance_exists(oOtherPlayer)
+	{
+		if oOtherPlayer.y>_var
+		{
+		depth=oOtherPlayer.depth+1
+		}else{depth=oOtherPlayer.depth-1}
+	}
+}
+
 function scrEmojiCheck(_sprite)
 {
 switch (msg)

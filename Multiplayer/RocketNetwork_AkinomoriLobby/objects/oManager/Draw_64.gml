@@ -1,3 +1,15 @@
+if kicked=true
+{
+draw_set_halign(fa_center)
+draw_text(640/2,480/2,global.disconnectReason)
+kickedTimer++
+if kickedTimer>120
+{
+kicked=false
+kickedTimer=0
+}
+}
+
 if instance_exists(localTextWarning)
 {
 with(localTextWarning)
@@ -23,7 +35,7 @@ timer[0]++
 
 if timer[0]>60*7 and global.serverFull=false
 {
-var warning="\nPressing ENTER and can't join? Spam ENTER or refresh the page."
+var warning="\n\nPressing ENTER and can't join?\n\nRNet servers must be closed or in maintenance.\n\nOr you're trying to log in mutiple times at once."
 global.mainMenuMsg="Welcome "+string(oPlayer.setUser)+"!\n"+"Press ENTER to join the server."+warning
 }
 }

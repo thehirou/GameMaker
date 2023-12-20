@@ -8,12 +8,12 @@ if(variable_instance_exists(oBrain,"socket") and global.clientId!=-1){
 		//WHAT DATA 
 		var data = ds_map_create();
 		data[? "ct"] = current_time;
-		data[? "serverId"] = global.SERVERID
+	
 		data[? "clientId"] = global.clientId
 	
 		
 		ds_map_add(data,"eventName","ping");
-		buffer_write(Buffer, buffer_text, json_encode(data))
+		buffer_write(Buffer, buffer_text, EC(string(json_encode(data))))
 		network_send_raw(oBrain.socket, Buffer, buffer_tell(Buffer),network_send_binary)
 		buffer_delete(Buffer)
 		ds_map_destroy(data)

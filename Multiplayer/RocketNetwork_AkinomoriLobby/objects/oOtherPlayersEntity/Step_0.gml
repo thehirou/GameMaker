@@ -13,6 +13,7 @@ or whatever you want to update in any way from
 your entityProperties
 */
 
+layer="Emojis"
 x=						EP._x
 y=						EP._y
 sprite_index =			EP.rec_sprite_index

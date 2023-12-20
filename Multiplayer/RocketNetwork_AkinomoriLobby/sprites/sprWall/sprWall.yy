@@ -7,7 +7,7 @@
   "bbox_right": 31,
   "bbox_top": 0,
   "bboxMode": 0,
-  "collisionKind": 1,
+  "collisionKind": 5,
   "collisionTolerance": 0,
   "DynamicTexturePage": false,
   "edgeFiltering": false,
@@ -20,7 +20,7 @@
   "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6e98e9c4-aa84-46f3-a3dd-a36c0f89f117","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6e98e9c4-aa84-46f3-a3dd-a36c0f89f117","blendMode":0,"displayName":"default","isLocked":false,"opacity":22.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,

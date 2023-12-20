@@ -1,0 +1,2 @@
+sprite_index=sprLayerChair3
+triggerHeight=1059

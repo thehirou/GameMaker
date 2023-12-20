@@ -1,7 +1,14 @@
 if global.playerState=state.normal{window_set_cursor(cr_default)}
 //Id also check for state.settings and state.interacting but to get to those you have to go through state.normal no matter what
 
-
+if global.debug
+{
+if keyboard_check(vk_control) and keyboard_check_pressed(ord("F"))
+{
+//callback_ReceivedMessage("FakeCallback" , 1)	
+CreatePersistentObject("public",{	_type	:	persistype.chatlogger})
+}
+}
 
 
 if global.debug
@@ -59,7 +66,8 @@ once[3]=false
 
 global.thisUserNameGlobal=thisUsername
 
-depth=-y
+//6899
+//depth=-y
 
 timerAfk++
 
@@ -296,6 +304,9 @@ break;
 case "sprIsBoots":
 textFeet="I's Boots"
 break;
+case "sprPerroShoes":
+textFeet="Perro's Shoes"
+break;
 }
 
 switch (wearingHead)
@@ -312,6 +323,9 @@ break;
 case "sprIsHead":
 textHead="I's Head"
 break;
+case "sprPerroHead":
+textHead="Perro's Head"
+break;
 }
 
 switch (wearingLegs)
@@ -327,6 +341,9 @@ textLegs="Apfel's Skirt"
 break;
 case "sprIsPants":
 textLegs="I's Pants"
+break;
+case "sprPerroLegs":
+textLegs="Perro's Pants"
 break;
 }
 
@@ -346,6 +363,9 @@ textTorso="I's Poncho"
 break;
 case "sprIsShirt":
 textTorso="I's Shirt"
+break;
+case "sprPerroTorso":
+textTorso="Perro's Shirt"
 break;
 }
 
@@ -401,6 +421,8 @@ break;
 
 image_blend=make_color_rgb(skinR,skinG,skinB)
 
+myIp=global.yourIp
+
 global.sharedProperties = {
 _x								:		x							,
 _y								:		y							,
@@ -419,6 +441,7 @@ received_moveLeft				:		moveLeft					,
 received_moveUp					:		moveUp						,
 received_moveDown				:		moveDown					,
 received_image_blend			:		image_blend					,
+received_myIP					:		myIp						,
 //OPTIMIZE LATER THIS IS FUCKING HORRENDOUS 6899
 received_eyesIsprIidleUp		:		eyes[spr.idleUp]			,	
 received_eyesIsprIidleDown		:		eyes[spr.idleDown]			,	

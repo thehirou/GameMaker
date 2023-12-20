@@ -13,7 +13,6 @@ torso		, //usual
 accessory	, //usual
 }
 
-
 setUser=global.inputField
 
 thisUsername=""
@@ -30,7 +29,10 @@ filteredMsg=""
 global.filteredMsgGlobal=""
 global.thisUserNameGlobal=""
 blinkingMotherfucker="|"
+myIp=global.yourIp
 timer[0]=0
+
+kickedBecauseOfDoubleIp=false
 
 once[0]=true
 once[1]=true
@@ -75,11 +77,11 @@ down
 }
 
 eyesArray=		["sprEyesNeutral","sprEmilioGlasses","sprEyesFocus","sprEmpty"]
-feetArray=		["sprEmpty","sprFeetDoge","sprApfelBoots","sprIsBoots"]
-headArray=		["sprEmpty","sprHeadDoge","sprIsHair","sprIsHead"]
-legsArray=		["sprEmpty","sprLegsDoge","sprApfelSkirt","sprIsPants"]
+feetArray=		["sprEmpty","sprFeetDoge","sprApfelBoots","sprIsBoots","sprPerroShoes"]
+headArray=		["sprEmpty","sprHeadDoge","sprIsHair","sprIsHead","sprPerroHead"]
+legsArray=		["sprEmpty","sprLegsDoge","sprApfelSkirt","sprIsPants","sprPerroLegs"]
 mouthArray=		["sprMouthSmile","sprMouthSerious","sprEmilioBeard","sprEmpty"]
-torsoArray=		["sprEmpty","sprTorsoDoge","sprApfelShirt","sprIsPoncho","sprIsShirt"]
+torsoArray=		["sprEmpty","sprTorsoDoge","sprApfelShirt","sprIsPoncho","sprIsShirt","sprPerroTorso"]
 accessoryArray=	["sprEmpty","sprApfelVest","sprLumberjackBeard","sprIsAcsrHat","sprBlumeFlower","sprIsAcsrFlower","sprGloCatLeft","sprGloCatRight","sprTabbyCatLeft","sprTabbyCatRight"]
 
 eyesOption		=0

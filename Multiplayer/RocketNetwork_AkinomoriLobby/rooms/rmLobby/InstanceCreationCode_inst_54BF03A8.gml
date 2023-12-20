@@ -1,0 +1,2 @@
+sprite_index=sprLayerTree2
+triggerHeight=1088

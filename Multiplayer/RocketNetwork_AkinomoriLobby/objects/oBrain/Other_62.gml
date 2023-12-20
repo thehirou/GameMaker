@@ -1,7 +1,6 @@
 
 try{
 
-	//show_message(json_encode(ds_map_find_value(async_load,"id")))
 	
 	var res = ds_map_find_value(async_load,"result");
 	//show_message("res is "+res)

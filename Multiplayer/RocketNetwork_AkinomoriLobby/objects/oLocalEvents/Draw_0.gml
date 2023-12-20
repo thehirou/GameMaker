@@ -2,6 +2,8 @@ if global.currentEvent=event.mantana
 {
 	with(instNpcMantana)
 	{
+		draw_sprite_ext(sprOwnShadow,0,x,y,1,1,0,c_white,0.6)
+		draw_self()
 		draw_set_halign(fa_center)
 		draw_set_valign(fa_bottom)
 		var _padUs=5

@@ -15,7 +15,7 @@ draw_text(640/2,(480/2)-20,"Set your username:\n"+string(global.inputField)+stri
 }
 else
 {
-draw_text(640/2,(480/2)-20,"Click anywhere to continue.")
+draw_text(640/2,(480/2)-20,initText)
 }
 draw_text_color(640/2,480-20,version+" "+updateName+" | "+legal,c_white,c_white,c_white,c_white,0.5)
 draw_set_halign(fa_left)

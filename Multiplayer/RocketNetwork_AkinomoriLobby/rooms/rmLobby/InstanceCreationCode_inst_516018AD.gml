@@ -1,0 +1,2 @@
+sprite_index=sprLayerRock1
+triggerHeight=1390

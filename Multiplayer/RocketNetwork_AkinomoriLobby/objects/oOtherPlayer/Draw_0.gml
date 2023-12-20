@@ -1,3 +1,4 @@
+draw_sprite_ext(sprOwnShadow,0,x,y,1,1,0,c_white,0.6)
 draw_self()
 
 draw_set_halign(fa_center)
@@ -8,7 +9,14 @@ if playerUsername="Admin"{draw_set_color(c_blue)}else{draw_set_color(c_black)}
 draw_rectangle(x-(string_width(playerUsername)/2)-_padUs,y-global.nameHeight+_padUs-3,x+(string_width(playerUsername)/2)+_padUs,y-global.nameHeight-23,false)
 draw_set_alpha(1)
 draw_set_color(c_white)
-draw_text(x,y-global.nameHeight,playerUsername)
+if global.debug
+{
+draw_text(x,y-global.nameHeight,playerUsername+" IP: "+string(otherPlayerIP))
+}
+else
+{
+draw_text(x,y-global.nameHeight,playerUsername)	
+}
 if receivedAfkState=1
 {
 draw_text(x,y+25,"(AFK) "+string(receivedDisconnectCountdown))

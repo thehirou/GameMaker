@@ -9,14 +9,16 @@ if(type == network_type_non_blocking_connect){
 		non_blocking_success_yet = true;
 		
 			//code to join server
+			
 			var Buffer = buffer_create(1, buffer_grow, 1)
 			//WHAT DATA 
 			var data = ds_map_create();
-			data[? "serverId"] = global.SERVERID;
+			data[? "serverId"] = md5_string_utf8(global.SERVERID);
+			data[? "uC"] = global.useCiphering;
 			//whatever data you want to send as key value pairs
 
 			ds_map_add(data,"eventName","join_server");
-			buffer_write(Buffer, buffer_text, json_encode(data))
+			buffer_write(Buffer, buffer_text, ((json_encode(data))))
 			network_send_raw(oBrain.socket, Buffer, buffer_tell(Buffer),network_send_text)
 			buffer_delete(Buffer)
 			ds_map_destroy(data)
@@ -31,8 +33,20 @@ if(type == network_type_non_blocking_connect){
 if(type == network_type_data){
 	var buffer_raw = async_load[? "buffer"];
 	var buffer_processed = buffer_read(buffer_raw , buffer_text);
-	//var realData = json_decode(buffer_processed);
-	var realData = json_parse(buffer_processed)
+	
+	if(string_pos("eventName", buffer_processed)!=0){
+		//eventName is there
+		var realData = json_parse(buffer_processed)
+		
+	}else{
+		var decrypted = substitutionDecrypt(buffer_processed,global.SERVERID)
+		var realData = json_parse(decrypted)
+	}
+
+	
+	
+	
+	
 	if(variable_struct_exists(realData , "eventName")){
 		//show_message(buffer_processed)
 	}
@@ -83,12 +97,12 @@ if(type == network_type_data){
 		break;
 		
 		case "all_clients":
-		callback_ShowAllClientsInRoom(realData.clients)
+		callback_ShowAllClientsInRoom(realData.clients, realData.roomId)
 		break;
 		
 		
 		case "all_pO":
-		callback_ShowAllPersistentObjectsInRoom(realData.pOs)
+		callback_ShowAllPersistentObjectsInRoom(realData.pOs, realData.roomId)
 		break;
 		
 		

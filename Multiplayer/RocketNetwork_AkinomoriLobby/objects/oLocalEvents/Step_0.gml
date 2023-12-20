@@ -19,6 +19,7 @@ if global.currentEvent=event.mantana and once[event.mantana]=true
 		SendMessageToClient(thisClientId,"<Server> "+"Mantana"+" joined the room.") //6899 for some reason I don't need to add a line break here???
 		}
 	}
+	audio_play_sound(sndMantana,1,false,1)
 	once[event.mantana]=false
 }
 
@@ -30,8 +31,8 @@ if global.currentEvent=event.mantana
 		sprite_index=sprMantana
 		image_xscale=2
 		image_yscale=2
-		x=1525
-		y=1000
+		x=180
+		y=945
 		image_alpha=lerp(image_alpha,1,0.05)
 	}
 }

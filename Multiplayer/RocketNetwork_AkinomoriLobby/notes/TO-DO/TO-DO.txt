@@ -12,21 +12,27 @@
 
 #TO-DO
 ----------------------
-#Limit players to only one per IP or per computer
-#Añadir sonido extradiegetico (audio_play_sound_at) creo
 #Add dots on top of players if they are typing
-#Depth Sorting (Between instances)
 #Make music not local
-
+#Try to read a hosted json file 
+#Smoke particles
+#Add shadow
+#Change Mantana Event to local
+#Make the players draw the emoji instead of creating a instance
 
 #KIND OF DONE
 ----------------------
+#Depth Sorting between instances (Hard to do with multiple players having a different POV)
+	Poner un depth definido a los objetos y mover el depth del personaje a ese numero en especifico, enviar la informacion de depth a otros jugadores
 #AFK Timer (Only works inside the browser tab)
 #Fix double line of text (Text is only limited to one line now)
 #Add the background (Not final)
+#Limit players to only one per IP or per computer (Works most of the time?)
 
 #DONE
 ----------------------
+#Fix kicking that kicks everyone
+#Añadir sonido extradiegetico
 #GUI Sounds
 #Ambience SFX
 #Change skin color

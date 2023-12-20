@@ -19,9 +19,10 @@ your sharedProperties
 image_xscale=2
 image_yscale=2
 depth=-y
-
+scrLayering(y);
 
 //Multiplayer
+otherPlayerIP=string(SP.received_myIP)
 x = real(SP._x)
 y = real(SP._y)
 sprite_index = real(SP._spr)
@@ -41,7 +42,7 @@ moveRight				   =	SP.received_moveRight
 moveLeft				   =	SP.received_moveLeft				
 moveUp					   =	SP.received_moveUp					
 moveDown				   =	SP.received_moveDown				
-image_blend				   =	SP.received_image_blend				
+image_blend				   =	SP.received_image_blend							
 
 //OPTIMIZE LATER THIS IS FUCKING HORRENDOUS 6899
 

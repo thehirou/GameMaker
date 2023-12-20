@@ -1,8 +1,13 @@
-if mouse_check_button_pressed(mb_left)
+if mouse_check_button_pressed(mb_left) and closedServers=false
 {
 allow=true
 keyboard_string=""
 global.inputField=""
+}
+
+if mouse_check_button_pressed(mb_left) and closedServers=true
+{
+initText="RNet servers are in maintenance.\nCome back later."
 }
 
 if allow=true

@@ -1,0 +1,2 @@
+triggerHeight=0
+sprite_index=sprEmpty

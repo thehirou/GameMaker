@@ -13,6 +13,7 @@ function callback_DisconnectFromServer(){
 	}
 
 	//edit ths code to do whatever you want
-	show_message(global.disconnectReason)
+	//show_message(global.disconnectReason)
+	oManager.kicked=true
 
 }

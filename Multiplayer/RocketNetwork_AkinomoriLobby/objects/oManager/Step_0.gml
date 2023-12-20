@@ -34,7 +34,7 @@ if keyboard_check(ord("K"))	and keyboard_check(vk_control)
 {
 
 KickPlayer(global.lastCheck)
-
+/* FIX 6899
 if instance_exists(oOtherPlayer)
 {
 	with (oOtherPlayer)
@@ -43,6 +43,7 @@ if instance_exists(oOtherPlayer)
 	SendMessageToClient(thisClientId,"<Server> "+global.lastCheckUser+" was kicked by an admin.")
 	}
 }
+*/
 }
 }
 
@@ -60,8 +61,11 @@ if global.debug
 		var noOfInstances=instance_number(oPersistentObject)
 		for (var i = 0; i < 99999; ++i) //Is putting 99999 in there a bad idea?
 		{
+			if i!=global.chatLoggerID
+			{
 			DestroyPersistentObject(i)	
-			if instance_exists(oPersistentObject){instance_destroy(oPersistentObject)}   
+			}
+			//if instance_exists(oPersistentObject){instance_destroy(oPersistentObject)}   
 		}
 	show_message("Deleted " +string(noOfInstances)+" instances.")
 	}else{show_message("Operation cancelled.")}

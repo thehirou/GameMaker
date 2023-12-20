@@ -20,17 +20,29 @@ They are purely server side objects  which will stay unless you delete them
 To create and edit these special objects use the CreatePersistentObject(), EditPersistentObject()!!
 */
 
+type=pOp._type
 
+if type!=persistype.chatlogger
+{
+storedJson="null" //ALWAYS NULL IF TYPE IS NOT CHATLOGGER
+}
+
+if type=persistype.blank
+{
 x = real(pOp._x)
 y = real(pOp._y)
 image_xscale = real(pOp._image_xscale)
 image_yscale = real(pOp._image_yscale)
 sprite_index = real(pOp._sprite_index)
+}
 	
-	
-	
-	
-	
+if type=persistype.chatlogger
+{	
+	if global.debug{image_alpha=1}else{image_alpha=0}
+	x=1000
+	y=1000
+	//storedJson=""
+}
 	
 	
 	

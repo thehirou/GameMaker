@@ -1,3 +1,4 @@
+/*
 get = http_get("http://api.myip.com/");
 gotResult=false
 jsonOutput=undefined

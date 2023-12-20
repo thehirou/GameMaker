@@ -162,9 +162,23 @@ skinB=clamp(skinB,0,255)
 	draw_text(sliderRGB_L.startX+_dis,sliderRGB_L.startY+_dis,"<")
 	draw_text(sliderRGB_R.startX+_dis,sliderRGB_R.startY+_dis,">")
 	draw_set_color(c_white)
-	
-	
-	
-	
-	
+
+}
+
+//KICK IF DOUBLE IP
+if instance_exists(oOtherPlayer) and debug_mode=false
+{
+	if oOtherPlayer.otherPlayerIP=myIp and global.debug=false
+	{
+		DisconnectFromServer()
+		kickedBecauseOfDoubleIp=true
+	}
+}
+
+if kickedBecauseOfDoubleIp
+{
+draw_rectangle_color(0,0,999,999,c_red,c_red,c_red,c_red,false)	
+draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
+draw_text(640/2,480/2,"Disconnected: Same IP logged in server already detected.")
 }

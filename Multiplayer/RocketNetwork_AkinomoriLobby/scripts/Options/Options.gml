@@ -1,15 +1,8 @@
-// Settings    V1.7.0
+// Settings    V1.7.3
 // -- Updates in this version? 
-//
-//  - Added a Complete Persistent Object Control System
-//      so you can create long lasting objects on the server.
-//  - Added  a pseudohost system in oBrain.AmIPseudoHost
-//      this tells you if you are the player who has joined the room earlier than the others existing in the room. 
-//      You can sort of assume control as the lead if you are the pseudohost.
-//  - Added a KickPlayer() function to forcefully disconnect another player.
-//  - Added ViewServerActivity() that returns a complete nested struct of everything on your RNet Server
-
-
+//  - Backwards compatibility. All older games before encryption will also continue to work.
+//  - Added full Ciphering of data and Never Revealing your SERVERID 
+//       basically security has increased a lot
 
 /*
 * Your server id or secret key. 
@@ -18,6 +11,11 @@
 */
 global.SERVERID = "xbt9wYJfJictC5MwljT3tGV2jCc2"
 
+/* Normally, data packets in websockets are safe because of SSL, but your game players can see the messages sent back and forth using tools like Chrome dev tools.
+* Your SERVERID is never revealed over these messages, but they will contain the Sructs of shared properties etc tec
+*  Ciphering will make it impossible to even understand these messages.
+*/   // The catch is that Ciphering can make your game slow especially in HTML5, so use with caution!
+global.useCiphering = false;
 
 /*
 * On which layer do you want other players to be instantiated
@@ -28,7 +26,7 @@ global.OtherPlayersLayerName = "Instances"
 * Do you want to manually connect to RNet? You can do this by copying your serverURL directy
 * from dashboard.rocketnetworking.net
 */
-global.manualServerURLconnection = true;
+global.manualServerURLconnection = false;
 global.manualServerURL = "rocket-networking.uc.r.appspot.com"
 
 
@@ -36,7 +34,7 @@ global.manualServerURL = "rocket-networking.uc.r.appspot.com"
 * How often do you want to share your sharedProperties?
 * The higher this Time period is in frames, thats how many frames later the server is updated
 */
-global.sharingFrequency = 1 ;    //Equivalent to alarm of 1 frame
+global.sharingFrequency = 1;    //Equivalent to alarm of 1 frame
 global.entitySharingFrequency = 3   //for entities
 
 

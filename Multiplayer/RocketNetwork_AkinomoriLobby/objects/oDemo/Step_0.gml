@@ -12,7 +12,6 @@ if(mouse_check_button_pressed(mb_left)){
 	var new_room = get_string("new room name","moon")
 	ChangeRoom(new_room)
 }
-
 if(keyboard_check_pressed(ord("E"))){
 	EditPersistentObject(1, {
 	_x: mouse_x, 
@@ -24,7 +23,7 @@ if(keyboard_check_pressed(ord("D"))){
 	DestroyPersistentObject(1)
 }
 if(keyboard_check_pressed(ord("S"))){
-	ViewServerActivity()
+	ShowPersistentObjectsInRoom(global.roomId)
 	
 	
 }
