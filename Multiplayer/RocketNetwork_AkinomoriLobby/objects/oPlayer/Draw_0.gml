@@ -149,6 +149,37 @@ if customizing=true{global.playerState=state.normal; customizing=false}
 if customizing=false{global.playerState=state.customizing; customizing=true}
 */
 
+if drawEmote=true
+{
+emoteTimer++
+var duration=3 //seconds
+if emoteTimer<duration*60
+{
+alphaEmote=lerp(alphaEmote,1,0.1)	
+}
+else
+{
+alphaEmote=lerp(alphaEmote,-0.5,0.1)
+}
+
+if alphaEmote<-0.2
+{
+drawEmote=false
+emoteTimer=0
+alphaEmote=0
+emote=sprEmpty
+}
+
+draw_sprite_ext(emote,0,x,y-100,1,1,0,c_white,alphaEmote)
+
+}
+
+if textingBubble=true
+{
+draw_set_halign(fa_center)
+draw_text(x,y+25,"Typing...")
+draw_set_halign(fa_left)
+}
 
 if global.debug
 {

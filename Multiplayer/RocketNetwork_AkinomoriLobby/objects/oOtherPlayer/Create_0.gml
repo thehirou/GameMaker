@@ -9,6 +9,8 @@ entities = {}
 oldE = {}
 alarm[0]=10;
 
+other_textingBubble=false
+
 /*
 Room id of this instance of other player
 DO NOT TAMPER
@@ -16,6 +18,10 @@ DO NOT TAMPER
 roomId = -1
 
 //add your personal variables under this line
+
+
+other_alphaEmote=0
+other_Emote=sprEmpty
 
 
 //JOIN

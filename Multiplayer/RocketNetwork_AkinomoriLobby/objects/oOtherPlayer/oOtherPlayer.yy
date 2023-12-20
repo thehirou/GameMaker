@@ -16,7 +16,10 @@
     "name": "Rocket Networking",
     "path": "folders/Objects/Rocket Networking.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oParentDepth",
+    "path": "objects/oParentDepth/oParentDepth.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

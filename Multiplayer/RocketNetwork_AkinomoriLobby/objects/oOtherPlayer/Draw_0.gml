@@ -123,3 +123,12 @@ else
 	        break;
 	}
 }
+
+draw_sprite_ext(other_Emote,0,x,y-100,1,1,0,c_white,other_alphaEmote)
+
+if other_textingBubble
+{
+	draw_set_halign(fa_center)
+	draw_text(x,y+25,"Typing...")
+	draw_set_halign(fa_left)
+}

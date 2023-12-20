@@ -61,7 +61,7 @@ if global.currentRoom!="none" and global.playerState=state.customizing
 	var _padding=90
 	
 	draw_set_alpha(0.5)
-	draw_rectangle_color(_xcam+_padding,_ycam+_padding,_xcam+640-_padding,_ycam+480-_padding,
+	draw_rectangle_color(_xcam+_padding-20,_ycam+_padding,_xcam+640-_padding+20,_ycam+480-_padding,
 	c_black,c_black,c_black,c_black,false)
 	
 	var scale=5

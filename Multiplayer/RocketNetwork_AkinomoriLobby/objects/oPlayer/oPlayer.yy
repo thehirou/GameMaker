@@ -15,7 +15,10 @@
     "name": "#Game",
     "path": "folders/#Game.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oParentDepth",
+    "path": "objects/oParentDepth/oParentDepth.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

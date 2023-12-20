@@ -10,15 +10,11 @@ global.currentEvent=event.noevent
 
 if global.currentEvent=event.mantana and once[event.mantana]=true
 {
-	//This will happen only for one frame
-	if instance_exists(oOtherPlayer)
-	{
-		with (oOtherPlayer)
-		{
-		var thisClientId = clientId
-		SendMessageToClient(thisClientId,"<Server> "+"Mantana"+" joined the room.") //6899 for some reason I don't need to add a line break here???
-		}
-	}
+
+	//Made local
+	array_insert(global.chat,0,"<Server> "+"Mantana"+" joined the room.")
+	oManager.arrayChanged=true
+	
 	audio_play_sound(sndMantana,1,false,1)
 	once[event.mantana]=false
 }

@@ -1,2 +1,0 @@
-sprite_index=sprLayerSign
-triggerHeight=984

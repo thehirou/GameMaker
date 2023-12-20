@@ -1,5 +1,5 @@
-version="Alpha 0.9.2"
-updateName="'Backgrounds Update'"
+version="Release 1.0"
+updateName="'Apfel Online'"
 legal="© 2023 TheHirou.com"
 
 closedServers=false

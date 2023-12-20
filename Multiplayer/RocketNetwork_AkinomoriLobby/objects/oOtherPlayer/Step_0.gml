@@ -34,7 +34,10 @@ receivedDisconnectCountdown=real(SP._afkCountdown)
 receivedSendMsgAudio=real(SP._sendMsgAudio)
 chatLogMsg=SP.receivedChatLog
 msgConfirmation=SP._sentMessage
-
+other_alphaEmote=SP.received_alphaEmote
+other_Emote=SP.received_Emote
+other_textingBubble=SP.received_textingBubble
+//depth=SP.received_depth
 
 
 moving					   =	SP.received_moving					

@@ -17,6 +17,9 @@ setUser=global.inputField
 
 thisUsername=""
 
+afkTextingTimer=0
+textingBubble=false
+
 col[0]=irandom_range(50,200)
 col[1]=irandom_range(50,200)
 col[2]=irandom_range(50,200)
@@ -42,6 +45,11 @@ hSpd=0
 vSpd=0
 
 maxCharacters=90
+
+drawEmote=false
+emoteTimer=0
+alphaEmote=0
+emote=sprEmpty
 
 image_xscale=2
 image_yscale=2
@@ -76,13 +84,13 @@ up,
 down
 }
 
-eyesArray=		["sprEyesNeutral","sprEmilioGlasses","sprEyesFocus","sprEmpty"]
+eyesArray=		["sprEyesNeutral","sprEmilioGlasses","sprEyesFocus","sprSunglasses","sprEmpty"]
 feetArray=		["sprEmpty","sprFeetDoge","sprApfelBoots","sprIsBoots","sprPerroShoes"]
-headArray=		["sprEmpty","sprHeadDoge","sprIsHair","sprIsHead","sprPerroHead"]
+headArray=		["sprEmpty","sprHeadDoge","sprIsHair","sprIsHead","sprPerroHead","sprBandana","sprBobHair","sprMediumHair","sprShortHair"]
 legsArray=		["sprEmpty","sprLegsDoge","sprApfelSkirt","sprIsPants","sprPerroLegs"]
 mouthArray=		["sprMouthSmile","sprMouthSerious","sprEmilioBeard","sprEmpty"]
 torsoArray=		["sprEmpty","sprTorsoDoge","sprApfelShirt","sprIsPoncho","sprIsShirt","sprPerroTorso"]
-accessoryArray=	["sprEmpty","sprApfelVest","sprLumberjackBeard","sprIsAcsrHat","sprBlumeFlower","sprIsAcsrFlower","sprGloCatLeft","sprGloCatRight","sprTabbyCatLeft","sprTabbyCatRight"]
+accessoryArray=	["sprEmpty","sprApfelVest","sprLumberjackBeard","sprIsAcsrHat","sprNewsboyHat",/*"sprHatDross",*/"sprBlumeFlower","sprIsAcsrFlower","sprGloCatLeft","sprGloCatRight","sprTabbyCatLeft","sprTabbyCatRight"]
 
 eyesOption		=0
 mouthOption		=0

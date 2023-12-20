@@ -83,6 +83,24 @@ if afkState=1
 	}
 }
 
+
+if global.playerState=state.texting
+{
+	
+	afkTextingTimer++
+	
+if keyboard_check_pressed(vk_anykey)
+{
+	afkTextingTimer=0
+}
+
+if afkTextingTimer<4*60
+{
+textingBubble=true	
+}else{textingBubble=false}
+
+}else{textingBubble=false}
+
 if global.playerState=state.normal and global.currentRoom!="none"
 {
 if keyboard_check_pressed(ord("T"))
@@ -169,8 +187,7 @@ if global.currentRoom!="none" and joined=true
 joined=false
 }
 if msg!="" and keyboard_check_pressed(vk_enter)
-{
-	
+{	
 //COMMANDS
 scrEmojiCheck();
 	
@@ -279,6 +296,9 @@ switch (wearingEyes)
 case "sprEmpty":
 textEyes="Eyeless"
 break;
+case "sprSunglasses":
+textEyes="Sunglasses"
+break;
 case "sprEyesNeutral":
 textEyes="Normal Eyes"
 break;
@@ -313,6 +333,18 @@ switch (wearingHead)
 {
 case "sprEmpty":
 textHead="No Top"
+break;
+case "sprBandana":
+textHead="Bandana"
+break;
+case "sprBobHair":
+textHead="Bob Hair"
+break;
+case "sprMediumHair":
+textHead="Medium Hair"
+break;
+case "sprShortHair":
+textHead="Short Hair"
 break;
 case "sprHeadDoge":
 textHead="Lia's Hat"
@@ -393,6 +425,12 @@ break;
 case "sprBlumeFlower":
 textAccessory="Blume's Flower"
 break;
+case "sprHatDross":
+textAccessory="Dross' Hat"
+break;
+case "sprNewsboyHat":
+textAccessory="Newsboy Cap"
+break;
 case "sprIsAcsrFlower":
 textAccessory="I's Flower"
 break;
@@ -442,6 +480,9 @@ received_moveUp					:		moveUp						,
 received_moveDown				:		moveDown					,
 received_image_blend			:		image_blend					,
 received_myIP					:		myIp						,
+received_alphaEmote				:		alphaEmote					,
+received_Emote					:		emote						,
+received_textingBubble			:		textingBubble				,
 //OPTIMIZE LATER THIS IS FUCKING HORRENDOUS 6899
 received_eyesIsprIidleUp		:		eyes[spr.idleUp]			,	
 received_eyesIsprIidleDown		:		eyes[spr.idleDown]			,	

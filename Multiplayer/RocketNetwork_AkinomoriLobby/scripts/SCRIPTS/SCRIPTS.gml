@@ -201,6 +201,7 @@ break;
 
 function scrEmote(_sprite)
 {
+/*
 if !instance_exists(emojiInstance){emojiInstance=instance_create_depth(x,y-sprite_height+16,depth,oMyEntity, {type : entity.emoji, displayIcon : _sprite})}
 if instance_exists(emojiInstance)
 {
@@ -210,7 +211,18 @@ if instance_number(emojiInstance)>=1
 	}
 emojiInstance.displayIcon=_sprite
 }
-	
+	*/
+if drawEmote=false
+	{
+		drawEmote=true
+		emote=_sprite
+	}
+else
+	{
+		drawEmote=true
+		emoteTimer=0
+		emote=_sprite	
+	}
 }
 
 /*
