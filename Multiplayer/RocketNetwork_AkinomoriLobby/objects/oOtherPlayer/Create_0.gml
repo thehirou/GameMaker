@@ -19,6 +19,9 @@ roomId = -1
 
 //add your personal variables under this line
 
+personalTimeOutTimer=0
+anotherCheckPersonalTimeout=personalTimeOutTimer
+
 
 other_alphaEmote=0
 other_Emote=sprEmpty

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "#Game",
-    "path": "folders/#Game.yy",
+    "name": "##PINNED",
+    "path": "folders/##PINNED.yy",
   },
 }

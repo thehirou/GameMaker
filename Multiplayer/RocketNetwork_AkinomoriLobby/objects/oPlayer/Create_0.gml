@@ -13,6 +13,12 @@ torso		, //usual
 accessory	, //usual
 }
 
+
+timeoutTimer=0
+warningDisconnect=false
+warningTimer=0
+
+
 setUser=global.inputField
 
 thisUsername=""
@@ -84,7 +90,7 @@ up,
 down
 }
 
-eyesArray=		["sprEyesNeutral","sprEmilioGlasses","sprEyesFocus","sprSunglasses","sprEmpty"]
+eyesArray=		["sprEyesNeutral","sprEmilioGlasses","sprEyesFocus","sprCrewmateEyes","sprSunglasses","sprEmpty"]
 feetArray=		["sprEmpty","sprFeetDoge","sprApfelBoots","sprIsBoots","sprPerroShoes"]
 headArray=		["sprEmpty","sprHeadDoge","sprIsHair","sprIsHead","sprPerroHead","sprBandana","sprBobHair","sprMediumHair","sprShortHair"]
 legsArray=		["sprEmpty","sprLegsDoge","sprApfelSkirt","sprIsPants","sprPerroLegs"]

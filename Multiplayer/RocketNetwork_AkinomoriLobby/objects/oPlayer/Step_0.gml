@@ -3,12 +3,39 @@ if global.playerState=state.normal{window_set_cursor(cr_default)}
 
 if global.debug
 {
+	
 if keyboard_check(vk_control) and keyboard_check_pressed(ord("F"))
 {
 //callback_ReceivedMessage("FakeCallback" , 1)	
-CreatePersistentObject("public",{	_type	:	persistype.chatlogger})
+//CreatePersistentObject("public",{	_type	:	persistype.chatlogger})
+
+date_set_timezone(timezone_utc)
+var _h=string(date_get_hour(date_current_datetime())	)
+var _m=string(date_get_minute(date_current_datetime())	)
+var _s=string(date_get_second(date_current_datetime())	)	
+var _d=string(date_get_day(date_current_datetime())		)
+var _mo=string(date_get_month(date_current_datetime())	)
+var _y=string(date_get_year(date_current_datetime())	)
+
+var stringDate="["+_d+"/"+_mo+"/"+_y+" - "+_h+":"+_m+":"+_s+"]"
+
+var playerInfo = {
+    ip: "ip test",
+    location : "location test",
+    name : "jony",
+    date : stringDate,
+}
+
+SetSimpleData("collection_1", "document_1", playerInfo)
+}
+if keyboard_check_pressed(ord("L"))
+{
+ReadSimpleData("collection_1", "document_1")	
 }
 }
+
+
+
 
 
 if global.debug
@@ -63,6 +90,17 @@ x=room_width/2
 y=room_height/2	
 once[3]=false
 }
+
+if global.currentRoom!="none" and !keyboard_check(ord("Q"))
+{
+timeoutTimer++
+if timeoutTimer>5*60
+{
+timeoutTimer=0	
+}
+
+}
+
 
 global.thisUserNameGlobal=thisUsername
 
@@ -305,6 +343,9 @@ break;
 case "sprEyesFocus":
 textEyes="Focused Eyes"
 break;
+case "sprCrewmateEyes":
+textEyes="Crewmate Visor"
+break;
 case "sprEmilioGlasses":
 textEyes="Emilio's Glasses"
 break;
@@ -483,6 +524,7 @@ received_myIP					:		myIp						,
 received_alphaEmote				:		alphaEmote					,
 received_Emote					:		emote						,
 received_textingBubble			:		textingBubble				,
+received_timeoutTimer			:		timeoutTimer				,
 //OPTIMIZE LATER THIS IS FUCKING HORRENDOUS 6899
 received_eyesIsprIidleUp		:		eyes[spr.idleUp]			,	
 received_eyesIsprIidleDown		:		eyes[spr.idleDown]			,	

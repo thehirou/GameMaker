@@ -3,7 +3,7 @@
   "resourceVersion": "1.1",
   "name": "TO-DO",
   "parent": {
-    "name": "#Game",
-    "path": "folders/#Game.yy",
+    "name": "##PINNED",
+    "path": "folders/##PINNED.yy",
   },
 }

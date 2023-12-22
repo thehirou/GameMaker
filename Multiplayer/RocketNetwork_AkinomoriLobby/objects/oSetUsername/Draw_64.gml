@@ -11,13 +11,13 @@ draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 if allow=true
 {
-draw_text(640/2,(480/2)-20,"Set your username:\n"+string(global.inputField)+string(blinkingLittleShit))
+draw_text(640/2,(480/2)-20,crash_warning+"Set your username:\n"+string(global.inputField)+string(blinkingLittleShit))
 }
 else
 {
 draw_text(640/2,(480/2)-20,initText)
 }
-draw_text_color(640/2,480-20,version+" "+updateName+" | "+legal,c_white,c_white,c_white,c_white,0.5)
+draw_text_color(640/2,480-20,global.version+" "+global.updateName+" | "+global.legal,c_white,c_white,c_white,c_white,0.5)
 draw_set_halign(fa_left)
 draw_set_valign(fa_bottom)
 

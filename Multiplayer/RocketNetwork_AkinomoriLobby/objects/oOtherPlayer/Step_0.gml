@@ -37,6 +37,15 @@ msgConfirmation=SP._sentMessage
 other_alphaEmote=SP.received_alphaEmote
 other_Emote=SP.received_Emote
 other_textingBubble=SP.received_textingBubble
+personalTimeOutTimer=SP.received_timeoutTimer
+
+
+if anotherCheckPersonalTimeout=personalTimeOutTimer
+{
+oPlayer.warningDisconnect=true	
+}else{oPlayer.warningDisconnect=false}
+
+
 //depth=SP.received_depth
 
 

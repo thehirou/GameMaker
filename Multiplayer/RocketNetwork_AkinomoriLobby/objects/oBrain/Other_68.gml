@@ -220,6 +220,10 @@ if(type == network_type_data){
 		case "full_server_view":
 		callback_ViewServerActivity(realData.activity)
 		break;
+		
+		case "read_data":
+		callback_ReadSimpleData(realData.readId,(realData.data));
+		break;
 	
 	}
 	

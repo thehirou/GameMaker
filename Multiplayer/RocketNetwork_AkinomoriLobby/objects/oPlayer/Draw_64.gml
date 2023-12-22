@@ -182,3 +182,16 @@ draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 draw_text(640/2,480/2,"Disconnected: Same IP logged in server already detected.")
 }
+
+
+
+if warningDisconnect=true
+{
+	warningTimer++
+	if warningTimer>7*60 and global.debug
+	{
+	draw_sprite(sprNoConnection,0,640,480)
+	//draw_set_halign(fa_center)
+	//draw_text(640/2,480/2,"HUGE PACKET LOSS:\nYOU MIGHT HAVE GOTTEN DISCONNECTED\nRESTART THE WEBSITE")
+	}
+}else{warningTimer=0}

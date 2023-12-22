@@ -1,0 +1,3 @@
+distanceUntilNoSound=200
+sndID=sndCampfire
+isItRandomSfx=false

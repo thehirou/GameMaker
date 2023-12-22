@@ -33,12 +33,9 @@ function substitutionDecrypt(encryptedMessage, key) {
 
 
 function EC(_message){
-	if global.useCiphering
-	{
+	if(global.useCiphering){
 		return substitutionEncrypt(_message,global.SERVERID)
-	}
-	else
-	{
+	}else{
 		return _message
 	}
 }

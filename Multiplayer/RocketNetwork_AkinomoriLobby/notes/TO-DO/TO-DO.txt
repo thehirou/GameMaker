@@ -10,11 +10,27 @@
 #Async Code (Impossible?)
 #Customize Text/Name color
 
+#SUGGESTIONS
+-------------------
+#Chat in web
+#Global chat / Server chat
+#Pop customization menu if IP is registered in database
+
 #TO-DO
 ----------------------
+#Make the typing gui to look like apfel's textboxes
+#Make Apfel Online banner in thehirou.com
+#Player list and chat in the website via database
+#Show current song playing
+#Tab list sometimes gets weird
 #Make music not local
-#Try to read a hosted json file
-
+#Fix Depth Sorting (Again)
+#Poner controles al principio
+#Change packet loss message with sprite icon
+#See a way to close the server using version.json
+#Clicking in the set name window resets the name
+#Fix why the fuck the packet warning shows randomly
+#Chat text is drawn on top of customization menu
 
 #KIND OF DONE
 ----------------------
@@ -23,7 +39,9 @@
 
 #DONE
 ----------------------
-#Individual depth system
+#Try to read a hosted json file
+#Send a timer packet every second to see if you got disconnected by browser timeout
+#Efectos de sonido individuales extradiegeticos
 #Add the background
 #AFK Timer (RNet handles this)
 #Add dots on top of players if they are typing

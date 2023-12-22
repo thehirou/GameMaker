@@ -1,0 +1,3 @@
+distanceUntilNoSound=250
+sndID=sndWater
+isItRandomSfx=false
