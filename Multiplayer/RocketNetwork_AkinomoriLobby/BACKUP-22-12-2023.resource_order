@@ -139,6 +139,7 @@
     {"name":"sprPerroShoesWalkUp","order":7,"path":"sprites/sprPerroShoesWalkUp/sprPerroShoesWalkUp.yy",},
     {"name":"sprTabbyCatLeftWalkDown","order":4,"path":"sprites/sprTabbyCatLeftWalkDown/sprTabbyCatLeftWalkDown.yy",},
     {"name":"oCameraFollow","order":5,"path":"objects/oCameraFollow/oCameraFollow.yy",},
+    {"name":"oShadowTop","order":8,"path":"objects/oShadowTop/oShadowTop.yy",},
     {"name":"sprLegsDogeIdleRight","order":2,"path":"sprites/sprLegsDogeIdleRight/sprLegsDogeIdleRight.yy",},
     {"name":"sprEmoteBoring","order":9,"path":"sprites/sprEmoteBoring/sprEmoteBoring.yy",},
     {"name":"sprLumberjackBeardIdleRight","order":2,"path":"sprites/sprLumberjackBeardIdleRight/sprLumberjackBeardIdleRight.yy",},
@@ -626,5 +627,6 @@
     {"name":"sprApfelBootsWalkRight","order":6,"path":"sprites/sprApfelBootsWalkRight/sprApfelBootsWalkRight.yy",},
     {"name":"sprPerroTorsoWalkUp","order":7,"path":"sprites/sprPerroTorsoWalkUp/sprPerroTorsoWalkUp.yy",},
     {"name":"sprBobHairIdleRight","order":2,"path":"sprites/sprBobHairIdleRight/sprBobHairIdleRight.yy",},
+    {"name":"rmLobby","order":5,"path":"rooms/rmLobby/rmLobby.yy",},
   ],
 }

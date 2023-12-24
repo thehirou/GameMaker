@@ -10,14 +10,17 @@
 #Async Code (Impossible?)
 #Customize Text/Name color
 
+
+
 #SUGGESTIONS
 -------------------
 #Global chat / Server chat
 #Pop customization menu if IP is registered in database
 
+
+
 #TO-DO
 ----------------------
-#Ping server to check if player got somehow disconnected
 #Fix top shadow
 #Make the typing gui to look like apfel's textboxes
 #Make Apfel Online banner in thehirou.com
@@ -36,8 +39,11 @@
 #Chat text is drawn on top of customization menu (Chat is no longer displayed in game)
 #Change packet loss message with sprite icon (Packet Loss msg got straight up deleted)
 
+
+
 #DONE
 ----------------------
+#Ping server to check if player got somehow disconnected
 #Clicking in the set name window resets the name
 #Fix Depth Sorting (Again)
 #See a way to close the server using version.json

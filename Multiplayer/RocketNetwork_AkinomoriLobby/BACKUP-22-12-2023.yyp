@@ -194,6 +194,7 @@
     {"id":{"name":"sprPerroShoesWalkUp","path":"sprites/sprPerroShoesWalkUp/sprPerroShoesWalkUp.yy",},},
     {"id":{"name":"sprTabbyCatLeftWalkDown","path":"sprites/sprTabbyCatLeftWalkDown/sprTabbyCatLeftWalkDown.yy",},},
     {"id":{"name":"oCameraFollow","path":"objects/oCameraFollow/oCameraFollow.yy",},},
+    {"id":{"name":"oShadowTop","path":"objects/oShadowTop/oShadowTop.yy",},},
     {"id":{"name":"sprLegsDogeIdleRight","path":"sprites/sprLegsDogeIdleRight/sprLegsDogeIdleRight.yy",},},
     {"id":{"name":"sprEmoteBoring","path":"sprites/sprEmoteBoring/sprEmoteBoring.yy",},},
     {"id":{"name":"sprLumberjackBeardIdleRight","path":"sprites/sprLumberjackBeardIdleRight/sprLumberjackBeardIdleRight.yy",},},
