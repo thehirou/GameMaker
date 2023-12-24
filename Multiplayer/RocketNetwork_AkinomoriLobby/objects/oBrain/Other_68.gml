@@ -111,6 +111,7 @@ if(type == network_type_data){
 		var found = false;
 		with(oOtherPlayer){
 			if(clientId==real(realData.clientId)){
+				afk = realData.afk
 				sharedProperties = realData.SP;
 				found = true;
 				//show_debug_message("found this player")
@@ -189,6 +190,7 @@ if(type == network_type_data){
 		
 		case "pong":
 		global.ping = current_time - real(realData.ct)
+		last_got_ping = current_time
 		break;
 		
 		

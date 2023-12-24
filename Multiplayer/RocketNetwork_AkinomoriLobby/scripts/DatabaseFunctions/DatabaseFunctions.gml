@@ -20,7 +20,7 @@ function SetSimpleData(collectionName, documentName, mapStruct){
 
 function ReadSimpleData(collectionName, documentName){
 	
-	var readId = current_time
+	var readId = int64( string(current_time) +string(floor(random(10000))))
 	//format for sending info to server 
 		var Buffer = buffer_create(1, buffer_grow, 1)
 	

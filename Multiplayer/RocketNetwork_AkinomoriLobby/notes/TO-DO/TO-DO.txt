@@ -12,33 +12,38 @@
 
 #SUGGESTIONS
 -------------------
-#Chat in web
 #Global chat / Server chat
 #Pop customization menu if IP is registered in database
 
 #TO-DO
 ----------------------
+#Ping server to check if player got somehow disconnected
+#Fix top shadow
 #Make the typing gui to look like apfel's textboxes
 #Make Apfel Online banner in thehirou.com
-#Player list and chat in the website via database
 #Show current song playing
 #Tab list sometimes gets weird
 #Make music not local
-#Fix Depth Sorting (Again)
 #Poner controles al principio
-#Change packet loss message with sprite icon
-#See a way to close the server using version.json
-#Clicking in the set name window resets the name
-#Fix why the fuck the packet warning shows randomly
-#Chat text is drawn on top of customization menu
+
+
 
 #KIND OF DONE
 ----------------------
+#Player list and chat in the website via database (Only chat)
 #Fix double line of text (Text is only limited to one line now)
 #Limit players to only one per IP or per computer (Works most of the time?)
+#Chat text is drawn on top of customization menu (Chat is no longer displayed in game)
+#Change packet loss message with sprite icon (Packet Loss msg got straight up deleted)
 
 #DONE
 ----------------------
+#Clicking in the set name window resets the name
+#Fix Depth Sorting (Again)
+#See a way to close the server using version.json
+#Add the date to the <Server> messages
+#If your name is DATE-ç change it via code as you do with fake admin
+#Add the date into everytext to parse it
 #Try to read a hosted json file
 #Send a timer packet every second to see if you got disconnected by browser timeout
 #Efectos de sonido individuales extradiegeticos

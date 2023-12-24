@@ -74,8 +74,11 @@ fullOpacityChat=10
 
 
 for (var i = 0; i < maxChatLog; ++i) {
+	
+	var iDisabledChat=0 //Put to 1 to recover chat
+	
 	draw_set_valign(fa_middle)
-	draw_set_alpha(((((maxChatLog-i)/40)*afkOpacity)*chatOpacity)+fullOpacityChat)
+	draw_set_alpha((((((maxChatLog-i)/40)*afkOpacity)*chatOpacity)+fullOpacityChat)*iDisabledChat)
     draw_text(10,(430-i*global.font_height)-25,global.chat[i])
     //draw_text_ext(10,(430-i*15)-25,global.chat[i],15,500)
 	draw_set_alpha(1)

@@ -1,38 +1,6 @@
 if global.playerState=state.normal{window_set_cursor(cr_default)}
 //Id also check for state.settings and state.interacting but to get to those you have to go through state.normal no matter what
 
-if global.debug
-{
-	
-if keyboard_check(vk_control) and keyboard_check_pressed(ord("F"))
-{
-//callback_ReceivedMessage("FakeCallback" , 1)	
-//CreatePersistentObject("public",{	_type	:	persistype.chatlogger})
-
-date_set_timezone(timezone_utc)
-var _h=string(date_get_hour(date_current_datetime())	)
-var _m=string(date_get_minute(date_current_datetime())	)
-var _s=string(date_get_second(date_current_datetime())	)	
-var _d=string(date_get_day(date_current_datetime())		)
-var _mo=string(date_get_month(date_current_datetime())	)
-var _y=string(date_get_year(date_current_datetime())	)
-
-var stringDate="["+_d+"/"+_mo+"/"+_y+" - "+_h+":"+_m+":"+_s+"]"
-
-var playerInfo = {
-    ip: "ip test",
-    location : "location test",
-    name : "jony",
-    date : stringDate,
-}
-
-SetSimpleData("collection_1", "document_1", playerInfo)
-}
-if keyboard_check_pressed(ord("L"))
-{
-ReadSimpleData("collection_1", "document_1")	
-}
-}
 
 
 
@@ -56,6 +24,12 @@ switch (setUser) {
         break;
     case "Admin":
 		thisUsername="Fake Admin"
+        break;
+    case "DATE-ç":
+		thisUsername="DATE-c"
+        break;
+    case "ç-DATE":
+		thisUsername="c-DATE"
         break;
     default:
         thisUsername=string_replace_all(setUser," ","_") //Replace spaces with underscores
@@ -219,11 +193,40 @@ if global.currentRoom!="none" and joined=true
 		with (oOtherPlayer)
 		{
 		var thisClientId = clientId
-		SendMessageToClient(thisClientId,"<Server> "+global.thisUserNameGlobal+" joined the room.") //6899 for some reason I don't need to add a line break here???
+		date_set_timezone(timezone_utc);
+
+		var _h = string(date_get_hour(date_current_datetime()));
+		var _m = string(date_get_minute(date_current_datetime()));
+		var _s = string(date_get_second(date_current_datetime()));
+		var _d = string(date_get_day(date_current_datetime()));
+		var _mo = string(date_get_month(date_current_datetime()));
+		var _y = string(date_get_year(date_current_datetime()));
+
+		// Add leading zeros for single-digit values
+		if (string_length(_h) == 1) _h = "0" + _h;
+		if (string_length(_m) == 1) _m = "0" + _m;
+		if (string_length(_s) == 1) _s = "0" + _s;
+		if (string_length(_d) == 1) _d = "0" + _d;
+		if (string_length(_mo) == 1) _mo = "0" + _mo;
+
+		var stringDate="["+_d+"/"+_mo+"/"+_y+" - "+_h+":"+_m+":"+_s+"]"
+		//"DATE-ç"+stringDate+"ç-DATE "
+		SendMessageToClient(thisClientId,"DATE-ç"+stringDate+"ç-DATE "+"<Server> "+global.thisUserNameGlobal+" joined the room.") //6899 for some reason I don't need to add a line break here???
 		}
 	}
 joined=false
 }
+
+if global.debug
+{
+
+
+if keyboard_check_pressed(ord("L"))
+{
+ReadSimpleData("logs", "chat")	
+}
+}
+
 if msg!="" and keyboard_check_pressed(vk_enter)
 {	
 //COMMANDS
@@ -240,11 +243,142 @@ filteredMsg=scrFilter(msg)
 global.filteredMsgGlobal="<"+thisUsername+"> "+filteredMsg
 sentMsg="<"+string(filteredMsg)+">"
 
+
+
+
 //chat66666
 
-//array_shift()
-array_insert(global.chat,0,"<"+thisUsername+"> "+filteredMsg+"\n")
+date_set_timezone(timezone_utc);
+
+var _h = string(date_get_hour(date_current_datetime()));
+var _m = string(date_get_minute(date_current_datetime()));
+var _s = string(date_get_second(date_current_datetime()));
+var _d = string(date_get_day(date_current_datetime()));
+var _mo = string(date_get_month(date_current_datetime()));
+var _y = string(date_get_year(date_current_datetime()));
+
+// Add leading zeros for single-digit values
+if (string_length(_h) == 1) _h = "0" + _h;
+if (string_length(_m) == 1) _m = "0" + _m;
+if (string_length(_s) == 1) _s = "0" + _s;
+if (string_length(_d) == 1) _d = "0" + _d;
+if (string_length(_mo) == 1) _mo = "0" + _mo;
+
+var stringDate="["+_d+"/"+_mo+"/"+_y+" - "+_h+":"+_m+":"+_s+"]"
+//"DATE-ç"+stringDate+"ç-DATE "
+
+array_insert(global.chat,0,"DATE-ç"+stringDate+"ç-DATE "+"<"+thisUsername+"> "+filteredMsg)
+//array_insert(global.DATEchat,0,stringDate+" "+"<"+thisUsername+"> "+filteredMsg)
 oManager.arrayChanged=true
+
+
+var msgStruct=
+{
+chatmsg00			:		global.chat[00]		,
+chatmsg01			:		global.chat[01]		,
+chatmsg02			:		global.chat[02]		,
+chatmsg03			:		global.chat[03]		,
+chatmsg04			:		global.chat[04]		,
+chatmsg05			:		global.chat[05]		,
+chatmsg06			:		global.chat[06]		,
+chatmsg07			:		global.chat[07]		,
+chatmsg08			:		global.chat[08]		,
+chatmsg09			:		global.chat[09]		,
+chatmsg10			:		global.chat[10]		,
+chatmsg11			:		global.chat[11]		,
+chatmsg12			:		global.chat[12]		,
+chatmsg13			:		global.chat[13]		,
+chatmsg14			:		global.chat[14]		,
+chatmsg15			:		global.chat[15]		,
+chatmsg16			:		global.chat[16]		,
+chatmsg17			:		global.chat[17]		,
+chatmsg18			:		global.chat[18]		,
+chatmsg19			:		global.chat[19]		,
+chatmsg20			:		global.chat[20]		,
+chatmsg21			:		global.chat[21]		,
+chatmsg22			:		global.chat[22]		,
+chatmsg23			:		global.chat[23]		,
+chatmsg24			:		global.chat[24]		,
+chatmsg25			:		global.chat[25]		,
+chatmsg26			:		global.chat[26]		,
+chatmsg27			:		global.chat[27]		,
+chatmsg28			:		global.chat[28]		,
+chatmsg29			:		global.chat[29]		,
+chatmsg30			:		global.chat[30]		,
+chatmsg31			:		global.chat[31]		,
+chatmsg32			:		global.chat[32]		,
+chatmsg33			:		global.chat[33]		,
+chatmsg34			:		global.chat[34]		,
+chatmsg35			:		global.chat[35]		,
+chatmsg36			:		global.chat[36]		,
+chatmsg37			:		global.chat[37]		,
+chatmsg38			:		global.chat[38]		,
+chatmsg39			:		global.chat[39]		,
+chatmsg40			:		global.chat[40]		,
+chatmsg41			:		global.chat[41]		,
+chatmsg42			:		global.chat[42]		,
+chatmsg43			:		global.chat[43]		,
+chatmsg44			:		global.chat[44]		,
+chatmsg45			:		global.chat[45]		,
+chatmsg46			:		global.chat[46]		,
+chatmsg47			:		global.chat[47]		,
+chatmsg48			:		global.chat[48]		,
+chatmsg49			:		global.chat[49]		,
+chatmsg50			:		global.chat[50]		,
+chatmsg51			:		global.chat[51]		,
+chatmsg52			:		global.chat[52]		,
+chatmsg53			:		global.chat[53]		,
+chatmsg54			:		global.chat[54]		,
+chatmsg55			:		global.chat[55]		,
+chatmsg56			:		global.chat[56]		,
+chatmsg57			:		global.chat[57]		,
+chatmsg58			:		global.chat[58]		,
+chatmsg59			:		global.chat[59]		,
+chatmsg60			:		global.chat[60]		,
+chatmsg61			:		global.chat[61]		,
+chatmsg62			:		global.chat[62]		,
+chatmsg63			:		global.chat[63]		,
+chatmsg64			:		global.chat[64]		,
+chatmsg65			:		global.chat[65]		,
+chatmsg66			:		global.chat[66]		,
+chatmsg67			:		global.chat[67]		,
+chatmsg68			:		global.chat[68]		,
+chatmsg69			:		global.chat[69]		,
+chatmsg70			:		global.chat[70]		,
+chatmsg71			:		global.chat[71]		,
+chatmsg72			:		global.chat[72]		,
+chatmsg73			:		global.chat[73]		,
+chatmsg74			:		global.chat[74]		,
+chatmsg75			:		global.chat[75]		,
+chatmsg76			:		global.chat[76]		,
+chatmsg77			:		global.chat[77]		,
+chatmsg78			:		global.chat[78]		,
+chatmsg79			:		global.chat[79]		,
+chatmsg80			:		global.chat[80]		,
+chatmsg81			:		global.chat[81]		,
+chatmsg82			:		global.chat[82]		,
+chatmsg83			:		global.chat[83]		,
+chatmsg84			:		global.chat[84]		,
+chatmsg85			:		global.chat[85]		,
+chatmsg86			:		global.chat[86]		,
+chatmsg87			:		global.chat[87]		,
+chatmsg88			:		global.chat[88]		,
+chatmsg89			:		global.chat[89]		,
+chatmsg90			:		global.chat[90]		,
+chatmsg91			:		global.chat[91]		,
+chatmsg92			:		global.chat[92]		,
+chatmsg93			:		global.chat[93]		,
+chatmsg94			:		global.chat[94]		,
+chatmsg95			:		global.chat[95]		,
+chatmsg96			:		global.chat[96]		,
+chatmsg97			:		global.chat[97]		,
+chatmsg98			:		global.chat[98]		,
+chatmsg99			:		global.chat[99]		,
+chatmsg100			:		global.chat[100]	,
+
+}
+
+SetSimpleData("logs", "chat", msgStruct)
 
 //old
 //global.chatLog+="<"+thisUsername+"> "+filteredMsg+"\n"

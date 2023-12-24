@@ -1,6 +1,6 @@
 //6899 EVERYTIME YOU CHANGE VERSION CHANGE IT HERE
-global.version="Release 1.0.5"
-versionReal=1.05
+global.version="Release 1.0.8"
+versionReal=1.08
 global.updateName="'Apfel Online'"
 global.legal="© 2023 TheHirou.com"
 

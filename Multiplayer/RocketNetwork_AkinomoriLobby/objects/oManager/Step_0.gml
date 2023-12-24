@@ -99,6 +99,8 @@ if keyboard_check_pressed(vk_enter) and global.currentRoom="none" and timer[1]>2
 {
 audio_play_sound(sndEnterRoom,1,false,global.sfxVolume)
 ChangeRoom("public")
+ReadSimpleData("logs","chat")
+//ReadSimpleData("logs","chatwithdate")
 }
 
 if global.debug

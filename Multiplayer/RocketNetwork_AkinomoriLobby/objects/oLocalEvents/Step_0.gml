@@ -11,7 +11,8 @@ global.currentEvent=event.noevent
 if global.currentEvent=event.mantana and once[event.mantana]=true
 {
 
-	//Made local
+	//Made local 6899, this probably doesn't work anymore since the chat is integrated into
+	//the website and this array doesn't get send to the database
 	array_insert(global.chat,0,"<Server> "+"Mantana"+" joined the room.")
 	oManager.arrayChanged=true
 	

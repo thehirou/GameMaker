@@ -471,9 +471,10 @@ var swearWords =
 "nigga",
 "whore",
 "retard",
-"retard",
 "sex",
-"omori"
+"omori",
+"DATE-ç",
+"ç-DATE",
 ];
 
 for (var i = 0; i < array_length(swearWords); i++) {

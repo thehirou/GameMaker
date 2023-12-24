@@ -4,6 +4,7 @@ function callback_ReceivedMessage(theMessage , senderClientId){
 array_insert(global.chat,0,theMessage)
 oManager.arrayChanged=true
 
+
 //Can't do this shit now 6899
 /*
 if instance_exists(oPersistentObject)

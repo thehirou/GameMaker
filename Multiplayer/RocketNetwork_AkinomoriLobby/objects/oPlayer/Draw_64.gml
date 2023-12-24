@@ -1,13 +1,22 @@
 if global.playerState=state.texting
 {
-draw_set_color(c_black)
+
+draw_set_color(c_black) //Writing box
 draw_rectangle(0,480-50,640,480,false)
 draw_set_color(c_white)
 draw_set_valign(fa_bottom)
 draw_set_halign(fa_left)
 //draw_text_ext(10,460,msg+blinkingMotherfucker,15,5000)
 draw_text(10,465,msg+blinkingMotherfucker)
-draw_set_halign(fa_left)
+
+
+/*
+var padding_X=20
+var padding_Y=20
+var textboxHeight=120
+draw_rectangle_color(padding_X,480-padding_Y-textboxHeight,640-padding_X,480-padding_Y,
+c_black,c_black,c_black,c_black,false)
+*/
 }
 
 
@@ -183,15 +192,14 @@ draw_set_valign(fa_middle)
 draw_text(640/2,480/2,"Disconnected: Same IP logged in server already detected.")
 }
 
-
-
-if warningDisconnect=true
+if instance_exists(oBrain)
 {
-	warningTimer++
-	if warningTimer>7*60 and global.debug
-	{
+var disconnectCheck=current_time - oBrain.last_got_ping
+
+if disconnectCheck>2000
+{
+
 	draw_sprite(sprNoConnection,0,640,480)
-	//draw_set_halign(fa_center)
-	//draw_text(640/2,480/2,"HUGE PACKET LOSS:\nYOU MIGHT HAVE GOTTEN DISCONNECTED\nRESTART THE WEBSITE")
-	}
-}else{warningTimer=0}
+
+}
+}

@@ -21,3 +21,4 @@ if(variable_instance_exists(oBrain,"socket") and global.clientId!=-1){
 }
 alarm[1] = 25
 
+afk = current_time - last_got_ping

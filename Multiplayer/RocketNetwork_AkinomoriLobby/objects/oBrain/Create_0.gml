@@ -7,6 +7,8 @@ entitiesCreated = 0;
 entitiesActive= []
 alarm[0]=5
 alarm[1]=5
+afk =0;
+last_got_ping = current_time
 global.clientId = -1
 
 global.ping = -1
@@ -17,5 +19,3 @@ global.sharedProperties = {
 }
 
 oBrain.AmIPseudoHost = false
-
-

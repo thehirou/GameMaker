@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "#Game",
-    "path": "folders/#Game.yy",
+    "name": "##PINNED",
+    "path": "folders/##PINNED.yy",
   },
   "parentObjectId": null,
   "persistent": true,

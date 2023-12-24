@@ -2,7 +2,10 @@ draw_sprite_ext(sprOwnShadow,0,x,y,1,1,0,c_white,0.6)
 draw_self()
 
 
-
+if instance_exists(oBrain) and debug_mode
+{
+draw_text(x,y+90,current_time - oBrain.last_got_ping)	
+}
 
 if global.currentRoom!="none"
 {

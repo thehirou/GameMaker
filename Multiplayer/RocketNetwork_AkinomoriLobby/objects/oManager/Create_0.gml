@@ -26,8 +26,11 @@ loadingInstance.sprite_index=sprLoading
 
 loadingTime=choose(2,3)
 
-maxChatLog=40
+maxChatLog=100
 global.chat=array_create(maxChatLog,"")
+global.DATEchat=array_create(maxChatLog,"")
+
+
 
 playerUsernames=array_create(1,"")
 addUserToTheList=""

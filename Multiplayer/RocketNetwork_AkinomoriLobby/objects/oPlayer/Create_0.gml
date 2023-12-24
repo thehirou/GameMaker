@@ -1,5 +1,6 @@
 ConnectToServer()
 
+
 scrSetSpriteDefaults();
 
 enum part

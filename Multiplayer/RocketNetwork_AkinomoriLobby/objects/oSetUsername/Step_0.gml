@@ -1,4 +1,4 @@
-if mouse_check_button_pressed(mb_left) and closedServers=false
+if mouse_check_button_pressed(mb_left) and closedServers=false and allow=false
 {
 allow=true
 keyboard_string=""
