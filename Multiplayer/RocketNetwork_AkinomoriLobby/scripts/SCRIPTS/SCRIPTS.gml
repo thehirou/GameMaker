@@ -10,6 +10,39 @@ enum spr
 	walkLeft
 }
 
+function scrCheckBlacklist(ip_to_check)
+{
+
+var blacklist_json = global.jsonBlacklist; // Your JSON data
+
+// Parse JSON string to a data structure
+var blacklist_data = json_parse(blacklist_json);
+
+var isIpInBlacklist = false;
+
+// Check if the provided IP is in the blacklist
+for (var i = 0; i < array_length(blacklist_data.blacklist); i++) {
+    if (blacklist_data.blacklist[i] == ip_to_check) {
+        // IP is in the blacklist, set flag to true and exit the loop
+        isIpInBlacklist = true;
+        break;
+    }
+}
+
+if (isIpInBlacklist) {
+    // IP is in the blacklist, execute the ban script
+    scrBan();
+} else {
+    // IP is not in the blacklist, do something else or nothing
+    //show_message("IP is not in the blacklist. You are safe!");
+}
+}
+
+function scrBan()
+{
+DisconnectFromServer()
+show_message("You're banned!")
+}
 
 function scrLayering(_var)
 {
@@ -27,14 +60,14 @@ function scrLayering(_var)
 	}
 }
 
-function scrEmojiCheck(_sprite)
+function scrEmojiCheck()
 {
 switch (msg)
 {
 //case ":xxxxx:":				scrEmote(sprEmote);					break;
 
 //Secrets (Unique)
-case ":broly:":				scrEmote(sprEmoteBroly);					break;
+case ":broly:":				scrEmote(sprEmoteBroly);				break;
 case ":goku:":				scrEmote(sprEmoteGoku);					break;
 
 //16-Dec-2023

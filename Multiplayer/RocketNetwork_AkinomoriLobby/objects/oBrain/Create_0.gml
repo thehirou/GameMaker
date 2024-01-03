@@ -5,6 +5,7 @@ connect = -10
 non_blocking_success_yet = false
 entitiesCreated = 0;
 entitiesActive= []
+waitingForURL = false
 alarm[0]=5
 alarm[1]=5
 afk =0;
@@ -19,3 +20,5 @@ global.sharedProperties = {
 }
 
 oBrain.AmIPseudoHost = false
+
+

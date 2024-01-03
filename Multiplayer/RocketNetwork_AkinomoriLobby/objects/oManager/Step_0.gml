@@ -47,7 +47,7 @@ if instance_exists(oOtherPlayer)
 }
 }
 
-if global.debug
+if global.debug and debug_mode
 {
 	
 	if keyboard_check(vk_control) and (keyboard_check_pressed(ord("S"))){ViewServerActivity()}

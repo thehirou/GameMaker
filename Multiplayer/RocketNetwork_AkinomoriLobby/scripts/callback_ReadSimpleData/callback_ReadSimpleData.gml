@@ -3,7 +3,21 @@ function callback_ReadSimpleData(readId,data){
 	//if data is -1, the read failed, The Document was not found!
 	//check the location(collection + document name) onceagain
 	if(data == -1){
-		show_message("failed read")
+		if debug_mode{show_message("failed read")}
+		
+		//First creation
+		with(oPlayer)
+		{
+			var playerData=
+			{
+			type					:		"Player Database",
+			_blacklisted			:		blacklisted,
+			_latestLogin			:		latestLogin,
+			_playerIp				:		myIp,
+			latestName				:		thisUsername,
+			}
+			SetSimpleData("pdatabase",string(myIp),playerData)	
+		}
 	}
 	
 	//the document is a struct in the variable data
@@ -11,15 +25,25 @@ function callback_ReadSimpleData(readId,data){
 	{
 	show_message("read id "+string(readId)+" : "+string(data))
 	}
-
-	/*
-	// Assign values to the array (this doesnt work bc i don't know how to convert string to int64 bruh
-	for (var i = 0; i <= 100; i++) {
-	    global.chat[i] = data["chatmsg" + string(i)];
-	}
-	*/
 	
-	//important 6899 I wont be able to read other data if im doing this here, see a way of not having to do that, maybe make a new variable inside the data structure that checks if x = true or anything idk
+	if data.type="Player Database"
+	{
+		with(oPlayer)
+		{	
+			var playerData=
+			{
+			type					:		"Player Database",
+			_blacklisted			:		blacklisted,
+			_latestLogin			:		latestLogin,
+			_playerIp				:		myIp,
+			latestName				:		thisUsername,
+			}
+			SetSimpleData("pdatabase",string(myIp),playerData)	
+		}
+	}
+	
+	if data.type="Chat Log"
+	{
 	global.chat[00]=data.chatmsg00
 	global.chat[01]=data.chatmsg01
 	global.chat[02]=data.chatmsg02
@@ -121,6 +145,7 @@ function callback_ReadSimpleData(readId,data){
 	global.chat[98]=data.chatmsg98
 	global.chat[99]=data.chatmsg99
 	global.chat[100]=data.chatmsg100
+	}
 
 
 	//DATE, fix later, this shit gets confused when there are two different data structures at the same time

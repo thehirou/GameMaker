@@ -1,5 +1,5 @@
 import_url=""
-global.yourIp="null"
+global.yourIp=""
 
 var url="https://api64.ipify.org/?format=json"
 var map=ds_map_create();

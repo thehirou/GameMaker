@@ -1,4 +1,3 @@
-// XOR Cipher Encryption
 
 function str_chr(str, index){
 	return string_char_at(str,(index+1))

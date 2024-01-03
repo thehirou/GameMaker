@@ -8,7 +8,7 @@ if receivedVersion!=999999
 	if receivedVersion=versionReal and manageFromJson="open"
 	{
 		_string=match
-		room_goto(rmSplashScreen)
+		room_goto(rmConsent)
 	}
 	
 	if receivedVersion!=versionReal and manageFromJson="open"
@@ -28,5 +28,5 @@ draw_text_ext(640/2,480/2,_string,20,400)
 
 if debug_mode //ignore closed servers
 {
-	room_goto(rmSplashScreen)
+	room_goto(rmConsent)
 }

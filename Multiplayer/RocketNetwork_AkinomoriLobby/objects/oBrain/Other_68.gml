@@ -14,6 +14,7 @@ if(type == network_type_non_blocking_connect){
 			//WHAT DATA 
 			var data = ds_map_create();
 			data[? "serverId"] = md5_string_utf8(global.SERVERID);
+			data[? "gameId"] = (global.gameId);
 			data[? "uC"] = global.useCiphering;
 			//whatever data you want to send as key value pairs
 
@@ -102,6 +103,7 @@ if(type == network_type_data){
 		
 		
 		case "all_pO":
+	
 		callback_ShowAllPersistentObjectsInRoom(realData.pOs, realData.roomId)
 		break;
 		
@@ -204,6 +206,10 @@ if(type == network_type_data){
 		callback_ReceivedMessage(  realData.message , realData.senderClientId);
 		break;
 		
+		case "SETC":
+		callback_ReceivedEvent( realData.event , json_parse(realData.message) , realData.senderClientId);
+		break;
+		
 		
 		case "created_PO":
 		callback_CreatedPersistentObject(realData.POid)
@@ -221,6 +227,10 @@ if(type == network_type_data){
 		
 		case "full_server_view":
 		callback_ViewServerActivity(realData.activity)
+		break;
+		
+		case "db_summary":
+		callback_GetServerSummary(realData.db)
 		break;
 		
 		case "read_data":

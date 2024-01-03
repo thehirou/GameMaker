@@ -1,4 +1,4 @@
-
+if(waitingForURL){
 try{
 
 	
@@ -24,6 +24,7 @@ try{
 	}
 
 	IP = res
+	waitingForURL= false
 
 	
 	show_debug_message("Trying to connect to your Rocket Server")
@@ -35,4 +36,5 @@ try{
 show_debug_message("Error in connecting. Please contact sales")
 show_debug_message(e)
 
+}
 }

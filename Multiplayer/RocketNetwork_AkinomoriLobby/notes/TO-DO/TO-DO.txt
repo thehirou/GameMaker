@@ -4,7 +4,6 @@
 #Send whispers
 #Different servers with more rooms
 #Report users
-#Ban users
 #Login method
 #Profile status
 #Async Code (Impossible?)
@@ -21,13 +20,14 @@
 
 #TO-DO
 ----------------------
-#Fix top shadow
 #Make the typing gui to look like apfel's textboxes
 #Make Apfel Online banner in thehirou.com
 #Show current song playing
 #Tab list sometimes gets weird
 #Make music not local
 #Poner controles al principio
+#Change got disconnected icon
+#Make new document i a new player logs in to store their ip and customization settings, maybe even name history
 
 
 
@@ -43,6 +43,9 @@
 
 #DONE
 ----------------------
+#Ban users
+#Make an admin menu to ban IPs (blacklist.json)
+#Fix top shadow
 #Ping server to check if player got somehow disconnected
 #Clicking in the set name window resets the name
 #Fix Depth Sorting (Again)

@@ -3,7 +3,7 @@ if global.playerState=state.normal{window_set_cursor(cr_default)}
 
 
 
-
+//DeleteSimpleData("pdatabase","undefined")
 
 
 if global.debug
@@ -188,6 +188,11 @@ keyboard_string=msg
 
 if global.currentRoom!="none" and joined=true
 {
+	
+
+	ReadSimpleData("pdatabase",string(myIp))
+	
+	
 	if instance_exists(oOtherPlayer)
 	{
 		with (oOtherPlayer)
@@ -274,6 +279,7 @@ oManager.arrayChanged=true
 
 var msgStruct=
 {
+type				:		"Chat Log"			,
 chatmsg00			:		global.chat[00]		,
 chatmsg01			:		global.chat[01]		,
 chatmsg02			:		global.chat[02]		,
@@ -716,4 +722,14 @@ received_acsrIsprIwalkUp		:		acsr[spr.walkUp]			,
 received_acsrIsprIwalkDown		:		acsr[spr.walkDown]			,	
 received_acsrIsprIwalkRight		:		acsr[spr.walkRight]			,
 received_acsrIsprIwalkLeft		:		acsr[spr.walkLeft]			,
+}
+
+
+
+scrCheckBlacklist(myIp);
+/*
+
+//HARDCODED BLACKLIST, don't use
+switch (myIp) {
+    case "0.0.0.0": scrBan(); break;
 }
