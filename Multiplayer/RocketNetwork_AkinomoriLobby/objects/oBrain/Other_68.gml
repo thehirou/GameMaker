@@ -16,6 +16,7 @@ if(type == network_type_non_blocking_connect){
 			data[? "serverId"] = md5_string_utf8(global.SERVERID);
 			data[? "gameId"] = (global.gameId);
 			data[? "uC"] = global.useCiphering;
+			data[? "v"] = 2
 			//whatever data you want to send as key value pairs
 
 			ds_map_add(data,"eventName","join_server");
@@ -110,6 +111,100 @@ if(type == network_type_data){
 		
 		case "state_update":
 		//show_message(buffer_processed)
+		
+		if(real(realData.clientId)==global.clientId){
+			
+			//shared peroperties from server
+			try{
+				global.sharedPropertiesFromServer = json_parse(realData.SPS)
+			}catch(e){}
+			 ///unfortunately the sp was not parseable!
+			// show_message("sps parse error")
+			
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			
+		
+				var E = json_parse(realData.entitiesOnServer)
+				
+				var oldKeys = []
+				with(oMyEntity){
+					array_push(oldKeys,id.entityId)
+				}
+
+				var keys = variable_struct_get_names(E);
+				
+				//DELETE ENTITIES THAT have been delted on server
+				
+				//No dont! This part needs careful async action
+				
+				/*
+				with(oMyEntity){
+					
+					if(!array_contains(keys, string(oMyEntity.entityId))){
+						//instance_destroy()
+					}
+					
+				}
+				*/
+
+		
+
+
+
+
+                /// EDIT AND CREATE YOUE ENTITIES
+
+				for (var i = array_length(keys)-1; i >= 0; --i) {
+				    var thisEntityId = keys[i];
+					
+					
+					
+						var thisEntityPropertiesFromServer = variable_struct_get(E , thisEntityId);
+	
+				    
+	
+					var found = false;
+					with(oMyEntity){
+						if(entityId == real(thisEntityId) ){
+						//found entities belonging to this player
+						found = true;
+						try{
+							//entityProperties =json_parse( thisEntityProperties)
+							entityPropertiesFromServer = thisEntityPropertiesFromServer
+						}catch(e){}
+		
+						}
+					}
+	
+	/*
+					if(!found){
+						show_debug_message("creating a new entity")
+						var new_entity = instance_create_layer(0,0,global.OtherPlayersLayerName,oMyEntity);
+						new_entity.clientId = real(clientId);
+						new_entity.entityId = real(thisEntityId)
+						try{
+							new_entity.entityProperties = json_parse(thisEntityProperties)
+							entityPropertiesFromServer = thisEntityPropertiesFromServer
+						
+						}catch(e){}
+	
+					}
+					*/
+				}
+				
+		}
+		
+		
 		var found = false;
 		with(oOtherPlayer){
 			if(clientId==real(realData.clientId)){
@@ -119,6 +214,7 @@ if(type == network_type_data){
 				//show_debug_message("found this player")
 				//Now also update the entities for this player
 				entities =(realData.entities);
+				entitiesOnServer =(realData.entitiesOnServer);
 				
 				
 				
@@ -129,7 +225,8 @@ if(type == network_type_data){
 		}
 		if(!found and real(realData.clientId!=global.clientId)){
 			//show_debug_message("creating a new player")
-			var new_enemy = instance_create_layer(0,0,global.OtherPlayersLayerName,oOtherPlayer);
+			var new_enemy = instance_create_layer(global.RNetSpawnPoints[0][0],global.RNetSpawnPoints[0][1],
+			global.OtherPlayersLayerName,oOtherPlayer);
 			new_enemy.clientId = real(realData.clientId);
 			new_enemy.roomId = realData.roomId;
 			new_enemy.sharedProperties = realData.SP;
@@ -151,7 +248,8 @@ if(type == network_type_data){
 		}
 		if(!found){
 			
-			var new_pO = instance_create_layer(0,0,global.OtherPlayersLayerName,oPersistentObject);
+			var new_pO = instance_create_layer(global.RNetSpawnPoints[2][0],global.RNetSpawnPoints[2][1],
+			global.PersistentObjectsLayerName,oPersistentObject);
 			new_pO.persistentObjectId = realData.POid;
 			new_pO.persistentObjectProperties = realData.pOp
 			new_pO.roomId = realData.roomId
@@ -210,6 +308,10 @@ if(type == network_type_data){
 		callback_ReceivedEvent( realData.event , json_parse(realData.message) , realData.senderClientId);
 		break;
 		
+		case "SEFC":
+		callback_ReceivedEventFromServer( realData.event , json_parse(realData.message));
+		break;
+		
 		
 		case "created_PO":
 		callback_CreatedPersistentObject(realData.POid)
@@ -217,6 +319,7 @@ if(type == network_type_data){
 		
 		case "pseudoHost":
 		var pseudoHostClientId = real(realData.pH)
+		oBrain.pseudoHostClientId = real(realData.pH)
 		if(pseudoHostClientId == global.clientId){
 			oBrain.AmIPseudoHost = true
 		}else{
@@ -236,7 +339,23 @@ if(type == network_type_data){
 		case "read_data":
 		callback_ReadSimpleData(realData.readId,(realData.data));
 		break;
-	
+		
+		case "write_data":
+		callback_SetSimpleData(realData.writeId,true)
+		break
+		
+		case "write_data_fail":
+		callback_SetSimpleData(realData.writeId, false)
+		break
+		
+		
+		case "patch_data":
+		callback_AddToSimpleData(realData.patchId,true)
+		break
+		
+		case "patch_data_fail":
+		callback_AddToSimpleData(realData.patchId, false)
+		break
 	}
 	
 	

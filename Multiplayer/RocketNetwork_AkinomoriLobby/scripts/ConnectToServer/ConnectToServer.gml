@@ -4,10 +4,18 @@ function ConnectToServer(){
 	if(!global.manualServerURLconnection){
 		PreConnect()
 	}else{
-		
-		oBrain.socket = network_create_socket(network_socket_wss)
-		var PORT=443
 		var IP = global.manualServerURL
+		var PORT=443
+		if(IP == "localhost"){
+			PORT = 3000
+			oBrain.socket = network_create_socket(network_socket_ws)
+		}else{
+			oBrain.socket = network_create_socket(network_socket_wss)
+		}
+		
+		
+		
+		
 		
 		show_debug_message("Set to "+IP+" at port "+string(PORT)+" assuming a safe wss connection.")
 

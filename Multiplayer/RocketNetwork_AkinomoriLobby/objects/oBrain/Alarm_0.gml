@@ -19,10 +19,11 @@ try{
 		data[? "clientId"] = global.clientId;
 		data[?"entityId"] = entityId
 		data[?"entityP"] = json_stringify(entityProperties)
+
 		if(variable_instance_exists(oBrain,"socket")){
 		ds_map_add(data,"eventName","entity_state_update");
 		buffer_write(Buffer, buffer_text, EC(string(json_encode(data))))
-		network_send_raw(oBrain.socket, Buffer, buffer_tell(Buffer),network_send_binary)
+		network_send_raw(oBrain.socket, Buffer, buffer_tell(Buffer),network_send_text)
 		buffer_delete(Buffer)
 		ds_map_destroy(data)
 		}

@@ -5,7 +5,7 @@ draw_text(90,90,import_url)
 
 if receivedVersion!=999999
 {
-	if receivedVersion=versionReal and manageFromJson="open"
+	if receivedVersion=versionReal and manageFromJson="open" //Not checking if the value is lower just because
 	{
 		_string=match
 		room_goto(rmConsent)

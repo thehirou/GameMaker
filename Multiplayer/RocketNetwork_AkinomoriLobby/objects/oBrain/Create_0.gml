@@ -18,7 +18,12 @@ global.sharedProperties = {
 
 
 }
+global.sharedPropertiesFromServer ={
+	//dont edit this one, this will get things from the server if you
+	//have server side scripting 
+}
 
 oBrain.AmIPseudoHost = false
 
+pseudoHostClientId = -1
 
