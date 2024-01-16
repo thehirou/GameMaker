@@ -1,1 +1,1 @@
-Almost fully customizable classic Dragon Quest battle engine.
+Almost fully customizable via tables Dragon Quest battle engine.
