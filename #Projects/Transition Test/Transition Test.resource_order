@@ -1,0 +1,13 @@
+{
+  "FolderOrderSettings": [
+    {"name":"Objects","order":1,"path":"folders/BATTLE SYSTEM/Objects.yy",},
+    {"name":"Rooms","order":2,"path":"folders/BATTLE SYSTEM/Rooms.yy",},
+    {"name":"BATTLE SYSTEM","order":22,"path":"folders/BATTLE SYSTEM.yy",},
+  ],
+  "ResourceOrderSettings": [
+    {"name":"sprPiro","order":3,"path":"sprites/sprPiro/sprPiro.yy",},
+    {"name":"sprAlchemy","order":1,"path":"sprites/sprAlchemy/sprAlchemy.yy",},
+    {"name":"sprTerra","order":4,"path":"sprites/sprTerra/sprTerra.yy",},
+    {"name":"sprAqua","order":2,"path":"sprites/sprAqua/sprAqua.yy",},
+  ],
+}
