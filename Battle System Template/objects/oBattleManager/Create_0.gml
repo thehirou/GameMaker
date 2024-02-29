@@ -1,71 +1,72 @@
 /*
-parmesan=show_question("Enable Parmesan?")
+parmesan=show_question("Enable Parmesan?") //DEBUG for final build of mockup
 borzois=show_question("Enable Borzois?")
 */
-window_set_size(640*2,480*2)
+//window_set_size(640*2,480*2)
 
-parmesan=false
-borzois=false
+parmesan=true
+borzois=true
 
-logstring="Perform an action"
+logstring="Perform an action" //this tells you what's happening
 
-turn=0
+turn=0 //current turn
 
 enemyTurn=false
-endMenu=false
+endMenu=false //if menus are accesible or not
 
-openWound=false
+openWound=false //to-do
 ailmentWound=false
 physWound=false
 burnWound=false
 
 gameover=false
 
-escaped=-1
+escaped=-1 //1=success //0=failure //-1=in menu value so it doesn't mess up with the timers
 
-escapeRequirement=0
+escapeRequirement=0 //this goes up everytime you press z when running away
 
-chanceWoundamage=0
+chanceWoundamage=0 //to-do
 
+//these might turn into globals in the future, or just be initialized by globals
 lifePoints=5
-alchPoints=50 //Also sanity points
+alchPoints=50 //Also called sanity points
 
-MAXlifePoints=5
-MAXalchPoints=50 //Also sanity points
+MAXlifePoints=lifePoints
+MAXalchPoints=alchPoints
 
-psyched=false
+psyched=false //self explanatory (i hope)
 berserk=false
-option=0
+option=0 //current option in MAIN menu ↓
 optionstring="alchemy" //"alchemy" "info" "flight" "psycheup"
 menu="none" //"alchemy" "info" "flight" "psycheup"
 
-optionAlchemy=0
-selectorVertPosition=0
+optionAlchemy=0 //current option in alchemy/combo menu
+selectorVertPosition=0 //debug for draw gui ">"
 
 defaultAlchemy=["fire","earth","air","water"];
-
-comboAlchemy = ["fire", "earth", "air", "water"]; //unused?
+comboAlchemy = ["fire", "earth", "air", "water"]; //alchemy menu that appears if you're psyched up (looks the same but if you have parmesan or borzois in your party they get pushed into the array for the menu="alchemy")
+maxAlchemyOptions = array_length(defaultAlchemy) -1;
 
 if (parmesan) {
     array_push(comboAlchemy, "parmesan");
 }
 
 if (borzois) {
-    array_push(comboAlchemy, "borzoi");
+    array_push(comboAlchemy, "borzois"); //NOT BORZOI; -> BORZOIS
 }
 
 
 
 //All of this should be on a script for the final version
 enemyAI="aiRandom"
-enemyInfo="This enemy looks watery."
+enemyInfo="This enemy looks watery." //text that appears when info'ing
 enemyWeak="air"
 enemyLifePoints=5
 
-//Timers
+//Timers!!!!!!!! :) I fucking love timers
 timer[0]=0 //delay when checking the alchemy menu
 timer[1]=0 //delay for battle ending if flight
-timer[2]=0 //how long you have to press to run away from battle
+timer[2]=0 //how long do you have before your running away is successful
 timer[3]=0 //enemy turn delay miss flight
 timer[4]=0 //enemy turn delay psyche
 timer[5]=0 //timer after using alchemy
