@@ -229,10 +229,11 @@ for (var i = 0; i < timerlength; i++) {
 }
 
 logstring="Enemy turn"	
-if keyboard_check_pressed(ord("M")) //DEBUG: Fast forward enemy turn
+if keyboard_check_pressed(ord("M")) or triggerEndTurn=true //DEBUG: Fast forward enemy turn
 {
 	logstring="Perform an action." 
 	enemyTurn=false; turn++; menu="none"; endMenu=false; option=0; optionAlchemy=0; //Initialization
+	triggerEndTurn=false
 	
 }
 }

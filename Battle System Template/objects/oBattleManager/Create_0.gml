@@ -2,7 +2,9 @@
 parmesan=show_question("Enable Parmesan?") //DEBUG for final build of mockup
 borzois=show_question("Enable Borzois?")
 */
-//window_set_size(640*2,480*2)
+
+window_set_size(640*2,480*2)
+window_center()
 
 parmesan=true
 borzois=true
@@ -12,6 +14,7 @@ logstring="Perform an action" //this tells you what's happening
 turn=0 //current turn
 
 enemyTurn=false
+triggerEndTurn=false
 endMenu=false //if menus are accesible or not
 
 openWound=false //to-do
@@ -63,6 +66,10 @@ enemyInfo="This enemy looks watery." //text that appears when info'ing
 enemyWeak="air"
 enemyLifePoints=5
 
+//qte test
+qtePos=0
+qteSuccess=false
+
 //Timers!!!!!!!! :) I fucking love timers
 timer[0]=0 //delay when checking the alchemy menu
 timer[1]=0 //delay for battle ending if flight
@@ -73,3 +80,16 @@ timer[5]=0 //timer after using alchemy
 timer[6]=0 //timer after info'ing enemy
 timer[7]=0 //delay for checking alchemy if psyched
 timer[8]=0 //delay for selecting combo alchemy (if psyched)
+
+
+
+//enemyTimers!!
+enemyTimer[0]=0
+enemyTimer[1]=0
+enemyTimer[2]=0
+enemyTimer[3]=0
+enemyTimer[4]=0
+enemyTimer[5]=0
+enemyTimer[6]=0
+enemyTimer[7]=0
+enemyTimer[8]=0
