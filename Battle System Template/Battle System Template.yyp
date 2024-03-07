@@ -34,6 +34,9 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"SPRairAttack","path":"sprites/SPRairAttack/SPRairAttack.yy",},},
+    {"id":{"name":"blank","path":"sprites/blank/blank.yy",},},
+    {"id":{"name":"oAnimation","path":"objects/oAnimation/oAnimation.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"enemyTest","path":"sprites/enemyTest/enemyTest.yy",},},
     {"id":{"name":"oBattleManager","path":"objects/oBattleManager/oBattleManager.yy",},},
@@ -45,5 +48,6 @@
   "templateType": "game",
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
+    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"BattleAnimations","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
 }

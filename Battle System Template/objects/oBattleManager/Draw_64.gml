@@ -49,7 +49,12 @@ if menu="alchemy" or menu="combo"
 {
 	logstring="Apfel used " +string(comboAlchemy[optionAlchemy]) + " alchemy" //6899 fix this so it displays uniqute messages if alchemy mix
 	timer[5]++
-	if timer[5]>2*60 //debug wait
+	animation=SPRairAttack //6899 debug test
+	if !instance_exists(oAnimation) and timer[5]<10 //10 is just a test
+	{
+		instance_create_depth(0,0,-999,oAnimation,{sprite_index:oBattleManager.animation})
+	}
+	if timer[5]>10*60 //debug wait 
 	{
 	//Reset psyching up if player uses alchemy
 	if menu="combo"{if psyched=true{psyched=false}}
@@ -63,6 +68,7 @@ if menu="alchemy" or menu="combo"
 	timer[0]=0
 	timer[5]=0
 	enemyTurn=true
+	animation=blank
 	}
 	//draw_text(20, 480-40, comboAlchemy[optionAlchemy]);
 }

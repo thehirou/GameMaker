@@ -3,6 +3,14 @@ parmesan=show_question("Enable Parmesan?") //DEBUG for final build of mockup
 borzois=show_question("Enable Borzois?")
 */
 
+show_debug_overlay(true)
+
+var _tex_array = texturegroup_get_textures("BattleAnimations");
+for (var i = 0; i < array_length(_tex_array); ++i;)
+{
+    texture_prefetch(_tex_array[i]);
+}
+
 window_set_size(640*2,480*2)
 window_center()
 
@@ -59,6 +67,9 @@ if (borzois) {
 }
 
 
+sprite_index=blank
+animation=blank
+animationEnd=false
 
 //All of this should be on a script for the final version
 enemyAI="aiRandom"

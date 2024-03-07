@@ -1,3 +1,5 @@
+x=0
+y=0
 draw_sprite_ext(enemyTest,0,640-32*4,128,2,2,0,c_white,1)
 
 if enemyTurn=true
