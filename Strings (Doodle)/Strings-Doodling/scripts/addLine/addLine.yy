@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "addLine",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Assets",
-    "path": "folders/Assets.yy",
+  "$GMScript":"",
+  "%Name":"addLine",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"addLine",
+  "parent":{
+    "name":"Assets",
+    "path":"folders/Assets.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

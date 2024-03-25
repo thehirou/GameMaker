@@ -1,9 +1,9 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Assets","order":9,"path":"folders/Assets.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"sndTada","order":11,"path":"sounds/sndTada/sndTada.yy",},
     {"name":"oRectangle","order":2,"path":"objects/oRectangle/oRectangle.yy",},
     {"name":"oColissionSide","order":4,"path":"objects/oColissionSide/oColissionSide.yy",},

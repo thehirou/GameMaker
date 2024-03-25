@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":6,"path":"folders/Animation Curves.yy",},
     {"name":"Objects","order":3,"path":"folders/Objects.yy",},
     {"name":"Camera Movement","order":7,"path":"folders/Objects/Camera Movement.yy",},
@@ -10,7 +10,7 @@
     {"name":"Scripts","order":1,"path":"folders/Scripts.yy",},
     {"name":"Shaders","order":2,"path":"folders/Shaders.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"oCursor","order":9,"path":"objects/oCursor/oCursor.yy",},
     {"name":"oRoomSecurity","order":8,"path":"objects/oRoomSecurity/oRoomSecurity.yy",},
     {"name":"sprCameraZone","order":2,"path":"sprites/sprCameraZone/sprCameraZone.yy",},

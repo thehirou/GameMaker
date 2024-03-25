@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrReload",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Assets",
-    "path": "folders/Assets.yy",
+  "$GMScript":"",
+  "%Name":"scrReload",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrReload",
+  "parent":{
+    "name":"Assets",
+    "path":"folders/Assets.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
