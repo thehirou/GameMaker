@@ -1,9 +1,11 @@
 {
-  "resourceType": "GMNotes",
-  "resourceVersion": "1.1",
-  "name": "TO-DO",
-  "parent": {
-    "name": "##PINNED",
-    "path": "folders/##PINNED.yy",
+  "$GMNotes":"",
+  "%Name":"TO-DO",
+  "name":"TO-DO",
+  "parent":{
+    "name":"##PINNED",
+    "path":"folders/##PINNED.yy",
   },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
 }

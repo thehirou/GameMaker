@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "SCRIPT_SENDCHAT",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "#Game",
-    "path": "folders/#Game.yy",
+  "$GMScript":"v1",
+  "%Name":"SCRIPT_SENDCHAT",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SCRIPT_SENDCHAT",
+  "parent":{
+    "name":"#Game",
+    "path":"folders/#Game.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -5,7 +5,7 @@ if isItRandomSfx=true
 
 	if randomSfx=69 and !audio_is_playing(currentSfx)
 	{
-	currentSfx=audio_play_sound(sndID,1,false,global.musicVolume)	
+		currentSfx=audio_play_sound(sndID,1,false,global.sfxVolume)	
 	}
 
 
